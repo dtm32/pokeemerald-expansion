@@ -68,20 +68,20 @@ ZoneA_Warehouse_1F_EventScript_DeltaMachineInfo::
 	multichoicegrid 0, 0, MULTI_LAB_A_DELTAS, 2, FALSE
 	@ closemessage
 	switch VAR_RESULT
-	case 0, EventScript_WurmpleData
-	case 1, EventScript_VenonatData
-	case 2, EventScript_SilcoonData
-	case 3, EventScript_WhismurData
-	case 4, EventScript_SandslashData
-	case 5, EventScript_DustoxData
-	case 6, EventScript_LaironData
-	case 7, EventScript_FearowData
-	case 8, EventScript_BeedrillData
-	case 9, EventScript_ShedinjaData
+	case 0, ZoneA_Warehouse_1F_EventScript_WurmpleData
+	case 1, ZoneA_Warehouse_1F_EventScript_VenonatData
+	case 2, ZoneA_Warehouse_1F_EventScript_SilcoonData
+	case 3, ZoneA_Warehouse_1F_EventScript_WhismurData
+	case 4, ZoneA_Warehouse_1F_EventScript_SandslashData
+	case 5, ZoneA_Warehouse_1F_EventScript_DustoxData
+	case 6, ZoneA_Warehouse_1F_EventScript_LaironData
+	case 7, ZoneA_Warehouse_1F_EventScript_FearowData
+	case 8, ZoneA_Warehouse_1F_EventScript_BeedrillData
+	case 9, ZoneA_Warehouse_1F_EventScript_ShedinjaData
 	goto ZoneA_Warehouse_1F_EventScript_DeltaConverterScientist
 	end
 
-EventScript_WurmpleData::
+ZoneA_Warehouse_1F_EventScript_WurmpleData::
 	showmonpic SPECIES_WURMPLE_DELTA, 10, 3
 	msgbox ZoneA_Warehouse_1F_Text_WurmpleData, MSGBOX_DEFAULT
 	@ closemessage
@@ -89,7 +89,7 @@ EventScript_WurmpleData::
 	goto ZoneA_Warehouse_1F_EventScript_DeltaMachineInfo
 	end
 
-EventScript_VenonatData::
+ZoneA_Warehouse_1F_EventScript_VenonatData::
 	showmonpic SPECIES_VENONAT_DELTA, 10, 3
 	msgbox ZoneA_Warehouse_1F_Text_VenonatData, MSGBOX_DEFAULT
 	@ closemessage
@@ -97,7 +97,7 @@ EventScript_VenonatData::
 	goto ZoneA_Warehouse_1F_EventScript_DeltaMachineInfo
 	end
 
-EventScript_SilcoonData::
+ZoneA_Warehouse_1F_EventScript_SilcoonData::
 	showmonpic SPECIES_SILCOON_DELTA, 10, 3
 	msgbox ZoneA_Warehouse_1F_Text_SilcoonData, MSGBOX_DEFAULT
 	@ closemessage
@@ -105,15 +105,15 @@ EventScript_SilcoonData::
 	goto ZoneA_Warehouse_1F_EventScript_DeltaMachineInfo
 	end
 
-EventScript_WhismurData::
-	showmonpic SPECIES_SILCOON_DELTA, 10, 3
+ZoneA_Warehouse_1F_EventScript_WhismurData::
+	showmonpic SPECIES_WHISMUR, 10, 3
 	msgbox ZoneA_Warehouse_1F_Text_WhismurData, MSGBOX_DEFAULT
 	@ closemessage
 	hidemonpic
 	goto ZoneA_Warehouse_1F_EventScript_DeltaMachineInfo
 	end
 	
-EventScript_SandslashData::
+ZoneA_Warehouse_1F_EventScript_SandslashData::
 	showmonpic SPECIES_SANDSLASH_DELTA, 10, 3
 	msgbox ZoneA_Warehouse_1F_Text_SandslashData, MSGBOX_DEFAULT
 	@ closemessage
@@ -121,7 +121,7 @@ EventScript_SandslashData::
 	goto ZoneA_Warehouse_1F_EventScript_DeltaMachineInfo
 	end
 
-EventScript_DustoxData::
+ZoneA_Warehouse_1F_EventScript_DustoxData::
 	showmonpic SPECIES_DUSTOX_DELTA, 10, 3
 	msgbox ZoneA_Warehouse_1F_Text_DustoxData, MSGBOX_DEFAULT
 	@ closemessage
@@ -129,7 +129,7 @@ EventScript_DustoxData::
 	goto ZoneA_Warehouse_1F_EventScript_DeltaMachineInfo
 	end
 
-EventScript_LaironData::
+ZoneA_Warehouse_1F_EventScript_LaironData::
 	showmonpic SPECIES_LAIRON_DELTA, 10, 3
 	msgbox ZoneA_Warehouse_1F_Text_LaironData, MSGBOX_DEFAULT
 	@ closemessage
@@ -137,7 +137,7 @@ EventScript_LaironData::
 	goto ZoneA_Warehouse_1F_EventScript_DeltaMachineInfo
 	end
 
-EventScript_FearowData::
+ZoneA_Warehouse_1F_EventScript_FearowData::
 	showmonpic SPECIES_FEAROW_DELTA, 10, 3
 	msgbox ZoneA_Warehouse_1F_Text_FearowData, MSGBOX_DEFAULT
 	@ closemessage
@@ -145,7 +145,7 @@ EventScript_FearowData::
 	goto ZoneA_Warehouse_1F_EventScript_DeltaMachineInfo
 	end
 
-EventScript_BeedrillData::
+ZoneA_Warehouse_1F_EventScript_BeedrillData::
 	showmonpic SPECIES_BEEDRILL_DELTA, 10, 3
 	msgbox ZoneA_Warehouse_1F_Text_BeedrillData, MSGBOX_DEFAULT
 	@ closemessage
@@ -153,26 +153,11 @@ EventScript_BeedrillData::
 	goto ZoneA_Warehouse_1F_EventScript_DeltaMachineInfo
 	end
 
-EventScript_ShedinjaData::
+ZoneA_Warehouse_1F_EventScript_ShedinjaData::
 	showmonpic SPECIES_SHEDINJA_DELTA, 10, 3
 	msgbox ZoneA_Warehouse_1F_Text_ShedinjaData, MSGBOX_DEFAULT
-	@ closemessage
 	hidemonpic
 	goto ZoneA_Warehouse_1F_EventScript_DeltaMachineInfo
-	end
-
-    @ {gText_Wurmple},
-    @ {gText_Venonat},
-    @ {gText_Silcoon},
-    @ {gText_Whismur},
-    @ {gText_Sandslash},
-    @ {gText_Dustox},
-    @ {gText_Lairon},
-    @ {gText_Fearow},
-    @ {gText_Beedrill},
-    @ {gText_Shedinja},
-
-ZoneA_Warehouse_1F_EventScript_DeltaMachineConvert::
 	end
 
 ZoneA_Warehouse_1F_Text_AvailableConversions:

@@ -67,7 +67,7 @@
 #define FLAG_HIDE_PETALBURG_CITY_DAD        0x34
 #define FLAG_PICKED_TRICERACHOP             0x35 // GIFT MON
 #define FLAG_ITEM_LAB_A_FULL_HEAL           0x36
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
+#define FLAG_HIDE_WALLY_ROUTE_111           0x37
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
@@ -665,9 +665,9 @@
 #define FLAG_HIDDEN_ITEM_PETALBURG_WOODS_REVIVE             0x266
 #define FLAG_ITEM_PETALBURG_WOODS_WATER_STONE               0x267
 #define FLAG_HIDDEN_ITEM_PETALBURG_WOODS_LEFTOVERS          0x268
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
+#define FLAG_HIDDEN_ITEM_DIG_SIT_2_ULTRA_BALL               0x269
+#define FLAG_ITEM_MAUVILLE_TUNNEL_MOON_STONE                0x26A
+#define FLAG_ITEM_MAUVILLE_TUNNEL_TM_HYPER_BEAM             0x26B
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag

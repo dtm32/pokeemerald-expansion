@@ -12805,17 +12805,17 @@
               {
                 "min_level": 15,
                 "max_level": 22,
-                "species": "SPECIES_TRICERACHOP"
-              },
-              {
-                "min_level": 19,
-                "max_level": 22,
                 "species": "SPECIES_VOLTREX"
               },
               {
                 "min_level": 19,
                 "max_level": 22,
-                "species": "SPECIES_TRICERACHOP"
+                "species": "SPECIES_POLARIS"
+              },
+              {
+                "min_level": 19,
+                "max_level": 22,
+                "species": "SPECIES_POLARIS"
               }
             ]
           },

@@ -666,3 +666,124 @@ MauvilleCity_Text_ExplainTV:
 
 MauvilleCity_Text_BeenCheckingOutTV:
 	.string "Hi, have you been checking out TVs?$"
+
+MauvilleCity_EventScript_WallyTrigger1::
+	lockall
+	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
+	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyTrigger1
+	waitmovement 0
+	goto MauvilleCity_EventScript_WallyFollowMe
+	end
+
+MauvilleCity_EventScript_WallyTrigger2::
+	lockall
+	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
+	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyTrigger2
+	waitmovement 0
+	goto MauvilleCity_EventScript_WallyFollowMe
+	end
+
+MauvilleCity_EventScript_WallyTrigger3::
+	lockall
+	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
+	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyTrigger3
+	waitmovement 0
+	goto MauvilleCity_EventScript_WallyFollowMe
+	end
+
+MauvilleCity_EventScript_WallyTrigger4::
+	lockall
+	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
+	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyTrigger4
+	waitmovement 0
+	goto MauvilleCity_EventScript_WallyFollowMe
+	end
+
+MauvilleCity_EventScript_WallyTrigger5::
+	lockall
+	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyTrigger5
+	waitmovement 0
+	goto MauvilleCity_EventScript_WallyFollowMe
+	end
+
+MauvilleCity_EventScript_WallyFollowMe::
+	msgbox MauvilleCity_Text_WallyComeToDigSite, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_WALLY, MauvilleCity_Movement_WallyDigSiteExit
+	waitmovement 0
+	removeobject LOCALID_WALLY
+	setflag FLAG_HIDE_MAUVILLE_CITY_WALLY
+	releaseall
+	end
+
+MauvilleCity_Movement_WallyTrigger1:
+	walk_fast_up
+	walk_fast_up
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+MauvilleCity_Movement_WallyTrigger2:
+	walk_fast_right
+	walk_fast_right
+	step_end
+
+MauvilleCity_Movement_WallyTrigger3:
+	walk_fast_right
+	walk_fast_down
+	walk_fast_right
+	step_end
+
+MauvilleCity_Movement_WallyTrigger4:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_down
+	walk_fast_down
+	walk_fast_right
+	step_end
+
+MauvilleCity_Movement_WallyTrigger5:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_down
+	walk_fast_down
+	step_end
+
+MauvilleCity_Movement_WallyDigSiteExit:
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_left
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
+
+MauvilleCity_Text_WallyComeToDigSite:
+	.string "WALLY: {PLAYER}!\n"
+	.string "BRAWLY told me you'd be coming.\p"
+	.string "You're here just in time, TEAM ARCO\n"
+	.string "just showed up and they're\l"
+	.string "causing chaos.\p"
+	.string "Quick, follow me!$"

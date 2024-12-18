@@ -3,6 +3,7 @@
 .set LOCALID_VIVI, 3
 .set LOCALID_VICKY, 4
 .set LOCALID_ROCK_SMASH_MAN, 46
+.set LOCALID_WALLY, 47
 
 @ Note: LOCALID_ROUTE111_PLAYER_FALLING is a local id for this map used elsewhere. It's defined in event_objects.h
 
@@ -728,3 +729,15 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "TRAINERS!”$"
 
+Route111_EventScript_Wally::
+	msgbox Route111_Text_WallyThroughHere, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_WALLY, Common_Movement_WalkUp
+	waitmovement 0
+	removeobject LOCALID_WALLY
+	setflag FLAG_HIDE_WALLY_ROUTE_111
+	end
+
+Route111_Text_WallyThroughHere:
+	.string "WALLYL: It's just through here!\n"
+	.string "Follow me!$"

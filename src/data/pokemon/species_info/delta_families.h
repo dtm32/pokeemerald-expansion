@@ -515,12 +515,12 @@
 // VENONAT FAMILY
     [SPECIES_VENONAT_DELTA] =
     {
-        .baseHP        = 67,
-        .baseAttack    = 64,
-        .baseDefense   = 60,
-        .baseSpeed     = 54,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 64,
+        .baseHP        = 72,
+        .baseAttack    = 89,
+        .baseDefense   = 70,
+        .baseSpeed     = 59,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 74,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_POISON),
         .catchRate = 190,
         .expYield = 228,
@@ -530,7 +530,7 @@
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_COMPOUND_EYES, ABILITY_TINTED_LENS, ABILITY_RUN_AWAY },
+        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Venonat δ"),
         .cryId = CRY_VENONAT,
@@ -1174,7 +1174,7 @@
         .catchRate = 45,
         .expYield = 104,
         .evYield_HP = 2,
-        .genderRatio = PERCENT_FEMALE(45),
+        .genderRatio = PERCENT_FEMALE(30),
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -1207,9 +1207,9 @@
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
         .palette = gMonPalette_Tricerachop,
         .shinyPalette = gMonPalette_Tricerachop,
-        .iconSprite = gMonIcon_Electrosaur,
-        .iconPalIndex = 0,
-        FOOTPRINT(Tyrantrum)
+        .iconSprite = gMonIcon_Tricerachop,
+        .iconPalIndex = 1,
+        FOOTPRINT(Aurorus)
         OVERWORLD(
             sPicTable_Aurorus,
             SIZE_32x32,
@@ -1224,17 +1224,17 @@
 
     [SPECIES_TOMAHTRI] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 70,
-        .baseDefense   = 55,
-        .baseSpeed     = 43,
+        .baseHP        = 127,
+        .baseAttack    = 105,
+        .baseDefense   = 100,
+        .baseSpeed     = 48,
         .baseSpAttack  = 40,
-        .baseSpDefense = 47,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FIGHTING),
         .catchRate = 45,
-        .expYield = 104,
+        .expYield = 200,
         .evYield_HP = 2,
-        .genderRatio = PERCENT_FEMALE(45),
+        .genderRatio = PERCENT_FEMALE(30),
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
@@ -1261,15 +1261,15 @@
         .frontPicYOffset = 8,
         .frontAnimFrames = sAnims_Aurorus,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Tricerachop,
+        .backPic = gMonBackPic_Tomahtops,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 4,
+        .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
         .palette = gMonPalette_Tomahtops,
-        .shinyPalette = gMonPalette_Tricerachop,
-        .iconSprite = gMonIcon_Electrosaur,
-        .iconPalIndex = 0,
-        FOOTPRINT(Tyrantrum)
+        .shinyPalette = gMonPalette_Tomahtops,
+        .iconSprite = gMonIcon_Tomahtops,
+        .iconPalIndex = 1,
+        FOOTPRINT(Terrakion)
         OVERWORLD(
             sPicTable_Aurorus,
             SIZE_32x32,
@@ -1278,7 +1278,7 @@
             gOverworldPalette_Aurorus,
             gShinyOverworldPalette_Aurorus
         )
-        .levelUpLearnset = sTricerachopLevelUpLearnset,
+        .levelUpLearnset = sTomahtopsLevelUpLearnset,
         .teachableLearnset = sAurorusTeachableLearnset,
     },
 

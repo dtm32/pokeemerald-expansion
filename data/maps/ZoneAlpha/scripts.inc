@@ -26,6 +26,10 @@ ZoneAlpha_EventScript_Grunt2::
 	msgbox ZoneAlpha_Text_SilentTreatment, MSGBOX_AUTOCLOSE
 	end
 
+ZoneAlpha_EventScript_LabSign::
+	msgbox ZoneAlpha_Text_LabSign, MSGBOX_SIGN
+	end
+
 ZoneAlpha_Text_SilentTreatment:
 	.string "…$"
 
@@ -40,3 +44,7 @@ ZoneAlpha_Text_WallyPokenavCall:
 	.string "have a thank you gift for you!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
+
+ZoneAlpha_Text_LabSign:
+	.string "DELTA PROJECT:\n"
+	.string "LAB A$"
