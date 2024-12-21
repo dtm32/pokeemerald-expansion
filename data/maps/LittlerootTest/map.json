@@ -59,8 +59,8 @@
       "x": 4,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_PETALBURG_WOODS",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_GRANITE_CAVE_B1F",
+      "dest_warp_id": "1"
     },
     {
       "x": 5,

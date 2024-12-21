@@ -1805,6 +1805,32 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = Move_DRILL_PECK,
     },
 
+    [MOVE_AERIAL_BASH] =
+    {
+        .name = COMPOUND_STRING("Aerial Bash"),
+        .description = COMPOUND_STRING(
+            "A diving aerial attack that\n"
+            "may cause flinching."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_FLYING,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 25,
+        }),
+        .makesContact = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_PECK},
+        .battleAnimScript = Move_BRAVE_BIRD,
+    },
+
     [MOVE_SUBMISSION] =
     {
         .name = COMPOUND_STRING("Submission"),
@@ -10899,16 +10925,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Rock Climb"),
         .description = COMPOUND_STRING(
-            "Emits powerful shockwaves\n"
-            "while climbing. May confuse."),
-        .effect = EFFECT_HIT,
-        .power = 90,
-        .type = TYPE_GROUND,
+            "Super effective on Rock-\n"
+            "types. May confuse."),
+        .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
+        .argument = TYPE_ROCK,
+        .power = 75,
+        .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_CONFUSION,
             .chance = 20,

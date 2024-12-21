@@ -1649,7 +1649,7 @@
 #define SPECIES_VOLTREX                                 1541
 #define SPECIES_ELECTROSAUR                             1542
 #define SPECIES_TRICERACHOP                             1543
-#define SPECIES_TOMAHTRI                                1544
+#define SPECIES_TOMAHTOPS                                1544
 #define SPECIES_LILEEP_DELTA                            1545
 #define SPECIES_CRADILY_DELTA                           1546
 #define SPECIES_ABYSSILILY                              1547

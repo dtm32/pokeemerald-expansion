@@ -350,6 +350,7 @@
     "GraniteCave_B1F",
     "GraniteCave_B2F",
     "GraniteCave_StevensRoom",
+    "GraniteCave_BeldumRoom",
     "PetalburgWoods",
     "PetalburgWoods2",
     "PetalburgWoods3",
@@ -456,7 +457,8 @@
     "BleakisleCave_3R",
     "BleakisleCave_B1F_1R",
     "BleakisleCave_B1F_2R",
-    "MauvilleTunnel"
+    "MauvilleTunnel",
+    "AppleWoods"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

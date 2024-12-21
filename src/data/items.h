@@ -11831,19 +11831,34 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_STRENGTH,
     },
 
-    [ITEM_HM_FLASH] =
+    // [ITEM_HM_FLASH] =
+    // {
+    //     .name = _("HM05"),
+    //     .price = 0,
+    //     .description = COMPOUND_STRING(
+    //         "Looses a powerful\n"
+    //         "blast of light that\n"
+    //         "may cut speed."),
+    //     .importance = 1,
+    //     .pocket = POCKET_TM_HM,
+    //     .type = ITEM_USE_PARTY_MENU,
+    //     .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+    //     .secondaryId = MOVE_FLASH,
+    // },
+
+    [ITEM_HM_ROCK_CLIMB] =
     {
         .name = _("HM05"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Looses a powerful\n"
-            "blast of light that\n"
-            "may cut speed."),
+            "Super effective on\n"
+            "Rock-types. May"
+            "confuse."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_FLASH,
+        .secondaryId = MOVE_ROCK_CLIMB,
     },
 
     [ITEM_HM_ROCK_SMASH] =

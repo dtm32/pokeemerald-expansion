@@ -118,10 +118,10 @@ ZoneA_Warehouse_B1F_Text_Stop:
 	.string "Stop right there.$"
 
 ZoneA_Warehouse_B1F_Text_AdminIntro:
-	.string "Enough, I'll do this myself.$"
+	.string "???: Enough, I'll do this myself.$"
 
 ZoneA_Warehouse_B1F_Text_AdminDefeated:
-	.string "We already got what we needed here.\p"
+	.string "???: We already got what we needed here.\p"
 	.string "Don't try and follow us.$"
 
 ZoneA_Warehouse_B1F_Text_SilentTreatment:

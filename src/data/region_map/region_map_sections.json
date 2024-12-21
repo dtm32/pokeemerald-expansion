@@ -1807,6 +1807,14 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_APPLE_WOODS",
+      "name": "APPLE WOODS",
+      "x": 6,
+      "y": 9,
+      "width": 2,
+      "height": 1
     }
   ]
 }

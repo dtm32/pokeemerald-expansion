@@ -1,4 +1,5 @@
 .set LOCALID_GOODY_BAG, 1
+.set LOCALID_POKEBALL, 2
 
 LittlerootTest_MapScripts::
 	.byte 0
@@ -8,15 +9,14 @@ LittlerootTest_MapScripts::
 sLittlerootTown_GiveTestingMonEtc::
 	lock
 	msgbox LittlerootTown_Text_TakePokeball, MSGBOX_DEFAULT
+	closemessage
 	getpartysize
 	compare VAR_RESULT, 6
 	goto_if_eq Script_PlayerHasFullParty
-	goto LittlerootTown_Script_GiveTestMons
-	removeobject 9
+	call LittlerootTown_Script_GiveTestMons
+	removeobject LOCALID_POKEBALL
 	setflag FLAG_BIRCH_SKIP
 	call LittlerootTown_Script_SkipBirchEncounter
-	msgbox LittlerootTown_Text_Test, MSGBOX_DEFAULT
-	closemessage
 	release
 	end
 
@@ -30,19 +30,15 @@ LittlerootTown_Script_GiveTestMons::
 	getpartysize
 	compare VAR_RESULT, 6
 	goto_if_eq Script_PlayerHasFullParty
-	@ givemon SPECIES_VAPOREON, 65, item=ITEM_LEFTOVERS, ball=ITEM_MASTER_BALL, nature=NATURE_MODEST, abilityNum=1, gender=MON_FEMALE, hpEv=252, atkEv=0, defEv=0, speedEv=4, spAtkEv=252, spDefEv=0, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31, move1=MOVE_SURF, move2=MOVE_FLAMETHROWER, move3=MOVE_ICE_BEAM, move4=MOVE_SPLASH, isShiny=TRUE;
-	givemon SPECIES_GOLBAT_DELTA, 64
-	givemon SPECIES_SHEDINJA_DELTA, 69
-	givemon SPECIES_DUSTOX_DELTA, 60	
-	givemon SPECIES_VENOMOTH_DELTA, 63
-	givemon SPECIES_SANDSLASH_DELTA, 65
+	givemon SPECIES_GLIGAR, 34, item=ITEM_EVIOLITE, move1=MOVE_AERIAL_BASH, move2=MOVE_CUT, move3=MOVE_POISON_TAIL, move4=MOVE_ROCK_CLIMB
+	givemon SPECIES_SANDSLASH_DELTA, 24
+	givemon SPECIES_TOMAHTOPS, 30
+	givemon SPECIES_LANTURN, 25
+	givemon SPECIES_BELLOSSOM, 28
 	return
 
 LittlerootTown_Text_TakePokeball:
 	.string "Oh look! A POKéBALL!$"
-
-LittlerootTown_Text_Test:
-	.string "TEST$"
 
 cLittlerootTown_Text_ReceivedVaporeon:
 	.string "{PLAYER} received a VAPOREON!$"
@@ -55,16 +51,16 @@ cLittlerootTown_EventScript_PickupGoodyBag::
 	msgbox cLittlerootTown_Text_PickupGoodyBag
 	msgbox cLittlerootTown_Text_FoundRustyOldBadges
 	giveitem ITEM_MASTER_BALL, 50
-	@ giveitem ITEM_CARBOS, 10
+	giveitem ITEM_RARE_CANDY, 100
 	@ giveitem ITEM_PROTEIN, 10
 	@ giveitem ITEM_ADAMANT_MUSHROOM, 10
 	call LittlerootTown_Script_SkipBirchEncounter
 	call LittlerootTown_Script_GiveStartingMons
 	call LittlerootTown_Script_GiveBadges
 	call LittlerootTown_Script_SetFlyFlags
+	call LittlerootTown_Script_GiveHMs
 	removeobject LOCALID_GOODY_BAG
 	setflag FLAG_STOLE_GOODY_BAG
-	setflag FLAG_HIDE_ROUTE_102_ARCO_GUARD
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	closemessage
 	release
@@ -89,10 +85,10 @@ LittlerootTown_Script_GiveStartingMons::
 	getpartysize
 	compare VAR_RESULT, 6
 	goto_if_eq Script_PlayerHasFullParty
-	givemon SPECIES_VAPOREON, 65, item=ITEM_LEFTOVERS, move1=MOVE_AERIAL_ACE, move2=MOVE_SURF, move3=MOVE_SLUDGE_BOMB, move4=MOVE_SPLASH, isShiny=TRUE;
-	givemon SPECIES_BEEDRILL_DELTA, 65, move1=MOVE_ROCK_CANNON, move2=MOVE_ICE_PUNCH, move3=MOVE_POISON_JAB, move4=MOVE_BRILLIANT_PUNCH, isShiny=TRUE;
-	givemon SPECIES_BEEDRILL, 40
-	givemon SPECIES_SUDOWOODO, 45, move1=MOVE_ROCK_CLIMB, move2=MOVE_JAGGED_BLOW, move3=MOVE_WATERFALL, move4=MOVE_BRILLIANT_PUNCH
+	givemon SPECIES_VAPOREON, 50, item=ITEM_LEFTOVERS, move1=MOVE_SCALD, move2=MOVE_SURF, move3=MOVE_SLUDGE_BOMB, move4=MOVE_SPLASH, isShiny=TRUE;
+	@ givemon SPECIES_BEEDRILL_DELTA, 65, move1=MOVE_ROCK_CANNON, move2=MOVE_ICE_PUNCH, move3=MOVE_POISON_JAB, move4=MOVE_BRILLIANT_PUNCH, isShiny=TRUE;
+	@ givemon SPECIES_BEEDRILL, 40
+	@ givemon SPECIES_SUDOWOODO, 45, move1=MOVE_ROCK_CLIMB, move2=MOVE_JAGGED_BLOW, move3=MOVE_WATERFALL, move4=MOVE_BRILLIANT_PUNCH
 	@ givemon SPECIES_SHEDINJA_DELTA, 65, item=ITEM_LEFTOVERS, ball=ITEM_MASTER_BALL, nature=NATURE_MODEST, abilityNum=1, gender=MON_FEMALE, hpEv=252, atkEv=0, defEv=0, speedEv=4, spAtkEv=252, spDefEv=0, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31, move1=MOVE_POISON_STING, move2=MOVE_EARTHQUAKE, move3=MOVE_GIGA_DRAIN, move4=MOVE_SPLASH, isShiny=TRUE;
 	@ givemon SPECIES_DUSTOX_DELTA, 60
 	return
@@ -107,6 +103,10 @@ LittlerootTown_Script_GiveBadges::
 	setflag FLAG_BADGE06_GET
 	setflag FLAG_BADGE07_GET
 	setflag FLAG_BADGE08_GET
+	return
+
+LittlerootTown_Script_GiveHMs::
+	@ giveitem ITEM_HM_ROCK_CLIMB
 	return
 
 LittlerootTown_Script_SetFlyFlags::

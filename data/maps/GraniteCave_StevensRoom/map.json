@@ -31,10 +31,17 @@
   "warp_events": [
     {
       "x": 7,
-      "y": 3,
+      "y": 4,
       "elevation": 3,
       "dest_map": "MAP_GRANITE_CAVE_1F",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 13,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_GRANITE_CAVE_BELDUM_ROOM",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

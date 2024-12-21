@@ -730,12 +730,15 @@ Route111_Text_TrainerHillSign:
 	.string "TRAINERS!”$"
 
 Route111_EventScript_Wally::
+	lock
+	faceplayer 
 	msgbox Route111_Text_WallyThroughHere, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_WALLY, Common_Movement_WalkUp
 	waitmovement 0
 	removeobject LOCALID_WALLY
 	setflag FLAG_HIDE_WALLY_ROUTE_111
+	releaseall
 	end
 
 Route111_Text_WallyThroughHere:

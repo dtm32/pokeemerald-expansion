@@ -1222,7 +1222,7 @@
         .teachableLearnset = sAurorusTeachableLearnset,
     },
 
-    [SPECIES_TOMAHTRI] =
+    [SPECIES_TOMAHTOPS] =
     {
         .baseHP        = 127,
         .baseAttack    = 105,

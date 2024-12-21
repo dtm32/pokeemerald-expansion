@@ -49,11 +49,11 @@
 #define FLAG_HIDE_ROUTE_102_ARCO_GUARD      0x22
 #define FLAG_HIDE_ROUTE_A_GRUNT_1           0x23
 #define FLAG_DEWFORD_GYM_ROCK_1             0x24 // Dewford gym rocks
-#define FLAG_DEWFORD_GYM_ROCK_2             0x25 // Unused Flag
-#define FLAG_DEWFORD_GYM_ROCK_3             0x26 // Unused Flag
-#define FLAG_DEWFORD_GYM_ROCK_4             0x27 // Unused Flag
-#define FLAG_DEWFORD_GYM_ROCK_5             0x28 // Unused Flag
-#define FLAG_DEWFORD_GYM_ROCK_6             0x29 // Unused Flag
+#define FLAG_DEWFORD_GYM_ROCK_2             0x25
+#define FLAG_DEWFORD_GYM_ROCK_3             0x26
+#define FLAG_DEWFORD_GYM_ROCK_4             0x27
+#define FLAG_DEWFORD_GYM_ROCK_5             0x28
+#define FLAG_DEWFORD_GYM_ROCK_6             0x29
 #define FLAG_HIDE_DEWFORD_TOWN_BRAWLY_1     0x2A // Brawly outside gym
 #define FLAG_HIDE_TEAM_ARCO_ZONE_A          0x2B
 #define FLAG_HIDE_NORMAL_SCIENTISTS_ZONE_A  0x2C
@@ -68,8 +68,8 @@
 #define FLAG_PICKED_TRICERACHOP             0x35 // GIFT MON
 #define FLAG_ITEM_LAB_A_FULL_HEAL           0x36
 #define FLAG_HIDE_WALLY_ROUTE_111           0x37
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
+#define FLAG_HIDE_DIG_SITE_2_ARCO_MEMBERS   0x38
+#define FLAG_HIDE_DIG_SITE_2_WALLY          0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
@@ -123,13 +123,13 @@
 #define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
 #define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
 
-#define FLAG_UNUSED_0x068                    0x68  // Unused Flag
+#define FLAG_USING_ROCK_CLIMB                0x68  // Used to disable wild encounters
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A
 #define FLAG_RECEIVED_HM_ROCK_SMASH          0x6B
 #define FLAG_WHITEOUT_TO_LAVARIDGE           0x6C // Set after defeating Flannery, so the player cant white out from poison before receiving Go Goggles
-#define FLAG_RECEIVED_HM_FLASH               0x6D
+#define FLAG_RECEIVED_HM_ROCK_CLIMB          0x6D
 #define FLAG_RECEIVED_HM_FLY                 0x6E
 #define FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT  0x6F
 #define FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE  0x70
@@ -310,7 +310,7 @@
 #define FLAG_ENABLE_PROF_BIRCH_MATCH_CALL    0x119
 #define FLAG_RECEIVED_CLEANSE_TAG            0x11A
 #define FLAG_RECEIVED_FOCUS_BAND             0x11B
-#define FLAG_DECLINED_WALLY_BATTLE_MAUVILLE  0x11C
+#define FLAG_DECLINED_WALLY_BATTLE_MAUVILLE  0x11C // Removed
 #define FLAG_RECEIVED_DEVON_SCOPE            0x11D
 #define FLAG_DECLINED_RIVAL_BATTLE_LILYCOVE  0x11E
 #define FLAG_MET_DEVON_EMPLOYEE              0x11F

@@ -279,6 +279,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_PETALBURG_AARON_NORTH
 	setflag FLAG_HIDE_PETALBURG_CITY_DAD
 	setflag FLAG_HIDE_TEAM_ARCO_ZONE_A
+	setflag FLAG_HIDE_DIG_SITE_2_WALLY
 
 	call EventScript_ResetAllBerries
 	end

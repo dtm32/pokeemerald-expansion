@@ -59,7 +59,6 @@ GraniteCave_StevensRoom_Movement_StevenExit:
 	walk_up
 	walk_up
 	walk_up
-	walk_up
 	delay_8
 	step_end
 
@@ -72,7 +71,6 @@ GraniteCave_StevensRoom_Movement_PlayerTurnTowardExit:
 
 GraniteCave_StevensRoom_Movement_StevenExitSouth:
 	walk_left
-	walk_up
 	walk_up
 	walk_up
 	walk_right

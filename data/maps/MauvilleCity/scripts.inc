@@ -69,14 +69,15 @@ MauvilleCity_EventScript_TVExplained::
 	end
 
 MauvilleCity_EventScript_WallysUncle::
-	lock
-	faceplayer
-	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_UncleAskPlayerToBattleWally
-	msgbox MauvilleCity_Text_UncleHesTooPeppy, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_WALLYS_UNCLE, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	release
+	msgbox MauvilleCity_Text_WallysUncle, MSGBOX_NPC
+	@ lock
+	@ faceplayer
+	@ goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_UncleAskPlayerToBattleWally
+	@ msgbox MauvilleCity_Text_UncleHesTooPeppy, MSGBOX_DEFAULT
+	@ closemessage
+	@ applymovement LOCALID_WALLYS_UNCLE, Common_Movement_FaceOriginalDirection
+	@ waitmovement 0
+	@ release
 	end
 
 MauvilleCity_EventScript_UncleAskPlayerToBattleWally::
@@ -89,21 +90,21 @@ MauvilleCity_EventScript_UncleAskPlayerToBattleWally::
 
 MauvilleCity_EventScript_Wally::
 	lockall
-	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_WallyRequestBattleAgain
-	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
-	waitmovement 0
-	msgbox MauvilleCity_Text_WallyWantToChallengeGym, MSGBOX_DEFAULT
-	msgbox MauvilleCity_Text_UncleYourePushingIt, MSGBOX_DEFAULT
-	msgbox MauvilleCity_Text_WallyWeCanBeatAnyone, MSGBOX_DEFAULT
-	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
-	waitmovement 0
-	playse SE_PIN
-	applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement LOCALID_WALLY, Common_Movement_Delay48
-	waitmovement 0
-	msgbox MauvilleCity_Text_WallyWillYouBattleMe, MSGBOX_YESNO
-	goto MauvilleCity_EventScript_BattleWallyPrompt
+	@ goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_WallyRequestBattleAgain
+	@ applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
+	@ waitmovement 0
+	@ msgbox MauvilleCity_Text_WallyWantToChallengeGym, MSGBOX_DEFAULT
+	@ msgbox MauvilleCity_Text_UncleYourePushingIt, MSGBOX_DEFAULT
+	@ msgbox MauvilleCity_Text_WallyWeCanBeatAnyone, MSGBOX_DEFAULT
+	@ applymovement LOCALID_WALLY, Common_Movement_FacePlayer
+	@ waitmovement 0
+	@ playse SE_PIN
+	@ applymovement LOCALID_WALLY, Common_Movement_ExclamationMark
+	@ waitmovement 0
+	@ applymovement LOCALID_WALLY, Common_Movement_Delay48
+	@ waitmovement 0
+	@ msgbox MauvilleCity_Text_WallyWillYouBattleMe, MSGBOX_YESNO
+	@ goto MauvilleCity_EventScript_BattleWallyPrompt
 	end
 
 MauvilleCity_EventScript_BattleWallyPrompt::
@@ -215,7 +216,7 @@ MauvilleCity_EventScript_BattleWally::
 	return
 
 MauvilleCity_EventScript_DeclineWallyBattle::
-	setflag FLAG_DECLINED_WALLY_BATTLE_MAUVILLE
+	@ setflag FLAG_DECLINED_WALLY_BATTLE_MAUVILLE
 	msgbox MauvilleCity_Text_WallyMyUncleWontKnowImStrong, MSGBOX_DEFAULT
 	release
 	end
@@ -463,10 +464,8 @@ MauvilleCity_EventScript_RegisterWallyCall::
 	releaseall
 	end
 
-MauvilleCity_Text_UncleHesTooPeppy:
-	.string "UNCLE: It's because of POKéMON that\n"
-	.string "this boy's got more pep, I suppose…\l"
-	.string "But he's become a bit too peppy…$"
+MauvilleCity_Text_WallysUncle:
+	.string "UNCLE: Where did that WALLY go…$"
 
 MauvilleCity_Text_WallyWantToChallengeGym:
 	.string "WALLY: Aww, UNCLE, please?\p"

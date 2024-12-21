@@ -223,7 +223,7 @@ Pic: Arco Member B
 Gender: Male
 Music: Magma
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
 Gligar
 Level: 16
@@ -237,13 +237,162 @@ Shedinja-Delta
 Level: 17
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Venomoth-Delta
+Fearow-Delta
 Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 
 /* =========================== */
-/* ==== PETALBURGH WOODS ===== */
+/* ======= DIG SITE 2 ======== */
+/* =========================== */
+
+=== TRAINER_GRUNT_MAUVILLE_TUNNEL_1 ===
+Name: GRUNT
+Class: Team Arco
+Pic: Arco Member R
+Gender: Male
+Music: Magma
+Double Battle: No
+AI: Check Bad Move
+
+Bayleef
+Level: 25
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Cacturne
+Level: 28
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Beedrill-Delta
+Level: 27
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+=== TRAINER_GRUNT_MAUVILLE_TUNNEL_2 ===
+Name: GRUNT
+Class: Team Arco
+Pic: Arco Member R
+Gender: Male
+Music: Magma
+Double Battle: No
+AI: Check Bad Move
+
+Porygon2
+Level: 23
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Dustox-Delta
+Level: 25
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Onix
+Level: 25
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+=== TRAINER_GRUNT_MAUVILLE_TUNNEL_3 ===
+Name: GRUNT
+Class: Team Arco
+Pic: Arco Member R
+Gender: Male
+Music: Magma
+Double Battle: No
+AI: Check Bad Move
+
+Golbat
+Level: 24
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Yanma
+Level: 26
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Trapinch
+Level: 25
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Azumarill
+Level: 27
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+
+=== TRAINER_GRUNT_DIG_SITE_2_1 ===
+Name: GRUNT
+Class: Team Arco
+Pic: Arco Member R
+Gender: Male
+Music: Magma
+Double Battle: No
+AI: Check Bad Move
+
+Espeon @ Sitrus Berry
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Primeape
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Sandslash-Delta @ Black Belt
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_GRUNT_DIG_SITE_2_2 ===
+Name: GRUNT
+Class: Team Arco
+Pic: Arco Member R
+Gender: Male
+Music: Magma
+Double Battle: No
+AI: Check Bad Move
+
+Archen @ Sitrus Berry
+Level: 25
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Venonat-Delta
+Level: 27
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Noctowl @ Quick Claw
+Level: 27
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_ADMIN_DIG_SITE_2 ===
+Name: ADMIN
+Class: Team Arco
+Pic: Arco Member B
+Gender: Male
+Music: Magma
+Double Battle: No
+Items: Full Restore
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Granbull
+Level: 26
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Lairon-Delta
+Level: 27
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Rhydon @ Soft Sand
+Level: 27
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Fearow-Delta @ Sitrus Berry
+Level: 30
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Gligar @ Eviolite
+Level: 29
+IVs: 24 HP / 24 Atk / 31 Def / 24 SpA / 31 SpD / 31 Spe
+- Rock Polish
+- Slash
+- Aerial Bash
+- Bulldoze
+
+
+/* =========================== */
+/* ===== PETALBURG WOODS ===== */
 /* =========================== */
 
 
@@ -1006,16 +1155,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Roselia
-Level: 21
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Wigglytuff
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ivysaur
+Level: 24
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Sunflora
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 25
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_FELIX ===
 Name: FELIX
@@ -3767,7 +3916,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Electrike
-Level: 24
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Quick Attack
 - Thunder Wave
@@ -3775,7 +3924,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Leer
 
 Voltorb
-Level: 22
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Charge
 - Shock Wave
@@ -3821,21 +3970,21 @@ Double Battle: No
 AI: Check Bad Move
 
 Voltorb
-Level: 24
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 31 Spe
 - Self Destruct
 
-Magnemite
-Level: 23
+Magneton
+Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Electrode
-Level: 26
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Swift
-- Charge Beam
-- Rollout
-- Spark
+Luxray
+Level: 31
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 31 Spe
+- Thunder Fang
+- Fire Fang
+- Ice Fang
+- Howl
 
 === TRAINER_FERNANDO_1 ===
 Name: FERNANDO
@@ -3864,16 +4013,24 @@ Double Battle: No
 AI: Check Bad Move
 
 Magnemite
-Level: 21
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-Loudred
 Level: 23
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 Loudred
-Level: 23
+Level: 25
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Loudred
+Level: 27
+Ability: Punk Rock
+Shiny: Yes
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 31 Spe
+EVs: 252 Spe
+Nature: Hasty
+- Uproar
+- Hyper Voice
+- Stomp
+- Rest
 
 === TRAINER_DALTON_2 ===
 Name: DALTON
@@ -4410,7 +4567,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Bedrill
+Beedrill
 Level: 23
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -5306,42 +5463,48 @@ Items: Super Potion / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Voltorb
-Level: 26
+Electrode
+Level: 30
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 200 Spe
+Ability: Static
 - Rollout
-- Spark
+- Chloroblast
 - Self Destruct
 - Shock Wave
 
 Jolteon
-Level: 27
+Level: 34
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+EVs: 100 Atk / 100 SpA / 100 Spe
 - Shock Wave
 - Signal Beam
 - Quick Attack
-- Double Kick
+- Trailblaze
 
-Magneton
-Level: 28
+Magnezone
+Level: 31
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Supersonic
-- Shock Wave
+EVs: 200 SpA
+- Tri Attack
+- Discharge
 - Thunder Wave
-- Sonic Boom
+- Flash Cannon
 
 Quagsire
-Level: 27
+Level: 32
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+EVs: 200 HP
 - Slam
 - Mud Bomb
 - Mist
 - Muddy Water
 
 Manectric @ Sitrus Berry
-Level: 30
+Level: 36
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-EVs: 120 SpA / 120 Spe
+EVs: 120 SpA / 200 Spe
+Nature: Timid
 - Snarl
 - Thunder Wave
 - Thunderbolt
@@ -5839,12 +6002,20 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Charmander
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 28
+IVs: 12 HP / 12 Atk / 12 Def / 31 SpA / 12 SpD / 31 Spe
+- Flamethrower
+- Dragon Breath
+- Fire Fang
+- Scary Face
 
 Riolu
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 28
+IVs: 12 HP / 24 Atk / 12 Def / 24 SpA / 12 SpD / 31 Spe
+- Bullet Punch
+- Metal Claw
+- Vacuum Wave
+- Force Palm
 
 === TRAINER_ANNA_AND_MEG_2 ===
 Name: ANNA & MEG
@@ -5951,13 +6122,17 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Taillow @ Oran Berry
-Level: 16
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Clefairy @ Oran Berry
+Level: 24
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Zigzagoon @ Oran Berry
-Level: 16
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Vulpix @ Oran Berry
+Level: 24
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+
+Swellow @ Oran Berry
+Level: 26
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_MIGUEL_1 ===
 Name: MIGUEL
@@ -6098,9 +6273,17 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
+Weepinbell
+Level: 26
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+
 Roselia @ Oran Berry
-Level: 17
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Level: 26
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+
+Roserade @ Oran Berry
+Level: 28
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_VANESSA ===
 Name: VANESSA
@@ -6311,9 +6494,22 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Meditite
-Level: 18
+Wyrdeer
+Level: 30
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Ursaluna @ Flame Orb
+Level: 30
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Body Slam
+- Play Rough
+- Lick
+- High Horsepower
+
+Medicham @ Focus Sash
+Level: 32
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 100 Atk / 100 SpA / 200 Spe
 - High Jump Kick
 - Meditate
 - Confusion
@@ -6510,15 +6706,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Linoone
-Level: 24
+Level: 28
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Headbutt
-- Sand Attack
-- Growl
+- Quick Attack
+- Surf
 - Thunderbolt
 
 Pikachu
-Level: 23
+Level: 30
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Spark
 - Iron Tail
@@ -6526,7 +6722,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Play Nice
 
 Grimer
-Level: 26
+Level: 29
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Toxic
 - Sludge
@@ -6692,13 +6888,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Raticate
+Level: 18
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Zigzagoon
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Drowzee
+Level: 18
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+
+Nidorina
+Level: 20
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_ALLEN ===
 Name: ALLEN
@@ -6971,20 +7171,20 @@ Double Battle: No
 AI: Check Bad Move
 
 Buizel
-Level: 21
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Poliwhirl
-Level: 22
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Level: 24
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Quagsire
-Level: 22
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Level: 24
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Wartortle
-Level: 24
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Level: 25
+IVs: 31 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_CARTER ===
 Name: CARTER
@@ -7331,8 +7531,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Doduo
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 24
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Jolteon
+Level: 28
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_DYLAN_2 ===
 Name: DYLAN
@@ -7343,12 +7547,16 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
-Level: 24
+Dodrio
+Level: 32
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Jolteon
-Level: 28
+Level: 35
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Vaporeon
+Level: 36
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_DYLAN_3 ===
@@ -7360,9 +7568,21 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Doduo
-Level: 31
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Dodrio
+Level: 36
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Jolteon
+Level: 37
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Vaporeon
+Level: 37
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Espeon
+Level: 37
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_DYLAN_4 ===
 Name: DYLAN
@@ -7400,11 +7620,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Ponyta
-Level: 20
+Level: 23
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Pawmo
-Level: 21
+Level: 25
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_MARIA_2 ===
@@ -10307,20 +10527,23 @@ Level: 24
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Bronzor 
-Level: 21
+Level: 22
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Roselia
-Level: 22
+Level: 23
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Staravia @ Sitrus Berry
 Level: 24
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Combusken @ Cheri Berry
-Level: 27
+Lickitung
+Level: 25
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Combusken @ Cheri Berry
+Level: 28
 
 === TRAINER_MAY_ROUTE_119_TREECKO ===
 Name: MAY
@@ -10408,28 +10631,28 @@ Double Battle: No
 AI: Check Bad Move
 
 Aipom
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Porygon
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Staravia
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Furret
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Purugly
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Sunflora
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_DAVIS ===
 Name: DAVIS
@@ -11691,16 +11914,20 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Marill
-Level: 15
+Hippowdon
+Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Shroomish
-Level: 15
+Sandslash
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Numel
-Level: 15
+Level: 30
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Azumarill
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_HALEY_2 ===
@@ -11785,8 +12012,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Oddish
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+Wormadam-Sandy
+Level: 20
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_ROBIN ===
 Name: ROBIN
@@ -11798,16 +12029,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Skitty
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 18
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Shroomish
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bulbasaur
+Level: 18
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 Marill
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 19
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_ANDREA ===
 Name: ANDREA
@@ -12244,16 +12475,18 @@ Double Battle: No
 AI: Check Bad Move
 
 Pelipper
-Level: 10
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Gust
 - Growl
 
-Poochyena
-Level: 10
+Grumpig
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Bite
-- Scary Face
+
+Mightyena
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MIKE_2 ===
 Name: MIKE
@@ -12549,7 +12782,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Meditite
-Level: 23
+Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bide
 - Detect
@@ -12557,7 +12790,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Thunder Punch
 
 Meditite
-Level: 23
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Thunder Punch
 - Detect
@@ -13805,9 +14038,13 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Breloom
+Level: 24
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Bellossom
+Level: 24
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_HAYDEN ===
 Name: HAYDEN
@@ -13819,8 +14056,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Numel
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 22
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Dugtrio
+Level: 25
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_SOPHIE ===
 Name: SOPHIE
@@ -13943,16 +14184,16 @@ Double Battle: No
 AI: Check Bad Move
 
 Persian
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 22
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Lairon
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 24
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Donphan
 Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 12 HP / 12 Atk / 31 Def / 12 SpA / 31 SpD / 12 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_1 ===
 Name: GRUNT
@@ -14585,12 +14826,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Doduo
-Level: 20
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Level: 23
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Jumpluff
-Level: 24
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_BRANDI ===
 Name: BRANDI
@@ -14602,8 +14843,8 @@ Double Battle: No
 AI: Check Bad Move
 
 Kirlia
-Level: 25
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Level: 27
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_AISHA ===
 Name: AISHA
@@ -14615,12 +14856,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Meditite
-Level: 21
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Level: 23
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Granbull
-Level: 22
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Level: 25
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_MAKAYLA ===
 Name: MAKAYLA
@@ -16551,22 +16792,23 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Volbeat
-Level: 24
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Shock Wave
 - Quick Attack
 - Confuse Ray
+- Electroweb
 
 Elekid
-Level: 23
+Level: 28
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Shock Wave
 - Quick Attack
 - Thunder Wave
 - Swift
 
-Mareep
-Level: 24
+Flaaffy
+Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Shock Wave
 - Cotton Spore
