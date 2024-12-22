@@ -334,7 +334,7 @@
     .baseSpeed     = 44,
     .baseSpAttack  = 66,
     .baseSpDefense = 33,
-    .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FAIRY),
+    .types = MON_TYPES(TYPE_ELECTRIC, TYPE_GHOST),
     .catchRate = 45,
     .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 83 : 95,
     .evYield_HP = 2,
@@ -915,8 +915,6 @@
     },
 
 
-
-
 // FOSSIL FAMILIES
     [SPECIES_IGNEOUSAUR] =
     {
@@ -935,8 +933,8 @@
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_RECKLESS, ABILITY_OBLIVIOUS, ABILITY_ANGER_POINT },
-        .bodyColor = BODY_COLOR_PURPLE,
+        .abilities = { ABILITY_STURDY, ABILITY_SHEER_FORCE, ABILITY_INTIMIDATE },
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Igneousaur"),
         .cryId = CRY_AERODACTYL,
         .natDexNum = NATIONAL_DEX_AERODACTYL,
@@ -974,20 +972,18 @@
             gOverworldPalette_Aerodactyl,
             gShinyOverworldPalette_Aerodactyl
         )
-        .levelUpLearnset = sAerodactylLevelUpLearnset,
+        .levelUpLearnset = sIgneousaurLevelUpLearnset,
         .teachableLearnset = sAerodactylTeachableLearnset,
         .eggMoveLearnset = sAerodactylEggMoveLearnset,
-        .formSpeciesIdTable = sAerodactylFormSpeciesIdTable,
-        .formChangeTable = sAerodactylFormChangeTable,
     },
 
     [SPECIES_POLARIS] =
     {
         .baseHP        = 104,
-        .baseAttack    = 45,
+        .baseAttack    = 65,
         .baseDefense   = 100,
         .baseSpeed     = 58,
-        .baseSpAttack  = 135,
+        .baseSpAttack  = 105,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_ROCK, TYPE_PSYCHIC),
         .catchRate = 45,
@@ -998,8 +994,8 @@
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
-        .abilities = { ABILITY_REFRIGERATE, ABILITY_NONE, ABILITY_SNOW_WARNING },
-        .bodyColor = BODY_COLOR_BLUE,
+        .abilities = { ABILITY_TRACE, ABILITY_NONE, ABILITY_TELEPATHY },
+        .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Polaris"),
         .cryId = CRY_AURORUS,
         .natDexNum = NATIONAL_DEX_AURORUS,
@@ -1037,8 +1033,8 @@
             gOverworldPalette_Aurorus,
             gShinyOverworldPalette_Aurorus
         )
-        .levelUpLearnset = sAurorusLevelUpLearnset,
-        .teachableLearnset = sAurorusTeachableLearnset,
+        .levelUpLearnset = sPolarisLevelUpLearnset,
+        .teachableLearnset = sDiancieTeachableLearnset,
     },
 
     [SPECIES_VOLTREX] =
@@ -1104,12 +1100,12 @@
 
     [SPECIES_ELECTROSAUR] =
     {
-        .baseHP        = 65,
+        .baseHP        = 80,
         .baseAttack    = 105,
-        .baseDefense   = 60,
-        .baseSpeed     = 105,
+        .baseDefense   = 65,
+        .baseSpeed     = 95,
         .baseSpAttack  = 85,
-        .baseSpDefense = 60,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_ROCK, TYPE_ELECTRIC),
         .catchRate = 45,
         .expYield = 104,
@@ -1224,7 +1220,7 @@
 
     [SPECIES_TOMAHTOPS] =
     {
-        .baseHP        = 127,
+        .baseHP        = 132,
         .baseAttack    = 105,
         .baseDefense   = 100,
         .baseSpeed     = 48,

@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_LITTLEROOT_TOWN",
-      "offset": 0,
+      "offset": -7,
       "direction": "left"
     }
   ],
@@ -59,7 +59,7 @@
       "x": 4,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_GRANITE_CAVE_B1F",
+      "dest_map": "MAP_MOUNT_KIRI_1F",
       "dest_warp_id": "1"
     },
     {

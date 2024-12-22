@@ -69,8 +69,8 @@
 #define FLAG_ITEM_LAB_A_FULL_HEAL           0x36
 #define FLAG_HIDE_WALLY_ROUTE_111           0x37
 #define FLAG_HIDE_DIG_SITE_2_ARCO_MEMBERS   0x38
-#define FLAG_HIDE_DIG_SITE_2_WALLY          0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
+#define FLAG_HIDE_DIG_SITE_2_WALLY          0x39
+#define FLAG_RECEIVED_EXPERT_BELT           0x3A // unused
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
@@ -665,13 +665,13 @@
 #define FLAG_HIDDEN_ITEM_PETALBURG_WOODS_REVIVE             0x266
 #define FLAG_ITEM_PETALBURG_WOODS_WATER_STONE               0x267
 #define FLAG_HIDDEN_ITEM_PETALBURG_WOODS_LEFTOVERS          0x268
-#define FLAG_HIDDEN_ITEM_DIG_SIT_2_ULTRA_BALL               0x269
+#define FLAG_HIDDEN_ITEM_DIG_SITE_2_ULTRA_BALL              0x269
 #define FLAG_ITEM_MAUVILLE_TUNNEL_MOON_STONE                0x26A
 #define FLAG_ITEM_MAUVILLE_TUNNEL_TM_HYPER_BEAM             0x26B
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
+#define FLAG_ITEM_VERDANTURF_RAVINE_TM_02                   0x26C
+#define FLAG_ITEM_VERDANTURF_RAVINE_MAX_REVIVE              0x26D
+#define FLAG_HIDDEN_ITEM_DIG_SITE_2_STAR_PIECE              0x26E
+#define FLAG_HIDDEN_ITEM_MT_KIRI_1F_NUGGET                  0x26F
 #define FLAG_UNUSED_0x270  0x270 // Unused Flag
 #define FLAG_UNUSED_0x271  0x271 // Unused Flag
 #define FLAG_UNUSED_0x272  0x272 // Unused Flag

@@ -364,7 +364,7 @@ Gender: Male
 Music: Magma
 Double Battle: No
 Items: Full Restore
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Ace Pokemon
 
 Granbull
 Level: 26
@@ -379,11 +379,11 @@ Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Fearow-Delta @ Sitrus Berry
-Level: 30
+Level: 29
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Gligar @ Eviolite
-Level: 29
+Level: 30
 IVs: 24 HP / 24 Atk / 31 Def / 24 SpA / 31 SpD / 31 Spe
 - Rock Polish
 - Slash
@@ -453,16 +453,141 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_EZRA ===
 Name: EZRA
-Class: Bug Catcher
-Pic: Bug Catcher
+Class: Youngster
+Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cubone
+Level: 26
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Kricketune
+Level: 27
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Skuntank
+Level: 28
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+=== TRAINER_MILES ===
+Name: MILES
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Ace Pokemon
+
+Golem-Alola @ Focus Band
+Level: 27
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+- Explosion
+
+Probopass
+Level: 28
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Machoke
+Level: 28
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Golem-Alola
+Level: 28
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+EVs: 150 Atk / 150 Def
+- Bulldoze
+- Iron Head
+- Thunder Punch
+- Explosion
+
+=== TRAINER_ADRIANA ===
+Name: ADRIANA
+Class: Expert
+Pic: Expert F
+Gender: Female
+Music: Intense
+Double Battle: No
+Items: Full Restore / Full Restore
+AI: Check Bad Move / Try To Faint / Check Viability / Ace Pokemon / Smart Switching / Omniscient
+
+Heracross @ Black Belt
+Level: 29
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 100 Atk / 100 Spe
+
+Farigiraf @ Petaya Berry
+Level: 32
+Ability: Cud Chew
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 200 HP / 200 SpA
+- Twin Beam
+- Grass Knot
+- Shadow Ball
+- Double Kick
+
+Milotic @ Leftovers
+Level: 31
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 200 HP / 80 SpA
+- Light Screen
+- Recover
+- Water Pulse
+- Draining Kiss
+
+Lucario @ Choice Scarf
+Level: 29
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 120 Atk / 120 Spe
+- Force Palm
+- Bone Rush
+- Swords Dance
+- Meteor Mash
+
+Charizard @ Expert Belt
+Level: 36
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 120 Atk / 120 SpA / 240 Spe
+- Flamethrower
+- Dragon Breath
+- Earthquake
+- Thunder Punch
+
+=== TRAINER_EMMETT ===
+Name: EMMETT
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Onix
+Level: 26
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Marowak
+Level: 29
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+=== TRAINER_OLIVER ===
+Name: OLIVER
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Polaris
+Level: 27
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Excadrill
+Level: 31
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_FLYNN ===
 Name: FLYNN
@@ -5423,7 +5548,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Mankey
 Level: 18
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Karate Chop
 - Low Kick
 - Seismic Toss
@@ -5431,7 +5556,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Tyrogue
 Level: 18
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Bullet Punch
 - Fake Out
 - Reflect
@@ -5441,7 +5566,7 @@ Primeape
 Level: 22
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Seismic Toss
-- Swagger
+- Bulk Up
 - Cross Chop
 - Focus Punch
 
@@ -5453,6 +5578,17 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Reversal
 - Focus Punch
 
+Electabuzz @ Punching Glove
+Level: 24
+Ability: Iron Fist
+Nature: Adamant
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 100 Atk / 50 Spe
+- Thunder Punch
+- Fire Punch
+- Mach Punch
+- Bulk Up
+
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
 Class: Leader
@@ -5461,7 +5597,7 @@ Gender: Male
 Music: Male
 Items: Super Potion / Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Ace Pokemon
 
 Electrode
 Level: 30
@@ -12477,8 +12613,6 @@ AI: Check Bad Move
 Pelipper
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Gust
-- Growl
 
 Grumpig
 Level: 26

@@ -742,5 +742,5 @@ Route111_EventScript_Wally::
 	end
 
 Route111_Text_WallyThroughHere:
-	.string "WALLYL: It's just through here!\n"
+	.string "WALLY: It's just through here!\n"
 	.string "Follow me!$"

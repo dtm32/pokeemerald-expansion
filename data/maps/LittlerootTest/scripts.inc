@@ -30,11 +30,11 @@ LittlerootTown_Script_GiveTestMons::
 	getpartysize
 	compare VAR_RESULT, 6
 	goto_if_eq Script_PlayerHasFullParty
-	givemon SPECIES_GLIGAR, 34, item=ITEM_EVIOLITE, move1=MOVE_AERIAL_BASH, move2=MOVE_CUT, move3=MOVE_POISON_TAIL, move4=MOVE_ROCK_CLIMB
-	givemon SPECIES_SANDSLASH_DELTA, 24
+	givemon SPECIES_GLIGAR, 30, item=ITEM_EVIOLITE, move1=MOVE_AERIAL_BASH, move2=MOVE_CUT, move3=MOVE_POISON_TAIL, move4=MOVE_BULLDOZE
+	givemon SPECIES_SANDSLASH_DELTA, 28
 	givemon SPECIES_TOMAHTOPS, 30
-	givemon SPECIES_LANTURN, 25
-	givemon SPECIES_BELLOSSOM, 28
+	givemon SPECIES_LANTURN, 28
+	givemon SPECIES_BELLOSSOM, 29
 	return
 
 LittlerootTown_Text_TakePokeball:
@@ -48,6 +48,7 @@ cLittlerootTown_Text_PlayerHasFullParty:
 
 cLittlerootTown_EventScript_PickupGoodyBag::
 	lock
+	setflag FLAG_HIDE_DIG_SITE_2_ARCO_MEMBERS
 	msgbox cLittlerootTown_Text_PickupGoodyBag
 	msgbox cLittlerootTown_Text_FoundRustyOldBadges
 	giveitem ITEM_MASTER_BALL, 50

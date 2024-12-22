@@ -202,15 +202,15 @@
       "y": 6,
       "elevation": 0,
       "item": "ITEM_ULTRA_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_DIG_SIT_2_ULTRA_BALL"
+      "flag": "FLAG_HIDDEN_ITEM_DIG_SITE_2_ULTRA_BALL"
     },
     {
       "type": "hidden_item",
       "x": 31,
       "y": 13,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "item": "ITEM_STAR_PIECE",
+      "flag": "FLAG_HIDDEN_ITEM_DIG_SITE_2_STAR_PIECE"
     }
   ]
 }
