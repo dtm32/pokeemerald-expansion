@@ -89,10 +89,10 @@ const u32 gMonShinyPalette_Polaris[] = INCBIN_U32("graphics/pokemon/polaris/norm
 const u8 gMonFootprint_Polaris[] = INCBIN_U8("graphics/pokemon/polaris/footprint.1bpp");
 const u8 gMonIcon_Polaris[] = INCBIN_U8("graphics/pokemon/polaris/icon.4bpp");
 
-const u32 gMonFrontPic_Voltrex[] = INCBIN_U32("graphics/pokemon/electrosaur/voltrex.4bpp.lz");
-const u32 gMonPalette_Voltrex[] = INCBIN_U32("graphics/pokemon/electrosaur/voltrex.gbapal.lz");
-const u32 gMonBackPic_Voltrex[] = INCBIN_U32("graphics/pokemon/electrosaur/back_voltrex.4bpp.lz");
-const u8 gMonIcon_Voltrex[] = INCBIN_U8("graphics/pokemon/electrosaur/icon_voltrex.4bpp");
+const u32 gMonFrontPic_Voltrex[] = INCBIN_U32("graphics/pokemon/voltrex/anim_front.4bpp.lz");
+const u32 gMonPalette_Voltrex[] = INCBIN_U32("graphics/pokemon/voltrex/normal.gbapal.lz");
+const u32 gMonBackPic_Voltrex[] = INCBIN_U32("graphics/pokemon/voltrex/back.4bpp.lz");
+const u8 gMonIcon_Voltrex[] = INCBIN_U8("graphics/pokemon/voltrex/icon.4bpp");
 
 const u32 gMonFrontPic_Electrosaur[] = INCBIN_U32("graphics/pokemon/electrosaur/electrosaur.4bpp.lz");
 const u32 gMonPalette_Electrosaur[] = INCBIN_U32("graphics/pokemon/electrosaur/electrosaur.gbapal.lz");

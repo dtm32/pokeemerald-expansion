@@ -1132,3 +1132,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AppleWoods/scripts.inc"
 
 	.include "data/maps/GraniteCave_BeldumRoom/scripts.inc"
+
+	.include "data/maps/LabB/scripts.inc"
+
+	.include "data/maps/LabB_1F/scripts.inc"
+
+	.include "data/maps/LabB_B1F/scripts.inc"

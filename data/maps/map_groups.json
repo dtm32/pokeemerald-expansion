@@ -1,7 +1,7 @@
 {
   "group_order": [
     "gMapGroup_TownsAndRoutes",
-    "gMapGroup_IndoorZoneA",
+    "gMapGroup_IndoorDeltaLabs",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorDewford",
@@ -104,11 +104,14 @@
     "VerdanturfRavine",
     "BleakisleTown",
     "CherryGarden",
-    "LittlerootTest"
+    "LittlerootTest",
+    "LabB"
   ],
-  "gMapGroup_IndoorZoneA": [
+  "gMapGroup_IndoorDeltaLabs": [
     "ZoneA_Warehouse_1F",
-    "ZoneA_Warehouse_B1F"
+    "ZoneA_Warehouse_B1F",
+    "LabB_1F",
+    "LabB_B1F"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

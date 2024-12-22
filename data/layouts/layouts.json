@@ -4700,6 +4700,36 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/GraniteCave_BeldumRoom/border.bin",
       "blockdata_filepath": "data/layouts/GraniteCave_BeldumRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAB_B",
+      "name": "LabB_Layout",
+      "width": 24,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/LabB/border.bin",
+      "blockdata_filepath": "data/layouts/LabB/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAB_B_1F",
+      "name": "LabB_1F_Layout",
+      "width": 18,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/LabB_1F/border.bin",
+      "blockdata_filepath": "data/layouts/LabB_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAB_B_B1F",
+      "name": "LabB_B1F_Layout",
+      "width": 18,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/LabB_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/LabB_B1F/map.bin"
     }
   ]
 }

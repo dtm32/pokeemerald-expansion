@@ -12,11 +12,18 @@ OldaleTown_OnTransition:
 	call_if_unset FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_BlockWestEntrance
 	call_if_unset FLAG_RECEIVED_POTION_OLDALE, OldaleTown_EventScript_MoveMartEmployee
 	call_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_SetOldaleState
+	call_if_set FLAG_DELIVERED_STEVEN_LETTER, OldaleTown_EventScript_SetOldaleState2
+	call_if_eq VAR_OLDALE_TOWN_STATE, 1, OldaleTown_EventScript_MoveFootprintsManBlockWoods
 	end
 
 @ This script seems pointless because nothing uses VAR_OLDALE_TOWN_STATE
+@ Custom use, block Apple Woods
 OldaleTown_EventScript_SetOldaleState::
 	setvar VAR_OLDALE_TOWN_STATE, 1
+	return
+
+OldaleTown_EventScript_SetOldaleState2::
+	setvar VAR_OLDALE_TOWN_STATE, 2
 	return
 
 OldaleTown_EventScript_BlockWestEntrance::
@@ -27,6 +34,11 @@ OldaleTown_EventScript_BlockWestEntrance::
 OldaleTown_EventScript_MoveMartEmployee::
 	setobjectxyperm LOCALID_MART_EMPLOYEE, 13, 14
 	setobjectmovementtype LOCALID_MART_EMPLOYEE, MOVEMENT_TYPE_FACE_DOWN
+	return
+
+OldaleTown_EventScript_MoveFootprintsManBlockWoods::
+	setobjectxyperm LOCALID_FOOTPRINTS_MAN, 19, 12
+	setobjectmovementtype LOCALID_FOOTPRINTS_MAN, MOVEMENT_TYPE_FACE_RIGHT
 	return
 
 OldaleTown_EventScript_TownSign::
@@ -194,7 +206,8 @@ OldaleTown_Movement_Unknown2:
 OldaleTown_EventScript_FootprintsMan::
 	lock
 	faceplayer
-	goto_if_set FLAG_ADVENTURE_STARTED, OldaleTown_EventScript_NotBlockingPath
+	goto_if_eq VAR_OLDALE_TOWN_STATE, 1, OldaleTown_EventScript_BlockingWoodsPath
+	goto_if_eq VAR_OLDALE_TOWN_STATE, 2, OldaleTown_EventScript_NotBlockingPath
 	msgbox OldaleTown_Text_DiscoveredFootprints, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_FOOTPRINTS_MAN, Common_Movement_FaceOriginalDirection
@@ -214,9 +227,32 @@ OldaleTown_EventScript_BlockedPath::
 	releaseall
 	end
 
+OldaleTown_EventScript_BlockingWoodsPath::
+	msgbox OldaleTown_Text_SketchingWoodsFootprints, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_FOOTPRINTS_MAN, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
 OldaleTown_EventScript_NotBlockingPath::
 	msgbox OldaleTown_Text_FinishedSketchingFootprints, MSGBOX_DEFAULT
 	release
+	end
+
+OldaleTown_EventScript_BlockedPath2::
+	lockall
+	applymovement OBJ_EVENT_ID_PLAYER, OldaleTown_Movement_WalkBackwardsLeft
+	applymovement LOCALID_FOOTPRINTS_MAN, OldaleTown_Movement_WalkDown
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+	applymovement LOCALID_FOOTPRINTS_MAN, Common_Movement_FaceLeft
+	waitmovement 0
+	msgbox OldaleTown_Text_WaitDontComeInHere2, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_FOOTPRINTS_MAN, OldaleTown_Movement_ReturnToOriginalPosition2
+	waitmovement 0
+	releaseall
 	end
 
 OldaleTown_EventScript_Rival::
@@ -343,6 +379,21 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	walk_left
 	step_end
 
+OldaleTown_Movement_WalkBackwardsLeft:
+	lock_facing_direction
+	walk_left
+	unlock_facing_direction
+	step_end
+
+OldaleTown_Movement_WalkDown:
+	walk_down
+	step_end
+
+OldaleTown_Movement_ReturnToOriginalPosition2:
+	walk_up
+	walk_in_place_faster_right
+	step_end
+
 OldaleTown_Text_SavingMyProgress:
 	.string "I want to take a rest, so I'm saving my\n"
 	.string "progress.$"
@@ -373,11 +424,23 @@ OldaleTown_Text_WaitDontComeInHere:
 	.string "Wait until I finish sketching\n"
 	.string "them, okay?$"
 
+OldaleTown_Text_WaitDontComeInHere2:
+	.string "Aaaaah! Wait!\n"
+	.string "Please don't come in here.\p"
+	.string "I just discovered some more rare\n"
+	.string "rare POKéMON footprints!\p"
+	.string "Wait until I finish sketching\n"
+	.string "them, okay?$"
+
 OldaleTown_Text_DiscoveredFootprints:
 	.string "I just discovered the footprints of\n"
 	.string "a rare POKéMON!\p"
 	.string "Wait until I finish sketching\n"
 	.string "them, okay?$"
+
+OldaleTown_Text_SketchingWoodsFootprints:
+	.string "Hopefully these ones aren't just my\n"
+	.string "own footprints…$"
 
 OldaleTown_Text_FinishedSketchingFootprints:
 	.string "I finished sketching the footprints of\n"

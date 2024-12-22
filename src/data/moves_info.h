@@ -1161,10 +1161,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "A toxic attack with barbs,\n"
             "etc., that may poison."),
         .effect = EFFECT_HIT,
-        .power = 25,
+        .power = 30,
         .type = TYPE_POISON,
         .accuracy = 100,
-        .pp = 35,
+        .pp = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
@@ -1955,7 +1955,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "An attack that absorbs\n"
             "half the damage inflicted."),
         .effect = EFFECT_ABSORB,
-        .power = 20,
+        .power = 30,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_4 ? 25 : 20,

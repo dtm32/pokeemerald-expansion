@@ -114,6 +114,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MayUnderwat
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MovingBox;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CableCar;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Scientist2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Scientist3;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Scientist4;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DevonEmployee;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberF;
@@ -371,6 +373,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MOVING_BOX] =               &gObjectEventGraphicsInfo_MovingBox,
     [OBJ_EVENT_GFX_CABLE_CAR] =                &gObjectEventGraphicsInfo_CableCar,
     [OBJ_EVENT_GFX_SCIENTIST_2] =              &gObjectEventGraphicsInfo_Scientist2,
+    [OBJ_EVENT_GFX_SCIENTIST_3] =              &gObjectEventGraphicsInfo_Scientist3,
+    [OBJ_EVENT_GFX_SCIENTIST_4] =              &gObjectEventGraphicsInfo_Scientist4,
     [OBJ_EVENT_GFX_DEVON_EMPLOYEE] =           &gObjectEventGraphicsInfo_DevonEmployee,
     [OBJ_EVENT_GFX_AQUA_MEMBER_M] =            &gObjectEventGraphicsInfo_AquaMemberM,
     [OBJ_EVENT_GFX_AQUA_MEMBER_F] =            &gObjectEventGraphicsInfo_AquaMemberF,
