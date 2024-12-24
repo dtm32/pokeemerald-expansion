@@ -27,6 +27,18 @@ ZoneA_Warehouse_1F_EventScript_FaceNorth::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
 
+ZoneA_Warehouse_1F_EventScript_HeadScientist::
+	msgbox ZoneA_Warehouse_1F_Text_HeadScientist, MSGBOX_NPC
+	end
+
+ZoneA_Warehouse_1F_EventScript_Scientist1::
+	msgbox ZoneA_Warehouse_1F_Text_Scientist1, MSGBOX_NPC
+	end
+
+ZoneA_Warehouse_1F_EventScript_Scientist2::
+	msgbox ZoneA_Warehouse_1F_Text_Scientist2, MSGBOX_NPC
+	end
+
 ZoneA_Warehouse_1F_Text_HeadScientistExplainMachine:
 	.string "Those goons were here trying to\n"
 	.string "steal our research.\p"
@@ -254,7 +266,19 @@ ZoneA_Warehouse_1F_EventScript_Grunt2::
 	msgbox ZoneA_Warehouse_1F_Text_SilentTreatment, MSGBOX_AUTOCLOSE
 	end
 
-@ ZoneAlpha_Text_
+ZoneA_Warehouse_1F_Text_HeadScientist:
+	.string "There are three other LABS that are\n"
+	.string "a part of the DELTA PROJECT.\p"
+	.string "I'm sure you will pass by them if\n"
+	.string "You're planning on collecting all\l"
+	.string "eight GYM BADGES.$"
+
+ZoneA_Warehouse_1F_Text_Scientist1:
+	.string "Our LEAD SCIENTIST is such a wizz\n"
+	.string "with science and technology!$"
+
+ZoneA_Warehouse_1F_Text_Scientist2:
+	.string "Straight back to work again…$"
 
 ZoneA_Warehouse_1F_Text_SilentTreatment:
 	.string "…$"

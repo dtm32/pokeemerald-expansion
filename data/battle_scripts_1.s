@@ -4455,6 +4455,32 @@ BattleScript_MoveWeatherChange::
 	call BattleScript_MoveWeatherChangeRet
 	goto BattleScript_MoveEnd
 
+@BattleScript_EffectDisasterSurge::
+	@call BattleScript_EffectHit_Ret
+	@@attackcanceler
+	@@attackstring
+	@@ppreduce
+	@call BattleScript_CheckPrimalWeather
+	@random 3
+	@switch VAR_RESULT
+	@case 0, BattleScript_EffectDisasterSurge_Rain
+	@case 1, BattleScript_EffectDisasterSurge_Sun
+	@case 2, BattleScript_EffectDisasterSurge_Snow
+@BattleScript_EffectDisasterSurge_Rain::
+	@setfieldweather ENUM_WEATHER_RAIN
+	@goto BattleScript_EffectDisasterSurge_MoveWeatherChange
+@BattleScript_EffectDisasterSurge_Sun::
+	@setfieldweather ENUM_WEATHER_SUN
+	@goto BattleScript_EffectDisasterSurge_MoveWeatherChange
+@BattleScript_EffectDisasterSurge_Snow::
+	@setfieldweather ENUM_WEATHER_SNOW
+	@goto BattleScript_EffectDisasterSurge_MoveWeatherChange
+@BattleScript_EffectDisasterSurge_MoveWeatherChange::
+	@attackanimation
+	@waitanimation
+	@call BattleScript_MoveWeatherChangeRet
+	@goto BattleScript_MoveEnd
+
 BattleScript_MoveWeatherChangeRet::
 	printfromtable gMoveWeatherChangeStringIds
 	waitmessage B_WAIT_TIME_LONG

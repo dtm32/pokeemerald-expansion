@@ -29,11 +29,10 @@ LittlerootTown_Script_GiveTestMons::
 	getpartysize
 	compare VAR_RESULT, 6
 	goto_if_eq Script_PlayerHasFullParty
-	givemon SPECIES_GLIGAR, 30, item=ITEM_EVIOLITE, move1=MOVE_AERIAL_BASH, move2=MOVE_CUT, move3=MOVE_POISON_TAIL, move4=MOVE_BULLDOZE
+	givemon SPECIES_GLIGAR, 30, item=ITEM_EVIOLITE, move1=MOVE_AERIAL_BASH, move2=MOVE_EARTHQUAKE, move3=MOVE_POISON_TAIL, move4=MOVE_BULLDOZE
 	givemon SPECIES_SANDSLASH_DELTA, 28
 	givemon SPECIES_NINETALES, 30
-	givemon SPECIES_SUNFLORA, 29, abilityNum=1
-	givemon SPECIES_SUNFLORA, 29
+	givemon SPECIES_SUNFLORA, 29, move1=MOVE_LIGHT_OF_RUIN, move2=MOVE_DISASTER_SURGE
 	return
 
 LittlerootTown_Text_TakePokeball:
@@ -85,7 +84,7 @@ LittlerootTown_Script_GiveStartingMons::
 	getpartysize
 	compare VAR_RESULT, 6
 	goto_if_eq Script_PlayerHasFullParty
-	givemon SPECIES_VAPOREON, 50, item=ITEM_LEFTOVERS, move1=MOVE_SCALD, move2=MOVE_SURF, move3=MOVE_SLUDGE_BOMB, move4=MOVE_SPLASH, isShiny=TRUE;
+	givemon SPECIES_VAPOREON, 50, item=ITEM_LEFTOVERS, move1=MOVE_SCALD, move2=MOVE_SURF, move3=MOVE_BADDY_BAD, move4=MOVE_SPLASH, isShiny=TRUE;
 	@ givemon SPECIES_BEEDRILL_DELTA, 65, move1=MOVE_ROCK_CANNON, move2=MOVE_ICE_PUNCH, move3=MOVE_POISON_JAB, move4=MOVE_BRILLIANT_PUNCH, isShiny=TRUE;
 	@ givemon SPECIES_BEEDRILL, 40
 	@ givemon SPECIES_SUDOWOODO, 45, move1=MOVE_ROCK_CLIMB, move2=MOVE_JAGGED_BLOW, move3=MOVE_WATERFALL, move4=MOVE_BRILLIANT_PUNCH

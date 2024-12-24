@@ -656,6 +656,7 @@ extern const u8 BattleScript_EffectMorningSun[];
 extern const u8 BattleScript_EffectSynthesis[];
 extern const u8 BattleScript_EffectMoonlight[];
 extern const u8 BattleScript_EffectRainDance[];
+// extern const u8 BattleScript_EffectDisasterSurge[];
 extern const u8 BattleScript_EffectSunnyDay[];
 extern const u8 BattleScript_EffectBellyDrum[];
 extern const u8 BattleScript_EffectPsychUp[];

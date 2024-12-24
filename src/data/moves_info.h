@@ -10182,6 +10182,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = Move_NIGHT_SLASH,
     },
 
+    [MOVE_DISASTER_SURGE] =
+    {
+        .name = COMPOUND_STRING("Disaster Surge"),
+        .description = COMPOUND_STRING(
+            "Summons random weather.\n"
+            "High critical-hit ratio."),
+        .effect = EFFECT_HIT,
+        .power = 85,
+        .type = TYPE_DARK,
+        .accuracy = 100,
+        .criticalHitStage = 2,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = Move_HYPERSPACE_FURY,
+    },
+
     [MOVE_AQUA_TAIL] =
     {
         .name = COMPOUND_STRING("Aqua Tail"),

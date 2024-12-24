@@ -71,8 +71,8 @@
 #define FLAG_HIDE_DIG_SITE_2_ARCO_MEMBERS   0x38
 #define FLAG_HIDE_DIG_SITE_2_WALLY          0x39
 #define FLAG_RECEIVED_EXPERT_BELT           0x3A // unused
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
+#define FLAG_MET_RED                        0x3B
+#define FLAG_HIDE_RED_FIERY_PATH            0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag

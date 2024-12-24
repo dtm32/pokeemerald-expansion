@@ -87,6 +87,10 @@ ZoneA_Warehouse_B1F_EventScript_ScientistApproachPlayer1::
 	waitmovement 0
 	return
 
+ZoneA_Warehouse_B1F_EventScript_Scientist1::
+	msgbox ZoneA_Warehouse_B1F_Text_Scientist1, MSGBOX_NPC
+	end
+
 ZoneA_Warehouse_B1F_Movement_StepForward:
 	walk_fast_right
 	step_end
@@ -130,3 +134,7 @@ ZoneA_Warehouse_B1F_Text_SilentTreatment:
 ZoneA_Warehouse_B1F_Text_ScientistsSaved:
 	.string "Oh thank goodness you saved us!\n"
 	.string "Please, follow me upstairs.$"
+
+ZoneA_Warehouse_B1F_Text_Scientist1:
+	.string "Huff, those TEAM ARCO goons\n"
+	.string "messed up my organization system!$"
