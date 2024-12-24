@@ -1138,3 +1138,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LabB_1F/scripts.inc"
 
 	.include "data/maps/LabB_B1F/scripts.inc"
+
+	.include "data/maps/LavaridgeTown_Dojo/scripts.inc"

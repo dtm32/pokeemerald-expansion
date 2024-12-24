@@ -97,6 +97,22 @@ static const struct LevelUpMove sVenomothDeltaLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sWhismurDeltaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_ACID),
+    LEVEL_UP_MOVE( 1, MOVE_POUND),
+    LEVEL_UP_MOVE( 5, MOVE_ECHOED_VOICE),
+    LEVEL_UP_MOVE(10, MOVE_HOWL),
+    LEVEL_UP_MOVE(14, MOVE_SLUDGE),
+    LEVEL_UP_MOVE(18, MOVE_MUD_SLAP),
+    LEVEL_UP_MOVE(21, MOVE_CLEAR_SMOG),
+    LEVEL_UP_MOVE(25, MOVE_FLING),
+    LEVEL_UP_MOVE(30, MOVE_UPROAR),
+    LEVEL_UP_MOVE(35, MOVE_CROSS_POISON),
+    LEVEL_UP_MOVE(40, MOVE_TOXIC),
+    LEVEL_UP_MOVE(45, MOVE_GUNK_SHOT),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sGolbatDeltaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCREECH),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),

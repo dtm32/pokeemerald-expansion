@@ -106,7 +106,7 @@ ZoneA_Warehouse_1F_EventScript_SilcoonData::
 	end
 
 ZoneA_Warehouse_1F_EventScript_WhismurData::
-	showmonpic SPECIES_WHISMUR, 10, 3
+	showmonpic SPECIES_WHISMUR_DELTA, 10, 3
 	msgbox ZoneA_Warehouse_1F_Text_WhismurData, MSGBOX_DEFAULT
 	@ closemessage
 	hidemonpic
@@ -193,7 +193,7 @@ ZoneA_Warehouse_1F_Text_LaironData:
 
 ZoneA_Warehouse_1F_Text_FearowData:
 	.string "> FEAROW δ\n"
-	.string "> TYPE: DARK / POISON$"
+	.string "> TYPE: DARK / FLYING$"
 
 ZoneA_Warehouse_1F_Text_BeedrillData:
 	.string "> BEEDRILL δ\n"

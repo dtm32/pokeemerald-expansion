@@ -1798,6 +1798,7 @@ static const u16 sSunkernEggMoveLearnset[] = {
     MOVE_NATURAL_GIFT,
     MOVE_MORNING_SUN,
     MOVE_GRASSY_TERRAIN,
+    MOVE_EMBER,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SUNKERN

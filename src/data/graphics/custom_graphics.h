@@ -35,6 +35,11 @@ const u32 gMonPalette_WurmpleDelta[] = INCBIN_U32("graphics/pokemon/wurmple/delt
 const u32 gMonBackPic_WurmpleDelta[] = INCBIN_U32("graphics/pokemon/wurmple/delta/back.4bpp.lz");
 const u8 gMonIcon_WurmpleDelta[] = INCBIN_U8("graphics/pokemon/wurmple/delta/icon.4bpp");
 
+const u32 gMonFrontPic_WhismurDelta[] = INCBIN_U32("graphics/pokemon/whismur/delta/anim_front_1.4bpp.lz");
+const u32 gMonPalette_WhismurDelta[] = INCBIN_U32("graphics/pokemon/whismur/delta/normal.gbapal.lz");
+const u32 gMonBackPic_WhismurDelta[] = INCBIN_U32("graphics/pokemon/whismur/delta/back.4bpp.lz");
+const u8 gMonIcon_WhismurDelta[] = INCBIN_U8("graphics/pokemon/whismur/delta/icon.4bpp");
+
 const u32 gMonFrontPic_SilcoonDelta[] = INCBIN_U32("graphics/pokemon/silcoon/delta/anim_front.4bpp.lz");
 const u32 gMonPalette_SilcoonDelta[] = INCBIN_U32("graphics/pokemon/silcoon/delta/normal.gbapal.lz");
 const u32 gMonBackPic_SilcoonDelta[] = INCBIN_U32("graphics/pokemon/silcoon/delta/back.4bpp.lz");

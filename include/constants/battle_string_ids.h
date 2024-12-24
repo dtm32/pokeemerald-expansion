@@ -712,8 +712,9 @@
 #define STRINGID_FOGLIFTED                            710
 #define STRINGID_PKMNMADESHELLGLEAM                   711
 #define STRINGID_FICKLEBEAMDOUBLED                    712
+#define STRINGID_EVAPORATEMISS                        713
 
-#define BATTLESTRINGS_COUNT                           713
+#define BATTLESTRINGS_COUNT                           714
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
@@ -745,6 +746,7 @@
 #define B_MSG_AVOIDED_ATK  2
 #define B_MSG_AVOIDED_DMG  3
 #define B_MSG_GROUND_MISS  4
+#define B_MSG_EVAPORATE_MISS 5
 
 // gAbsorbDrainStringIds
 #define B_MSG_ABSORB      0

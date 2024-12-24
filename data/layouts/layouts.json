@@ -124,8 +124,8 @@
     {
       "id": "LAYOUT_LAVARIDGE_TOWN",
       "name": "LavaridgeTown_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 26,
+      "height": 28,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/LavaridgeTown/border.bin",
@@ -4730,6 +4730,16 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/LabB_B1F/border.bin",
       "blockdata_filepath": "data/layouts/LabB_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LAVARIDGE_TOWN_DOJO",
+      "name": "LavaridgeTown_Dojo_Layout",
+      "width": 16,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PetalburgGym",
+      "border_filepath": "data/layouts/LavaridgeTown_Dojo/border.bin",
+      "blockdata_filepath": "data/layouts/LavaridgeTown_Dojo/map.bin"
     }
   ]
 }

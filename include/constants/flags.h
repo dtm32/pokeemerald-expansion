@@ -44,7 +44,7 @@
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
 // CUSTOM
-#define FLAG_BIRCH_SKIP                     0x20 // LittlerootTown Vaporeon
+#define FLAG_HIDE_DEBUG_POKEBALLS           0x20 // DEBUG
 #define FLAG_STOLE_GOODY_BAG                0x21
 #define FLAG_HIDE_ROUTE_102_ARCO_GUARD      0x22
 #define FLAG_HIDE_ROUTE_A_GRUNT_1           0x23

@@ -1633,7 +1633,7 @@
 #define SPECIES_SILCOON_DELTA                           1525
 #define SPECIES_DUSTOX_DELTA                            1526
 #define SPECIES_FEAROW_DELTA                            1527
-#define SPECIES_NINJASK_DELTA                           1528
+#define SPECIES_WHISMUR_DELTA                           1528
 #define SPECIES_SHEDINJA_DELTA                          1529
 #define SPECIES_LAIRON_DELTA                            1530
 #define SPECIES_SANDSLASH_DELTA                         1531

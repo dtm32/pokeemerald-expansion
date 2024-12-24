@@ -26,8 +26,8 @@ LavaridgeTown_EventScript_CheckSetRivalPos::
 	return
 
 LavaridgeTown_EventScript_SetRivalPos::
-	setobjectxyperm LOCALID_RIVAL, 11, 9
-	setobjectxyperm LOCALID_RIVAL_ON_BIKE, 9, 8
+	setobjectxyperm LOCALID_RIVAL, 17, 9
+	setobjectxyperm LOCALID_RIVAL_ON_BIKE, 15, 8
 	setobjectmovementtype LOCALID_RIVAL_ON_BIKE, MOVEMENT_TYPE_FACE_UP
 	clearflag FLAG_HIDE_LAVARIDGE_TOWN_RIVAL
 	return
@@ -110,12 +110,12 @@ LavaridgeTown_EventScript_RivalNoticePlayer::
 	return
 
 LavaridgeTown_EventScript_RivalExitHerbShop::
-	opendoor 12, 15
+	opendoor 18, 15
 	waitdooranim
 	addobject LOCALID_RIVAL
 	applymovement LOCALID_RIVAL, LavaridgeTown_Movement_RivalExitHerbShop
 	waitmovement 0
-	closedoor 12, 15
+	closedoor 18, 15
 	waitdooranim
 	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0

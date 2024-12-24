@@ -333,6 +333,10 @@ SlateportCity_EventScript_NameRatersHouseSign::
 	msgbox SlateportCity_Text_NameRatersHouseSign, MSGBOX_SIGN
 	end
 
+SlateportCity_EventScript_RedsHouseSign::
+	msgbox SlateportCity_Text_RedsHouseSign, MSGBOX_SIGN
+	end
+
 SlateportCity_EventScript_Maniac::
 	lock
 	faceplayer
@@ -1319,6 +1323,9 @@ SlateportCity_Text_HarborSign:
 SlateportCity_Text_NameRatersHouseSign:
 	.string "NAME RATER'S HOUSE\n"
 	.string "“POKéMON nicknames rated.”$"
+
+SlateportCity_Text_RedsHouseSign:
+	.string "RED'S HOUSE$"
 
 SlateportCity_Text_ExplainBerries:
 	.string "If a wild POKéMON gets hurt, it heals\n"

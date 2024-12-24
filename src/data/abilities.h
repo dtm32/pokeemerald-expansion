@@ -552,6 +552,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 9,
     },
 
+    [ABILITY_SUNNY_FLOWER] =
+    {
+        .name = _("Sunny Flower"),
+        .description = COMPOUND_STRING("Summons sun, resists Fire."),
+        .aiRating = 9,
+    },
+
     [ABILITY_ARENA_TRAP] =
     {
         .name = _("Arena Trap"),
@@ -661,6 +668,14 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Heatproof"),
         .description = COMPOUND_STRING("Heat and burn protection."),
         .aiRating = 5,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_EVAPORATE] =
+    {
+        .name = _("Evaporate"),
+        .description = COMPOUND_STRING("Evaporates Water moves."),
+        .aiRating = 7,
         .breakable = TRUE,
     },
 

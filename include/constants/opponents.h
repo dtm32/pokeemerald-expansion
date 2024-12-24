@@ -272,7 +272,7 @@
 #define TRAINER_CHUCK_1                     266
 #define TRAINER_WATTSON_1                   267
 #define TRAINER_FLANNERY_1                  268
-#define TRAINER_NORMAN_1                    269
+#define TRAINER_NORMAN_LAB_B_LILEEP         269
 #define TRAINER_WINONA_1                    270
 #define TRAINER_TATE_AND_LIZA_1             271
 #define TRAINER_JUAN_1                      272
@@ -789,7 +789,7 @@
 #define TRAINER_FLANNERY_3                  783
 #define TRAINER_FLANNERY_4                  784
 #define TRAINER_FLANNERY_5                  785
-#define TRAINER_NORMAN_2                    786
+#define TRAINER_NORMAN_LAB_B_ANORITH        786
 #define TRAINER_NORMAN_3                    787
 #define TRAINER_NORMAN_4                    788
 #define TRAINER_NORMAN_5                    789

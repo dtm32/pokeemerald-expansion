@@ -41,15 +41,15 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
       "x": 5,
-      "y": 13,
+      "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "RouteA_EventScript_Scientist1",
+      "flag": "FLAG_HIDE_NORMAL_SCIENTISTS_ZONE_A"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ARCO_MEMBER_R",
@@ -105,6 +105,14 @@
       "elevation": 0,
       "item": "ITEM_SUPER_POTION",
       "flag": "FLAG_ITEM_ZONE_A_SUPER_POTION"
+    },
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ZoneAlpha_EventScript_RestrictedSign"
     }
   ]
 }

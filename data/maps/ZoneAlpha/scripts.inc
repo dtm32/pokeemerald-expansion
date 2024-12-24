@@ -30,6 +30,18 @@ ZoneAlpha_EventScript_LabSign::
 	msgbox ZoneAlpha_Text_LabSign, MSGBOX_SIGN
 	end
 
+ZoneAlpha_EventScript_DebugPokeball::
+	lock
+	setflag FLAG_HIDE_TEAM_ARCO_ZONE_A
+	setflag FLAG_HIDE_ROUTE_A_GRUNT_1
+	clearflag FLAG_HIDE_NORMAL_SCIENTISTS_ZONE_A
+	setvar VAR_LAB_A_STATE, 1
+	@ Unlock traveling to Dewford with Briney
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
+	release
+	end
+
 ZoneAlpha_Text_SilentTreatment:
 	.string "…$"
 

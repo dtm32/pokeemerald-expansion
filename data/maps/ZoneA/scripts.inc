@@ -21,6 +21,10 @@ RouteA_EventScript_Grunt1Defeated::
 	release
 	return
 
+RouteA_EventScript_Scientist1::
+	msgbox RouteA_Text_Scientist1, MSGBOX_NPC
+	end
+
 RouteA_Movement_Grunt1RunAway:
 	walk_fast_up
 	walk_fast_up
@@ -39,6 +43,10 @@ RouteA_EventScript_Grunt3::
 	msgbox RouteA_Text_SilentTreatment, MSGBOX_AUTOCLOSE
 	end
 
+ZoneAlpha_EventScript_RestrictedSign::
+	msgbox RouteA_Text_RestrictedSign, MSGBOX_SIGN
+	end
+
 RouteA_Text_Grunt1Intro:
 	.string "Hey! What happened to our guard!$"
 
@@ -55,3 +63,12 @@ RouteA_Text_Grunt2Intro:
 
 RouteA_Text_SilentTreatment:
 	.string "…$"
+
+RouteA_Text_Scientist1:
+	.string "The DELTA GENE we use to induce the\n"
+	.string "transformation was extracted from\l"
+	.string "a recently discovered mythical\l"
+	.string "POKéMON!$"
+
+RouteA_Text_RestrictedSign:
+	.string "RESTRICTED AREA$"

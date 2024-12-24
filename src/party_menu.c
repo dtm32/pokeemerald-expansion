@@ -7782,7 +7782,7 @@ u16 GetMonDeltaVersion(struct Pokemon *mon)
             break;
         case SPECIES_FEAROW: deltaSpecies = SPECIES_FEAROW_DELTA;
             break;
-        case SPECIES_NINJASK: deltaSpecies = SPECIES_NINJASK_DELTA;
+        case SPECIES_WHISMUR: deltaSpecies = SPECIES_WHISMUR_DELTA;
             break;
         case SPECIES_SHEDINJA: deltaSpecies = SPECIES_SHEDINJA_DELTA;
             break;

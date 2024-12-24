@@ -15,7 +15,6 @@ sLittlerootTown_GiveTestingMonEtc::
 	goto_if_eq Script_PlayerHasFullParty
 	call LittlerootTown_Script_GiveTestMons
 	removeobject LOCALID_POKEBALL
-	setflag FLAG_BIRCH_SKIP
 	call LittlerootTown_Script_SkipBirchEncounter
 	release
 	end
@@ -32,9 +31,9 @@ LittlerootTown_Script_GiveTestMons::
 	goto_if_eq Script_PlayerHasFullParty
 	givemon SPECIES_GLIGAR, 30, item=ITEM_EVIOLITE, move1=MOVE_AERIAL_BASH, move2=MOVE_CUT, move3=MOVE_POISON_TAIL, move4=MOVE_BULLDOZE
 	givemon SPECIES_SANDSLASH_DELTA, 28
-	givemon SPECIES_TOMAHTOPS, 30
-	givemon SPECIES_LANTURN, 28
-	givemon SPECIES_BELLOSSOM, 29
+	givemon SPECIES_NINETALES, 30
+	givemon SPECIES_SUNFLORA, 29, abilityNum=1
+	givemon SPECIES_SUNFLORA, 29
 	return
 
 LittlerootTown_Text_TakePokeball:

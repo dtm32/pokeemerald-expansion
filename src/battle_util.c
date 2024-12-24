@@ -4654,6 +4654,19 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_SUNNY_FLOWER:
+            if (TryChangeBattleWeather(battler, ENUM_WEATHER_SUN, TRUE))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_DroughtActivates);
+                effect++;
+            }
+            else if (gBattleWeather & B_WEATHER_PRIMAL_ANY && WEATHER_HAS_EFFECT && !gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                BattleScriptPushCursorAndCallback(BattleScript_BlockedByPrimalWeatherEnd3);
+                effect++;
+            }
+            break;
         case ABILITY_SNOW_WARNING:
             if (B_SNOW_WARNING >= GEN_9 && TryChangeBattleWeather(battler, ENUM_WEATHER_SNOW, TRUE))
             {
@@ -9307,6 +9320,14 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
                 RecordAbilityBattle(battlerDef, defAbility);
         }
         break;
+    case ABILITY_SUNNY_FLOWER:
+        if (moveType == TYPE_FIRE)
+        {
+            modifier = uq4_12_multiply(modifier, UQ_4_12(0.25));
+            if (updateFlags)
+                RecordAbilityBattle(battlerDef, defAbility);
+        }
+        break;
     case ABILITY_DRY_SKIN:
         if (moveType == TYPE_FIRE)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
@@ -10432,6 +10453,18 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(u32 move, u32 mov
             gLastLandedMoves[battlerDef] = 0;
             gBattleCommunication[MISS_TYPE] = B_MSG_GROUND_MISS;
             RecordAbilityBattle(battlerDef, ABILITY_WONDER_CLOUD);
+        }
+    }
+    else if (moveType == TYPE_WATER && defAbility == ABILITY_EVAPORATE)
+    {
+        modifier = UQ_4_12(0.0);
+        if (recordAbilities && defAbility == ABILITY_EVAPORATE)
+        {
+            gLastUsedAbility = ABILITY_EVAPORATE;
+            gMoveResultFlags |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);
+            gLastLandedMoves[battlerDef] = 0;
+            gBattleCommunication[MISS_TYPE] = B_MSG_EVAPORATE_MISS;
+            RecordAbilityBattle(battlerDef, ABILITY_EVAPORATE);
         }
     }
     else if (B_SHEER_COLD_IMMUNITY >= GEN_7 && move == MOVE_SHEER_COLD && IS_BATTLER_OF_TYPE(battlerDef, TYPE_ICE))
