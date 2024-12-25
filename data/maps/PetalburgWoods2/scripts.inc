@@ -11,6 +11,21 @@ PetalburgWoods2_EventScript_Reid::
 	msgbox PetalburgWoods2_Text_BirdsEatBugs, MSGBOX_AUTOCLOSE
 	end
 
+PetalburgWoods2_EventScript_Aaron::
+	msgbox PetalburgWoods2_Text_Aaron, MSGBOX_NPC
+	end
+
+PetalburgWoods2_Text_Aaron:
+	.string "AARON: Hey {PLAYER}!\p"
+	.string "Thanks for completing my\n"
+	.string "challenge before.\p"
+	.string "I'm working on setting up\n"
+	.string "something really exciting for\l"
+	.string "experienced TRAINERS like\l"
+	.string "you here.\p"
+	.string "I'll give you a call in a\n"
+	.string "bit when it's ready!$"
+
 PetalburgWoods2_Text_BugsAreScary:
 	.string "I actually think bugs are kind\n"
 	.string "of scary…$"

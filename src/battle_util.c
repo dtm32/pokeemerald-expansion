@@ -9692,6 +9692,14 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
         if (IS_MOVE_SPECIAL(move) && GetActiveGimmick(battlerAtk) != GIMMICK_DYNAMAX)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
+    case HOLD_EFFECT_DELTA_DRIVE_ATK:
+        if (IS_MOVE_PHYSICAL(move) && IsDeltaSpeciesMon(battlerAtk))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.3));
+        break;
+    case HOLD_EFFECT_DELTA_DRIVE_SPA:
+        if (IS_MOVE_SPECIAL(move) && IsDeltaSpeciesMon(battlerAtk))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.3));
+        break;
     }
 
     // The offensive stats of a Player's Pokémon are boosted by x1.1 (+10%) if they have the 1st badge and 7th badges.
@@ -9852,6 +9860,14 @@ static inline u32 CalcDefenseStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 
          && (gBattleMons[battlerDef].species == SPECIES_LATIAS || gBattleMons[battlerDef].species == SPECIES_LATIOS)
          && !(gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
          && !usesDefStat)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
+    case HOLD_EFFECT_DELTA_DRIVE_DEF:
+        if (usesDefStat && IsDeltaSpeciesMon(battlerDef))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
+    case HOLD_EFFECT_DELTA_DRIVE_SPD:
+        if (!usesDefStat && IsDeltaSpeciesMon(battlerDef))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     }
@@ -11588,6 +11604,11 @@ static bool32 CanBeInfinitelyConfused(u32 battler)
         return FALSE;
     }
     return TRUE;
+}
+
+bool32 IsDeltaSpeciesMon(u32 battler)
+{
+    return gBattleMons[battler].species >= 1524 && gBattleMons[battler].species <= 1553;
 }
 
 u8 GetBattlerGender(u32 battler)

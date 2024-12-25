@@ -401,27 +401,27 @@
       "x": 91,
       "y": 8,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_NORMAN_STATE",
+      "var_value": "2",
+      "script": "Route113_EventScript_NormanCall"
     },
     {
       "type": "trigger",
       "x": 91,
       "y": 9,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_NORMAN_STATE",
+      "var_value": "2",
+      "script": "Route113_EventScript_NormanCall"
     },
     {
       "type": "trigger",
       "x": 91,
       "y": 10,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_NORMAN_STATE",
+      "var_value": "2",
+      "script": "Route113_EventScript_NormanCall"
     }
   ],
   "bg_events": [

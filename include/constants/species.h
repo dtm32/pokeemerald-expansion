@@ -1644,18 +1644,34 @@
 #define SPECIES_VENOMOTH_DELTA                          1536
 #define SPECIES_BEEDRILL_DELTA                          1537
 #define SPECIES_BUTTERFREE_DELTA                        1538
-#define SPECIES_IGNEOUSAUR                              1539
-#define SPECIES_POLARIS                                 1540
-#define SPECIES_VOLTREX                                 1541
-#define SPECIES_ELECTROSAUR                             1542
-#define SPECIES_TRICERACHOP                             1543
-#define SPECIES_TOMAHTOPS                                1544
-#define SPECIES_LILEEP_DELTA                            1545
-#define SPECIES_CRADILY_DELTA                           1546
-#define SPECIES_ABYSSILILY                              1547
-#define SPECIES_ANORITH_DELTA                           1548
-#define SPECIES_ARMALDO_DELTA                           1549
-#define SPECIES_ARMOUNTAN                               1550
+#define SPECIES_BUTTERFREE_DELT1                        1539
+#define SPECIES_BUTTERFREE_DELT2                        1540
+#define SPECIES_BUTTERFREE_DELT3                        1541
+#define SPECIES_BUTTERFREE_DELT4                        1542
+#define SPECIES_BUTTERFREE_DELT5                        1543
+#define SPECIES_BUTTERFREE_DELT6                        1544
+#define SPECIES_BUTTERFREE_DELT7                        1545
+#define SPECIES_BUTTERFREE_DELT8                        1546
+#define SPECIES_BUTTERFREE_DELT9                        1547
+#define SPECIES_BUTTERFREE_DELT10                       1548
+#define SPECIES_BUTTERFREE_DELT11                       1549
+#define SPECIES_BUTTERFREE_DELT12                       1550
+#define SPECIES_BUTTERFREE_DELT13                       1551
+#define SPECIES_BUTTERFREE_DELT14                       1552
+#define SPECIES_BUTTERFREE_DELT15                       1553
+
+#define SPECIES_IGNEOUSAUR                              1554
+#define SPECIES_POLARIS                                 1555
+#define SPECIES_VOLTREX                                 1556
+#define SPECIES_ELECTROSAUR                             1557
+#define SPECIES_TRICERACHOP                             1558
+#define SPECIES_TOMAHTOPS                               1559
+#define SPECIES_LILEEP_DELTA                            1560
+#define SPECIES_CRADILY_DELTA                           1561
+#define SPECIES_ABYSSILILY                              1562
+#define SPECIES_ANORITH_DELTA                           1563
+#define SPECIES_ARMALDO_DELTA                           1564
+#define SPECIES_ARMOUNTAN                               1565
 
 #define SPECIES_EGG (SPECIES_ARMOUNTAN + 1)
 

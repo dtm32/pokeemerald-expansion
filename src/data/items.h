@@ -7917,6 +7917,116 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_ChoiceScarf,
     },
 
+// Delta Drives
+
+    [ITEM_DELTA_DRIVE_ATK] =
+    {
+        .name = _("δ Drive: ATK"),
+        .pluralName = _("δ Drive: ATKs"),
+        .price = (I_PRICE >= GEN_9) ? 100000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+        .holdEffect = HOLD_EFFECT_DELTA_DRIVE_ATK,
+        .description = COMPOUND_STRING(
+            "Slightly boosts\n"
+            "Attack for a\n"
+            "δ Species."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_ShockDrive,
+        .iconPalette = gItemIconPalette_ShockDrive,
+    },
+
+    [ITEM_DELTA_DRIVE_DEF] =
+    {
+        .name = _("δ Drive: DEF"),
+        .pluralName = _("δ Drive: DEFs"),
+        .price = (I_PRICE >= GEN_9) ? 100000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+        .holdEffect = HOLD_EFFECT_DELTA_DRIVE_DEF,
+        .description = COMPOUND_STRING(
+            "Slightly boosts\n"
+            "Defense for a\n"
+            "δ Species."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_ShockDrive,
+        .iconPalette = gItemIconPalette_ShockDrive,
+    },
+
+    [ITEM_DELTA_DRIVE_SPE] =
+    {
+        .name = _("δ Drive: SPE"),
+        .pluralName = _("δ Drive: SPEs"),
+        .price = (I_PRICE >= GEN_9) ? 100000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+        .holdEffect = HOLD_EFFECT_DELTA_DRIVE_SPE,
+        .description = COMPOUND_STRING(
+            "Slightly boosts\n"
+            "Speed for a\n"
+            "δ Species."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_ShockDrive,
+        .iconPalette = gItemIconPalette_ShockDrive,
+    },
+
+    [ITEM_DELTA_DRIVE_SPA] =
+    {
+        .name = _("δ Drive: SpA"),
+        .pluralName = _("δ Drive: SpAs"),
+        .price = (I_PRICE >= GEN_9) ? 100000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+        .holdEffect = HOLD_EFFECT_DELTA_DRIVE_SPA,
+        .description = COMPOUND_STRING(
+            "Slightly boosts\n"
+            "Sp. Attack for\n"
+            "a δ Species."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_ShockDrive,
+        .iconPalette = gItemIconPalette_ShockDrive,
+    },
+
+    [ITEM_DELTA_DRIVE_SPD] =
+    {
+        .name = _("δ Drive: SpD"),
+        .pluralName = _("δ Drive: SpDs"),
+        .price = (I_PRICE >= GEN_9) ? 100000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+        .holdEffect = HOLD_EFFECT_DELTA_DRIVE_SPD,
+        .description = COMPOUND_STRING(
+            "Slightly boosts\n"
+            "Sp. Defense for\n"
+            "a δ Species."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_ShockDrive,
+        .iconPalette = gItemIconPalette_ShockDrive,
+    },
+
+    [ITEM_DELTA_DRIVE_CRIT] =
+    {
+        .name = _("δ Drive: CRIT"),
+        .pluralName = _("δ Drive: CRITs"),
+        .price = (I_PRICE >= GEN_9) ? 100000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+        .holdEffect = HOLD_EFFECT_DELTA_DRIVE_CRIT,
+        .description = COMPOUND_STRING(
+            "Slightly boosts\n"
+            "crit chance for\n"
+            "a δ Species."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 10,
+        .iconPic = gItemIcon_ShockDrive,
+        .iconPalette = gItemIconPalette_ShockDrive,
+    },
+
 // Status Orbs
 
     [ITEM_FLAME_ORB] =
@@ -11852,7 +11962,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
             "Super effective on\n"
-            "Rock-types. May"
+            "Rock-types. May\n"
             "confuse."),
         .importance = 1,
         .pocket = POCKET_TM_HM,

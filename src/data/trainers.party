@@ -3316,9 +3316,13 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Aron
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mr. Mime
+Level: 35
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Weavile
+Level: 38
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_THALIA_1 ===
 Name: THALIA
@@ -4327,13 +4331,17 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Slugma
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Magcargo
+Level: 34
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Wingull
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rapidash
+Level: 35
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Alakazam
+Level: 36
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_BERNIE_2 ===
 Name: BERNIE
@@ -4481,13 +4489,17 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Hippowdon
+Level: 36
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Nuzleaf
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sandslash
+Level: 38
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Drapion
+Level: 37
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_JUSTIN ===
 Name: JUSTIN
@@ -5708,7 +5720,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_NORMAN_LAB_B_LILEEP ===
 Name: NORMAN
-Class: Leader
+Class: Rival
 Pic: Leader Norman
 Gender: Male
 Music: Male
@@ -5717,7 +5729,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Ace Pokemon / Omniscient
 
 Relicanth
-Level: 38
+Level: 40
 Ability: Rock Head
 Nature: Adamant
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
@@ -5727,7 +5739,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Liquidation
 
 Tyrunt
-Level: 38
+Level: 40
 Ability: Strong Jaw
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Dragon Claw
@@ -5736,7 +5748,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Jagged Blow
 
 Wigglytuff @ Punching Glove
-Level: 39
+Level: 41
 Ability: Huge Power
 Nature: Adamant
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
@@ -5747,10 +5759,11 @@ EVs: 120 HP / 120 Atk
 - Earthquake
 
 Obstagoon
-Level: 38
+Level: 40
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Sceptile @ Sitrus Berry
+Level: 43
 Ability: Unburden
 Nature: Adamant
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
@@ -5761,7 +5774,7 @@ EVs: 120 HP / 120 Atk
 - Low Kick
 
 Armountan @ Leftovers
-Level: 42
+Level: 44
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Earthquake
 - Bug Bite
@@ -5770,7 +5783,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_NORMAN_LAB_B_ANORITH ===
 Name: NORMAN
-Class: Leader
+Class: Rival
 Pic: Leader Norman
 Gender: Male
 Music: Male
@@ -5779,7 +5792,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Ace Pokemon / Omniscient
 
 Relicanth
-Level: 38
+Level: 40
 Ability: Rock Head
 Nature: Adamant
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
@@ -5789,11 +5802,11 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Liquidation
 
 Amaura
-Level: 38
+Level: 40
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Wigglytuff @ Punching Glove
-Level: 39
+Level: 41
 Ability: Huge Power
 Nature: Adamant
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
@@ -5804,10 +5817,11 @@ EVs: 120 HP / 120 Atk
 - Earthquake
 
 Obstagoon
-Level: 38
+Level: 40
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 Swampert @ Rindo Berry
+Level: 43
 Nature: Adamant
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 EVs: 120 HP / 120 Atk
@@ -5817,7 +5831,7 @@ EVs: 120 HP / 120 Atk
 - Knock Off
 
 Abyssilily @ Leftovers
-Level: 42
+Level: 44
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Giga Drain
 - Dark Pulse
@@ -7316,17 +7330,17 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Slowking
+Level: 35
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Goldeen
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Politoed
+Level: 35
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Barboach
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Feraligatr
+Level: 36
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_ELLIOT_1 ===
 Name: ELLIOT
@@ -7400,9 +7414,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
+Shellos
+Level: 32
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
 Barboach
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 32
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_BARNY ===
 Name: BARNY
@@ -9607,13 +9625,15 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Golduck
+Level: 34
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
-Lombre
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mothim @ Sitrus Berry
+Level: 34
+Nature: Relaxed
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 31 Spe
+EVs: 252 Spe
 
 === TRAINER_MARTHA ===
 Name: MARTHA
@@ -12636,13 +12656,17 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Graveler-Alola
+Level: 38
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Machop
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bastiodon
+Level: 39
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Sudowoodo
+Level: 39
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_LUCAS_1 ===
 Name: LUCAS
@@ -12654,11 +12678,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Geodude
-Level: 18
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Numel
-Level: 18
+Cranidos
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALAN ===
@@ -13793,21 +13817,25 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Roselia
-Level: 18
+Heracross
+Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Growth
-- Stun Spore
-- Mega Drain
-- Leech Seed
 
 Graveler
-Level: 20
+Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Defense Curl
+- Iron Defense
 - Rollout
 - Mud Sport
 - Rock Throw
+
+Pinsir
+Level: 35
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Purugly
+Level: 34
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MEL_AND_PAUL ===
 Name: MEL & PAUL
@@ -14437,12 +14465,12 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Lombre
-Level: 18
+Ludicolo
+Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Marill
-Level: 18
+Beautifly
+Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KAI ===
@@ -14454,9 +14482,19 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Barboach
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pelipper
+Level: 36
+Ability: Drizzle
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Seaking
+Level: 37
+Ability: Lightning Rod
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+
+Wailord
+Level: 39
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_CHARLOTTE ===
 Name: CHARLOTTE
@@ -14467,9 +14505,15 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Nuzleaf
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Kingdra
+Level: 38
+Ability: Swift Swim
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+EVs: 200 Spe
+
+Hypno
+Level: 37
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_DEANDRE ===
 Name: DEANDRE

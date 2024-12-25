@@ -126,7 +126,7 @@
 #define VAR_ROUTE111_STATE                               0x406A // Unused Var
 #define VAR_ROUTE112_STATE                               0x406B // Unused Var
 #define VAR_ROUTE113_STATE                               0x406C // Unused Var
-#define VAR_ROUTE114_STATE                               0x406D // Unused Var
+#define VAR_ROUTE114_STATE                               0x406D // Used for Lab B
 #define VAR_ROUTE115_STATE                               0x406E // Unused Var
 #define VAR_ROUTE116_STATE                               0x406F
 #define VAR_ROUTE117_STATE                               0x4070 // Unused Var
@@ -156,7 +156,7 @@
 #define VAR_CONTEST_TYPE                                 0x4088
 #define VAR_SECRET_BASE_INITIALIZED                      0x4089
 #define VAR_CONTEST_PRIZE_PICKUP                         0x408A
-#define VAR_NORMAN_STATE                                 0x408B // Custom use
+#define VAR_NORMAN_STATE                                 0x408B // Custom use 2: call on route 113
 #define VAR_LITTLEROOT_HOUSES_STATE_BRENDAN              0x408C
 #define VAR_LITTLEROOT_RIVAL_STATE                       0x408D
 #define VAR_BOARD_BRINEY_BOAT_STATE                      0x408E
@@ -172,7 +172,7 @@
 #define VAR_PETALBURG_WOODS_STATE                        0x4098
 #define VAR_LILYCOVE_CONTEST_LOBBY_STATE                 0x4099
 #define VAR_RUSTURF_TUNNEL_STATE                         0x409A
-#define VAR_RED_STATE                                    0x409B // 0: 
+#define VAR_RED_STATE                                    0x409B // 0: in Fiery Path
 #define VAR_ELITE_4_STATE                                0x409C
 #define VAR_UNUSED_0x409D                                0x409D // Unused Var
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E

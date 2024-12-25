@@ -1002,9 +1002,15 @@
 // LEGEND PLATE
 
 // Custom Items
-#define ITEM_ADAMANT_MUSHROOM 828
+#define ITEM_DELTA_DRIVE_ATK 828
+#define ITEM_DELTA_DRIVE_DEF 829
+#define ITEM_DELTA_DRIVE_SPE 830
+#define ITEM_DELTA_DRIVE_SPA 831
+#define ITEM_DELTA_DRIVE_SPD 832
+#define ITEM_DELTA_DRIVE_CRIT 833
+#define ITEM_ADAMANT_MUSHROOM 834
 
-#define ITEMS_COUNT 829
+#define ITEMS_COUNT 835
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

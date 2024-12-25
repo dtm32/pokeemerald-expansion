@@ -72,12 +72,12 @@
 #define FLAG_HIDE_DIG_SITE_2_WALLY          0x39
 #define FLAG_RECEIVED_EXPERT_BELT           0x3A // unused
 #define FLAG_MET_RED                        0x3B
-#define FLAG_HIDE_RED_FIERY_PATH            0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
+#define FLAG_HIDE_RED_FIERY_PATH            0x3C
+#define FLAG_HIDE_NORMAN_LAB_B              0x3D
+#define FLAG_RECEIVED_DELTA_DRIVE_SPE       0x3E
+#define FLAG_RECEIVED_DELTA_DRIVE_ATK_DEF   0x3F
+#define FLAG_RECEIVED_DELTA_DRIVE_SPA_SPD   0x40
+#define FLAG_RECEIVED_DELTA_DRIVE_CRIT      0x41
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag
 #define FLAG_UNUSED_0x044    0x44 // Unused Flag

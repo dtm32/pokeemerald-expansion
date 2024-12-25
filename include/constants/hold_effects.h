@@ -165,6 +165,13 @@
 // Gen2 hold effect
 #define HOLD_EFFECT_BERSERK_GENE        184
 
+#define HOLD_EFFECT_DELTA_DRIVE_ATK     185
+#define HOLD_EFFECT_DELTA_DRIVE_DEF     186
+#define HOLD_EFFECT_DELTA_DRIVE_SPE     187
+#define HOLD_EFFECT_DELTA_DRIVE_SPA     188
+#define HOLD_EFFECT_DELTA_DRIVE_SPD     189
+#define HOLD_EFFECT_DELTA_DRIVE_CRIT    190
+
 #define HOLD_EFFECT_CHOICE(holdEffect)((holdEffect == HOLD_EFFECT_CHOICE_BAND || holdEffect == HOLD_EFFECT_CHOICE_SCARF || holdEffect == HOLD_EFFECT_CHOICE_SPECS))
 
 // Terrain seed params

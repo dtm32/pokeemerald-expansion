@@ -74,7 +74,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AARON",
-      "x": 25,
+      "x": 26,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "PetalburgWoods2_EventScript_Aaron",
       "flag": "0"
     },
     {

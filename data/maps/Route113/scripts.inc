@@ -133,6 +133,13 @@ Route113_EventScript_Wyatt::
 	msgbox Route113_Text_WyattPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route113_EventScript_NormanCall::
+	lockall
+	msgbox Route113_Text_NormanPokenavCall, MSGBOX_POKENAV
+	setvar VAR_NORMAN_STATE, 3
+	releaseall
+	end
+
 Route113_Text_AshCanBeFashionedIntoGlass:
 	.string "Wahahaha! Today's technology is a\n"
 	.string "wondrous thing!\p"
@@ -163,4 +170,19 @@ Route113_Text_TrainerTipsRegisterKeyItems:
 Route113_Text_GlassWorkshopSign:
 	.string "GLASS WORKSHOP\n"
 	.string "“Turning Volcanic Ash into Glass Items”$"
+
+Route113_Text_NormanPokenavCall:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "DAD: {PLAYER}!\p"
+	.string "I hear you're moving up through\n"
+	.string "the ranks and beat the MAUVILLE\l"
+	.string "GYM! Well done!\p"
+	.string "That should mean you're heading up\n"
+	.string "towards FALLARBOR TOWN soon.\p"
+	.string "I'm actually visiting an associate\n"
+	.string "at the DELTA LAB west of town!\p"
+	.string "You should stop by and say hi!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
 

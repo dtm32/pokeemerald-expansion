@@ -17,7 +17,7 @@ LabB_B1F_EventScript_DeltaMachineInfo::
 	@ .macro multichoicegrid x:req, y:req, multichoiceId:req, per_row:req, ignoreBPress:req
 	multichoicegrid 0, 0, MULTI_LAB_A_DELTAS, 2, FALSE
 	switch VAR_RESULT
-	case 0, LabB_B1F_EventScript_WurmpleData
+	case 0, LabB_B1F_EventScript_GolbatData
 	case 1, LabB_B1F_EventScript_VenonatData
 	case 2, LabB_B1F_EventScript_SilcoonData
 	case 3, LabB_B1F_EventScript_WhismurData
@@ -30,9 +30,9 @@ LabB_B1F_EventScript_DeltaMachineInfo::
 	goto LabB_B1F_EventScript_DeltaMachine
 	end
 
-LabB_B1F_EventScript_WurmpleData::
-	showmonpic SPECIES_WURMPLE_DELTA, 10, 3
-	msgbox LabB_B1F_Text_WurmpleData, MSGBOX_DEFAULT
+LabB_B1F_EventScript_GolbatData::
+	showmonpic SPECIES_GOLBAT_DELTA, 10, 3
+	msgbox LabB_B1F_Text_GolbatData, MSGBOX_DEFAULT
 	@ closemessage
 	hidemonpic
 	goto LabB_B1F_EventScript_DeltaMachineInfo
@@ -112,8 +112,8 @@ LabB_B1F_EventScript_ShedinjaData::
 LabB_B1F_Text_AvailableConversions:
 	.string "> CONVERSIONS INFO$"
 
-LabB_B1F_Text_WurmpleData:
-	.string "> WURMPLE δ\n"
+LabB_B1F_Text_GolbatData:
+	.string "> GOLBAT δ\n"
 	.string "> TYPE: DRAGON$"
 
 LabB_B1F_Text_VenonatData:

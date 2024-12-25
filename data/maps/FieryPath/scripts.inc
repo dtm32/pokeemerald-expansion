@@ -55,6 +55,9 @@ FieryPath_EventScript_RedBattle::
 	applymovement LOCALID_RED, FieryPath_Movement_RedExit
 	waitmovement 0
 	setflag FLAG_MET_RED
+	setflag FLAG_HIDE_RED_FIERY_PATH
+	setvar VAR_RED_STATE, 1
+	removeobject LOCALID_RED
 	releaseall
 	end
 

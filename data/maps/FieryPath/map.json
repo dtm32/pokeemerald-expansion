@@ -154,7 +154,7 @@
       "x": 18,
       "y": 13,
       "elevation": 0,
-      "var": "FLAG_HIDE_RED_FIERY_PATH",
+      "var": "VAR_RED_STATE",
       "var_value": "0",
       "script": "FieryPath_EventScript_RedTrigger1"
     },
@@ -163,7 +163,7 @@
       "x": 19,
       "y": 13,
       "elevation": 0,
-      "var": "FLAG_HIDE_RED_FIERY_PATH",
+      "var": "VAR_RED_STATE",
       "var_value": "0",
       "script": "FieryPath_EventScript_Red"
     },
@@ -172,7 +172,7 @@
       "x": 20,
       "y": 13,
       "elevation": 0,
-      "var": "FLAG_HIDE_RED_FIERY_PATH",
+      "var": "VAR_RED_STATE",
       "var_value": "0",
       "script": "FieryPath_EventScript_RedTrigger3"
     }
