@@ -14,7 +14,7 @@ AppleWoods_EventScript_Red::
 	releaseall
 	end
 
-AppleWoods_Movement_RedExit::
+AppleWoods_Movement_RedExit:
 	jump_2_left
 	delay_16
 	walk_fast_left

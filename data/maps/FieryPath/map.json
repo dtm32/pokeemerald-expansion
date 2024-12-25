@@ -117,6 +117,19 @@
       "trainer_sight_or_berry_tree_id": "ITEM_FIRE_STONE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_FIERY_PATH_FIRE_STONE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RED",
+      "x": 19,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_RED_FIERY_PATH"
     }
   ],
   "warp_events": [
@@ -139,29 +152,29 @@
     {
       "type": "trigger",
       "x": 18,
-      "y": 12,
+      "y": 13,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "FLAG_HIDE_RED_FIERY_PATH",
       "var_value": "0",
-      "script": "NULL"
+      "script": "FieryPath_EventScript_RedTrigger1"
     },
     {
       "type": "trigger",
       "x": 19,
-      "y": 12,
+      "y": 13,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "FLAG_HIDE_RED_FIERY_PATH",
       "var_value": "0",
-      "script": "NULL"
+      "script": "FieryPath_EventScript_Red"
     },
     {
       "type": "trigger",
       "x": 20,
-      "y": 12,
+      "y": 13,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "FLAG_HIDE_RED_FIERY_PATH",
       "var_value": "0",
-      "script": "NULL"
+      "script": "FieryPath_EventScript_RedTrigger3"
     }
   ],
   "bg_events": [

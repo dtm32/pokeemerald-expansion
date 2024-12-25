@@ -5824,6 +5824,27 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Scald
 - Nasty Plot
 
+=== TRAINER_RED_1 ===
+Name: RED
+Class: RIVAL
+Pic: Red
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Ace Pokemon
+
+Magmar
+Level: 34
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+Shuckle
+Level: 34
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+Pikachu-Original-Cap @ Oran Berry
+Level: 37
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
 === TRAINER_WINONA_1 ===
 Name: WINONA
 Class: Leader

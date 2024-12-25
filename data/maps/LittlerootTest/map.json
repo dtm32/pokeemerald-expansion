@@ -59,8 +59,8 @@
       "x": 4,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_MOUNT_KIRI_1F",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_FIERY_PATH",
+      "dest_warp_id": "0"
     },
     {
       "x": 5,
