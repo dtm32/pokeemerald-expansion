@@ -721,7 +721,9 @@ LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou:
 	.string "PROF. BIRCH: Great!\n"
 	.string "{RIVAL} should be happy, too.\p"
 	.string "Get {RIVAL} to teach you what it\n"
-	.string "means to be a TRAINER.$"
+	.string "means to be a TRAINER.\p"
+	.string "I think they ran off to OLDALE TOWN\n"
+	.string "to go look for new POKéMON.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_DontBeThatWay:
 	.string "PROF. BIRCH: Oh, don't be that way.\n"

@@ -32,7 +32,7 @@ LittlerootTown_BrendansHouse_1F_OnTransition:
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 3, LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToDoor
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 5, LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToStairs
 	@ State 6 modified, leave mom at table and add dad invisible at door
-	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToTV
+	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_BrendansHouse_1F_EventScript_MoveDadToDoor
 	end
 
 LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToStairs::
@@ -40,7 +40,7 @@ LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToStairs::
 	setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_FACE_UP
 	return
 
-LittlerootTown_BrendansHouse_1F_EventScript_MoveMomToTV::
+LittlerootTown_BrendansHouse_1F_EventScript_MoveDadToDoor::
 	@ setobjectxyperm LOCALID_MOM, 4, 5
 	@ setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_FACE_UP
 	clearflag FLAG_HIDE_PLAYERS_HOUSE_DAD
@@ -166,23 +166,23 @@ LittlerootTown_BrendansHouse_1F_EventScript_GoSeeRoom::
 	goto PlayersHouse_1F_EventScript_MomGoSeeRoom
 	end
 
-LittlerootTown_BrendansHouse_1F_EventScript_MeetRival0::
-	lockall
-	setvar VAR_0x8008, 0
-	goto LittlerootTown_BrendansHouse_1F_EventScript_MeetRival
-	end
+@ LittlerootTown_BrendansHouse_1F_EventScript_MeetRival0::
+@ 	lockall
+@ 	setvar VAR_0x8008, 0
+@ 	goto LittlerootTown_BrendansHouse_1F_EventScript_MeetRival
+@ 	end
 
-LittlerootTown_BrendansHouse_1F_EventScript_MeetRival1::
-	lockall
-	setvar VAR_0x8008, 1
-	goto LittlerootTown_BrendansHouse_1F_EventScript_MeetRival
-	end
+@ LittlerootTown_BrendansHouse_1F_EventScript_MeetRival1::
+@ 	lockall
+@ 	setvar VAR_0x8008, 1
+@ 	goto LittlerootTown_BrendansHouse_1F_EventScript_MeetRival
+@ 	end
 
-LittlerootTown_BrendansHouse_1F_EventScript_MeetRival2::
-	lockall
-	setvar VAR_0x8008, 2
-	goto LittlerootTown_BrendansHouse_1F_EventScript_MeetRival
-	end
+@ LittlerootTown_BrendansHouse_1F_EventScript_MeetRival2::
+@ 	lockall
+@ 	setvar VAR_0x8008, 2
+@ 	goto LittlerootTown_BrendansHouse_1F_EventScript_MeetRival
+@ 	end
 
 LittlerootTown_BrendansHouse_1F_EventScript_MeetRival::
 	playse SE_EXIT

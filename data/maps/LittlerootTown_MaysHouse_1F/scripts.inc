@@ -30,7 +30,8 @@ LittlerootTown_MaysHouse_1F_EventScript_ShowRunningShoesManual::
 LittlerootTown_MaysHouse_1F_OnTransition:
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 3, LittlerootTown_MaysHouse_1F_EventScript_MoveMomToDoor
 	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 5, LittlerootTown_MaysHouse_1F_EventScript_MoveMomToStairs
-	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_MaysHouse_1F_EventScript_MoveMomToTV
+	@ call_if_eq VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_MaysHouse_1F_EventScript_MoveMomToTV
+	call_if_eq VAR_LITTLEROOT_INTRO_STATE, 6, LittlerootTown_MaysHouse_1F_EventScript_MoveDadToDoor
 	end
 
 LittlerootTown_MaysHouse_1F_EventScript_MoveMomToStairs::
@@ -38,9 +39,10 @@ LittlerootTown_MaysHouse_1F_EventScript_MoveMomToStairs::
 	setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_FACE_UP
 	return
 
-LittlerootTown_MaysHouse_1F_EventScript_MoveMomToTV::
-	setobjectxyperm LOCALID_MOM, 6, 5
-	setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_FACE_UP
+LittlerootTown_MaysHouse_1F_EventScript_MoveDadToDoor::
+	clearflag FLAG_HIDE_PLAYERS_HOUSE_DAD
+	setobjectxyperm LOCALID_DAD, 2, 8
+	setobjectmovementtype LOCALID_DAD, MOVEMENT_TYPE_FACE_UP
 	return
 
 LittlerootTown_MaysHouse_1F_EventScript_MoveMomToDoor::
@@ -82,9 +84,25 @@ LittlerootTown_MaysHouse_1F_EventScript_EnterHouseMovingIn::
 
 LittlerootTown_MaysHouse_1F_EventScript_PetalburgGymReport::
 	lockall
-	setvar VAR_0x8004, FEMALE
-	setvar VAR_0x8005, LOCALID_MOM
-	goto PlayersHouse_1F_EventScript_PetalburgGymReportFemale
+	setvar VAR_LITTLEROOT_INTRO_STATE, 7
+	goto LittlerootTown_MaysHouse_1F_EventScript_DadTakesYouToLab
+	@ setvar VAR_0x8004, FEMALE
+	@ setvar VAR_0x8005, LOCALID_MOM
+	@ goto PlayersHouse_1F_EventScript_PetalburgGymReportFemale
+	end
+
+LittlerootTown_MaysHouse_1F_EventScript_DadTakesYouToLab::
+	applymovement LOCALID_DAD, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_DAD, Common_Movement_Delay48
+	waitmovement 0
+	applymovement LOCALID_DAD, LittlerootTown_BrendansHouse_1F_Movement_DadWalksUp
+	waitmovement 0
+	msgbox LittlerootTown_BrendansHouse_1F_Text_DadTakesPlayerToLab, MSGBOX_DEFAULT
+	setflag FLAG_HIDE_PLAYERS_HOUSE_DAD
+	warpsilent MAP_ROUTE101_NORMANS_LAB, 5, 6
+	waitstate
+	releaseall
 	end
 
 LittlerootTown_MaysHouse_1F_EventScript_YoureNewNeighbor::
@@ -156,23 +174,23 @@ LittlerootTown_MaysHouse_1F_EventScript_GoSeeRoom::
 	goto PlayersHouse_1F_EventScript_MomGoSeeRoom
 	end
 
-LittlerootTown_MaysHouse_1F_EventScript_MeetRival0::
-	lockall
-	setvar VAR_0x8008, 0
-	goto LittlerootTown_MaysHouse_1F_EventScript_MeetRival
-	end
+@ LittlerootTown_MaysHouse_1F_EventScript_MeetRival0::
+@ 	lockall
+@ 	setvar VAR_0x8008, 0
+@ 	goto LittlerootTown_MaysHouse_1F_EventScript_MeetRival
+@ 	end
 
-LittlerootTown_MaysHouse_1F_EventScript_MeetRival1::
-	lockall
-	setvar VAR_0x8008, 1
-	goto LittlerootTown_MaysHouse_1F_EventScript_MeetRival
-	end
+@ LittlerootTown_MaysHouse_1F_EventScript_MeetRival1::
+@ 	lockall
+@ 	setvar VAR_0x8008, 1
+@ 	goto LittlerootTown_MaysHouse_1F_EventScript_MeetRival
+@ 	end
 
-LittlerootTown_MaysHouse_1F_EventScript_MeetRival2::
-	lockall
-	setvar VAR_0x8008, 2
-	goto LittlerootTown_MaysHouse_1F_EventScript_MeetRival
-	end
+@ LittlerootTown_MaysHouse_1F_EventScript_MeetRival2::
+@ 	lockall
+@ 	setvar VAR_0x8008, 2
+@ 	goto LittlerootTown_MaysHouse_1F_EventScript_MeetRival
+@ 	end
 
 LittlerootTown_MaysHouse_1F_EventScript_MeetRival::
 	playse SE_EXIT

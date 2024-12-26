@@ -1,4 +1,5 @@
 .set LOCALID_RIVAL, 1
+.set LOCALID_RIVALS_POKEBALL, 16
 
 LittlerootTown_MaysHouse_2F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_MaysHouse_2F_OnTransition
@@ -49,8 +50,35 @@ LittlerootTown_MaysHouse_2F_EventScript_CheckInitDecor::
 
 LittlerootTown_MaysHouse_2F_EventScript_RivalsPokeBall::
 	lockall
-	goto_if_eq VAR_LITTLEROOT_RIVAL_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_MeetMay
-	msgbox RivalsHouse_2F_Text_ItsRivalsPokeBall, MSGBOX_DEFAULT
+	@ Always meet on Route 103 now
+	@ goto_if_eq VAR_LITTLEROOT_RIVAL_STATE, 2, LittlerootTown_MaysHouse_2F_EventScript_MeetMay
+	msgbox RivalsHouse_2F_Text_ItsRivalsPokeBall, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, LittlerootTown_MaysHouse_2F_EventScript_TakeRivalsPokeBall
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_MaysHouse_2F_EventScript_LeaveRivalsPokeBall
+	releaseall
+	end
+
+LittlerootTown_MaysHouse_2F_EventScript_TakeRivalsPokeBall::
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, LittlerootTown_MaysHouse_2F_EventScript_NoRoomRivalsPokeBall
+	givemon SPECIES_TOGEPI, 2, isShiny=TRUE
+	msgbox LittlerootTown_MaysHouse_2F_Text_ReceivedTogepi, MSGBOX_AUTOCLOSE
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
+	setflag FLAG_SYS_POKEMON_GET
+	removeobject LOCALID_RIVALS_POKEBALL
+	releaseall
+	end
+
+LittlerootTown_MaysHouse_2F_Text_ReceivedTogepi:
+	.string "{PLAYER} received a TOGEPI!$"
+
+LittlerootTown_MaysHouse_2F_EventScript_NoRoomRivalsPokeBall::
+	msgbox RivalsHouse_2F_Text_NoRoom, MSGBOX_AUTOCLOSE
+	releaseall
+	end
+
+LittlerootTown_MaysHouse_2F_EventScript_LeaveRivalsPokeBall::
+	msgbox RivalsHouse_2F_Text_BetterLeaveIt, MSGBOX_AUTOCLOSE
 	releaseall
 	end
 
@@ -364,7 +392,13 @@ RivalsHouse_2F_Text_BrendanGettingReady:
 
 RivalsHouse_2F_Text_ItsRivalsPokeBall:
 	.string "It's {RIVAL}'s POKé BALL!\p"
+	.string "Want to take it?$"
+
+RivalsHouse_2F_Text_BetterLeaveIt:
 	.string "Better leave it right where it is.$"
+
+RivalsHouse_2F_Text_NoRoom:
+	.string "You don't have any room!$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
 	.string "MAY: {PLAYER}{KUN}!\p"

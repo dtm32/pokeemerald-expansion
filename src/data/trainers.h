@@ -45485,3 +45485,99 @@ F_TRAINER_FEMALE |
             },
         },
     },
+#line 18175
+    [TRAINER_DOJO_ATTACK] =
+    {
+#line 18176
+        .trainerName = _("Student"),
+#line 18177
+        .trainerClass = TRAINER_CLASS_BLACK_BELT,
+#line 18178
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .encounterMusic_gender = 
+#line 18180
+            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+#line 18181
+        .doubleBattle = FALSE,
+#line 18182
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .partySize = 5,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 18184
+            .species = SPECIES_FLAREON,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 18186
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 18185
+            .lvl = 15,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 18186
+                MOVE_TACKLE,
+            },
+            },
+            {
+#line 18188
+            .species = SPECIES_FLAREON,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 18190
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 18189
+            .lvl = 15,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 18190
+                MOVE_TACKLE,
+            },
+            },
+            {
+#line 18192
+            .species = SPECIES_FLAREON,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 18194
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 18193
+            .lvl = 15,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 18194
+                MOVE_TACKLE,
+            },
+            },
+            {
+#line 18196
+            .species = SPECIES_FLAREON,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 18198
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 18197
+            .lvl = 15,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 18198
+                MOVE_TACKLE,
+            },
+            },
+            {
+#line 18200
+            .species = SPECIES_FLAREON,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 18202
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 18201
+            .lvl = 15,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 18202
+                MOVE_TACKLE,
+            },
+            },
+        },
+    },

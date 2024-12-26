@@ -92,6 +92,7 @@ Route101_NormansLab_EventScript_TakeLileep::
 	waitfanfare
 	removeobject LOCALID_LILEEP_BALL
 	setflag FLAG_PICKED_LILEEP
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkRight
 	call Route101_NormansLab_EventScript_TookStarter
 	return
 

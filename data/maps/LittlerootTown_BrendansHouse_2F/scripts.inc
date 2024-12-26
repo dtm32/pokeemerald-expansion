@@ -1,4 +1,5 @@
 .set LOCALID_RIVAL, 1
+.set LOCALID_RIVALS_POKEBALL, 15
 
 LittlerootTown_BrendansHouse_2F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_BrendansHouse_2F_OnTransition
@@ -50,8 +51,29 @@ LittlerootTown_BrendansHouse_2F_EventScript_CheckInitDecor::
 
 LittlerootTown_BrendansHouse_2F_EventScript_RivalsPokeBall::
 	lockall
-	goto_if_eq VAR_LITTLEROOT_RIVAL_STATE, 2, LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendan
-	msgbox RivalsHouse_2F_Text_ItsRivalsPokeBall, MSGBOX_DEFAULT
+	@ Always meet on Route 103 now
+	@ goto_if_eq VAR_LITTLEROOT_RIVAL_STATE, 2, LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendan
+	msgbox RivalsHouse_2F_Text_ItsRivalsPokeBall, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, LittlerootTown_BrendansHouse_2F_EventScript_TakeRivalsPokeBall
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_BrendansHouse_2F_EventScript_LeaveRivalsPokeBall
+	releaseall
+	end
+
+LittlerootTown_BrendansHouse_2F_EventScript_TakeRivalsPokeBall::
+	goto_if_eq VAR_RESULT, PARTY_SIZE, LittlerootTown_MaysHouse_2F_EventScript_NoRoomRivalsPokeBall
+	givemon SPECIES_WYNAUT, 2, isShiny=TRUE
+	msgbox LittlerootTown_BrendansHouse_2F_Text_ReceivedWynaut, MSGBOX_AUTOCLOSE
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
+	setflag FLAG_SYS_POKEMON_GET
+	removeobject LOCALID_RIVALS_POKEBALL
+	releaseall
+	end
+
+LittlerootTown_BrendansHouse_2F_Text_ReceivedWynaut:
+	.string "{PLAYER} received a WYNAUT!$"
+
+LittlerootTown_BrendansHouse_2F_EventScript_LeaveRivalsPokeBall::
+	msgbox RivalsHouse_2F_Text_BetterLeaveIt, MSGBOX_AUTOCLOSE
 	releaseall
 	end
 
