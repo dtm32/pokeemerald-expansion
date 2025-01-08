@@ -114,6 +114,10 @@ LittlerootTown_OnFrame:
 
 LittlerootTown_EventScript_StepOffTruckMale::
 	lockall
+
+	@ Skip intro if debugging flag is set
+	@ goto_if_unset FLAG_HIDE_DEBUG_POKEBALLS, LittlerootTown_EventScript_NullOp
+
 	setvar VAR_0x8004, 5
 	setvar VAR_0x8005, 8
 	call LittlerootTown_EventScript_GoInsideWithMom
@@ -125,12 +129,20 @@ LittlerootTown_EventScript_StepOffTruckMale::
 
 LittlerootTown_EventScript_StepOffTruckFemale::
 	lockall
+
+	@ Skip intro if debugging flag is set
+	@ goto_if_unset FLAG_HIDE_DEBUG_POKEBALLS, LittlerootTown_EventScript_NullOp
+
 	setvar VAR_0x8004, 14
 	setvar VAR_0x8005, 8
 	call LittlerootTown_EventScript_GoInsideWithMom
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
 	warpsilent MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F, 2, 8
 	waitstate
+	releaseall
+	end
+
+LittlerootTown_EventScript_NullOp::
 	releaseall
 	end
 

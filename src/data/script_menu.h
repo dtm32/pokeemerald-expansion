@@ -805,6 +805,20 @@ static const struct MenuAction MultichoiceList_LabADeltas[] =
     {gText_Shedinja},
 };
 
+static const struct MenuAction MultichoiceList_LabBDeltas[] =
+{
+    {gText_Rhyhorn},
+    {gText_Slowpoke},
+    {gText_Lunatone},
+    {gText_Solrock},
+    {gText_Skarmory},
+    {gText_Camerupt},
+    {gText_Cacturne},
+    {gText_Clefable},
+    {gText_Vibrava},
+    {gText_Metang},
+};
+
 static const struct MenuAction MultichoiceList_DojoTrainingTypes[] =
 {
     {gText_HP3},
@@ -946,6 +960,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_FOSSIL_MON_GIFT]            = MULTICHOICE(MultichoiceList_FossilMonGift),
     [MULTI_DELTA_MACHINE_MENU]         = MULTICHOICE(MultichoiceList_DeltaMachineMenu),
     [MULTI_LAB_A_DELTAS]               = MULTICHOICE(MultichoiceList_LabADeltas),
+    [MULTI_LAB_B_DELTAS]               = MULTICHOICE(MultichoiceList_LabBDeltas),
     [MULTI_DOJO_TRAINING_TYPES]        = MULTICHOICE(MultichoiceList_DojoTrainingTypes),
 };
 

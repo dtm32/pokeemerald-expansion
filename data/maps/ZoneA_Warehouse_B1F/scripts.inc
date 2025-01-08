@@ -30,13 +30,15 @@ ZoneA_Warehouse_B1F_EventScript_AdminBattle::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
 	applymovement LOCALID_GRUNT2, ZoneA_Warehouse_B1F_Movement_StepForward
 	waitmovement 0
-	@ check for loss?
 	call ZoneA_Warehouse_B1F_EventScript_Grunt2
+	call ZoneA_Warehouse_B1F_EventScript_Grunt2Defeated
+	call ZoneA_Warehouse_B1F_EventScript_AdminDefeated
 	releaseall
 	end
 
 ZoneA_Warehouse_B1F_EventScript_Grunt2::
-	trainerbattle_single TRAINER_GRUNT_WAREHOUSE_A_4, ZoneA_Warehouse_B1F_Text_Stop, ZoneA_Warehouse_B1F_Text_SilentTreatment, ZoneA_Warehouse_B1F_EventScript_Grunt2Defeated
+	msgbox ZoneA_Warehouse_B1F_Text_Stop, MSGBOX_AUTOCLOSE
+	trainerbattle_no_intro TRAINER_GRUNT_WAREHOUSE_A_4, ZoneA_Warehouse_B1F_Text_SilentTreatment
 	return
 
 ZoneA_Warehouse_B1F_EventScript_Grunt2Defeated::
@@ -48,7 +50,8 @@ ZoneA_Warehouse_B1F_EventScript_Grunt2Defeated::
 	return
 
 ZoneA_Warehouse_B1F_EventScript_Admin::
-	trainerbattle_single TRAINER_ADMIN_WAREHOUSE_A, ZoneA_Warehouse_B1F_Text_AdminIntro, ZoneA_Warehouse_B1F_Text_SilentTreatment, ZoneA_Warehouse_B1F_EventScript_AdminDefeated, NO_MUSIC
+	msgbox ZoneA_Warehouse_B1F_Text_AdminIntro, MSGBOX_AUTOCLOSE
+	trainerbattle_no_intro TRAINER_ADMIN_WAREHOUSE_A, ZoneA_Warehouse_B1F_Text_SilentTreatment
 	return
 
 ZoneA_Warehouse_B1F_EventScript_AdminDefeated::

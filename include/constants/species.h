@@ -1629,6 +1629,7 @@
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE_GIGANTAMAX   1522
 #define SPECIES_MIMIKYU_TOTEM_BUSTED                    1523
 // CUSTOM MONS
+// LAB A
 #define SPECIES_WURMPLE_DELTA                           1524
 #define SPECIES_SILCOON_DELTA                           1525
 #define SPECIES_DUSTOX_DELTA                            1526
@@ -1637,29 +1638,31 @@
 #define SPECIES_SHEDINJA_DELTA                          1529
 #define SPECIES_LAIRON_DELTA                            1530
 #define SPECIES_SANDSLASH_DELTA                         1531
-#define SPECIES_CACNEA_DELTA                            1532
-#define SPECIES_CACTURNE_DELTA                          1533
-#define SPECIES_GOLBAT_DELTA                            1534
-#define SPECIES_VENONAT_DELTA                           1535
-#define SPECIES_VENOMOTH_DELTA                          1536
-#define SPECIES_BEEDRILL_DELTA                          1537
-#define SPECIES_BUTTERFREE_DELTA                        1538
-#define SPECIES_BUTTERFREE_DELT1                        1539
-#define SPECIES_BUTTERFREE_DELT2                        1540
-#define SPECIES_BUTTERFREE_DELT3                        1541
-#define SPECIES_BUTTERFREE_DELT4                        1542
-#define SPECIES_BUTTERFREE_DELT5                        1543
-#define SPECIES_BUTTERFREE_DELT6                        1544
-#define SPECIES_BUTTERFREE_DELT7                        1545
-#define SPECIES_BUTTERFREE_DELT8                        1546
-#define SPECIES_BUTTERFREE_DELT9                        1547
+#define SPECIES_VENONAT_DELTA                           1532
+#define SPECIES_BEEDRILL_DELTA                          1533
+// LAB B
+#define SPECIES_RHYHORN_DELTA                           1534
+#define SPECIES_SLOWPOKE_DELTA                          1535
+#define SPECIES_LUNATONE_DELTA                          1536
+#define SPECIES_SOLROCK_DELTA                           1537
+#define SPECIES_SKARMORY_DELTA                          1538
+#define SPECIES_CAMERUPT_DELTA                          1539
+#define SPECIES_CACTURNE_DELTA                          1540
+#define SPECIES_CLEFABLE_DELTA                          1541
+#define SPECIES_VIBRAVA_DELTA                           1542
+#define SPECIES_METANG_DELTA                            1543
+// LAB C
+#define SPECIES_GOLBAT_DELTA                            1544
+#define SPECIES_CACNEA_DELTA                            1545
+#define SPECIES_BUTTERFREE_DELTA                        1546
+#define SPECIES_VENOMOTH_DELTA                          1547
 #define SPECIES_BUTTERFREE_DELT10                       1548
 #define SPECIES_BUTTERFREE_DELT11                       1549
 #define SPECIES_BUTTERFREE_DELT12                       1550
 #define SPECIES_BUTTERFREE_DELT13                       1551
 #define SPECIES_BUTTERFREE_DELT14                       1552
 #define SPECIES_BUTTERFREE_DELT15                       1553
-
+// FOSSILS
 #define SPECIES_IGNEOUSAUR                              1554
 #define SPECIES_POLARIS                                 1555
 #define SPECIES_VOLTREX                                 1556
@@ -1672,6 +1675,7 @@
 #define SPECIES_ANORITH_DELTA                           1563
 #define SPECIES_ARMALDO_DELTA                           1564
 #define SPECIES_ARMOUNTAN                               1565
+#define SPECIES_THERAZOR                               1565
 
 #define SPECIES_EGG (SPECIES_ARMOUNTAN + 1)
 

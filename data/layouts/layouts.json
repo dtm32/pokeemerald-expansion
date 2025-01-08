@@ -4740,6 +4740,26 @@
       "secondary_tileset": "gTileset_PetalburgGym",
       "border_filepath": "data/layouts/LavaridgeTown_Dojo/border.bin",
       "blockdata_filepath": "data/layouts/LavaridgeTown_Dojo/map.bin"
+    },
+    {
+      "id": "LAYOUT_MOUNT_KIRI_B1F",
+      "name": "MountKiri_B1F_Layout",
+      "width": 22,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MountKiri_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/MountKiri_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MOUNT_KIRI_B2F",
+      "name": "MountKiri_B2F_Layout",
+      "width": 22,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/MountKiri_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/MountKiri_B2F/map.bin"
     }
   ]
 }

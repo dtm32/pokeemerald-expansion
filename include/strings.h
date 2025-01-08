@@ -3058,6 +3058,17 @@ extern const u8 gText_Lairon[];
 extern const u8 gText_Fearow[];
 extern const u8 gText_Beedrill[];
 extern const u8 gText_Shedinja[];
+// Lab B
+extern const u8 gText_Rhyhorn[];
+extern const u8 gText_Slowpoke[];
+extern const u8 gText_Lunatone[];
+extern const u8 gText_Solrock[];
+extern const u8 gText_Skarmory[];
+extern const u8 gText_Camerupt[];
+extern const u8 gText_Cacturne[];
+extern const u8 gText_Clefable[];
+extern const u8 gText_Vibrava[];
+extern const u8 gText_Metang[];
 
 // Map name pop-up
 extern const u8 gText_AM[];

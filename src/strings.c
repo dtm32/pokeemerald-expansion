@@ -1848,4 +1848,14 @@ const u8 gText_Lairon[] = _("LAIRON");
 const u8 gText_Fearow[] = _("FEAROW");
 const u8 gText_Beedrill[] = _("BEEDRILL");
 const u8 gText_Shedinja[] = _("SHEDINJA");
+const u8 gText_Rhyhorn[] = _("RHYHORN");
+const u8 gText_Slowpoke[] = _("SLOWPOKE");
+const u8 gText_Lunatone[] = _("LUNATONE");
+const u8 gText_Solrock[] = _("SOLROCK");
+const u8 gText_Skarmory[] = _("SKARMORY");
+const u8 gText_Camerupt[] = _("CAMERUPT");
+const u8 gText_Cacturne[] = _("CACTURNE");
+const u8 gText_Clefable[] = _("CLEFABLE");
+const u8 gText_Vibrava[] = _("VIBRAVA");
+const u8 gText_Metang[] = _("METANG");
 

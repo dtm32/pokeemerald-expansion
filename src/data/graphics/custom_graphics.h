@@ -125,3 +125,66 @@ const u32 gMonPalette_Armountan[] = INCBIN_U32("graphics/pokemon/armaldo/mega/no
 const u32 gMonShinyPalette_Armountan[] = INCBIN_U32("graphics/pokemon/armaldo/mega/shiny.gbapal.lz");
 const u32 gMonBackPic_Armountan[] = INCBIN_U32("graphics/pokemon/armaldo/mega/back.4bpp.lz");
 const u8 gMonIcon_Armountan[] = INCBIN_U8("graphics/pokemon/armaldo/mega/icon.4bpp");
+
+// const u32 gMonFrontPic_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/anim_front.4bpp.lz");
+// const u32 gMonPalette_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/normal.gbapal.lz");
+// const u32 gMonShinyPalette_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/shiny.gbapal.lz");
+// const u32 gMonBackPic_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/back.4bpp.lz");
+// const u8 gMonIcon_RhyhornDelta[] = INCBIN_U8("graphics/pokemon/rhyhorn/delta/icon.4bpp");
+
+const u32 gMonFrontPic_SlowpokeDelta[] = INCBIN_U32("graphics/pokemon/slowpoke/delta/anim_front.4bpp.lz");
+const u32 gMonPalette_SlowpokeDelta[] = INCBIN_U32("graphics/pokemon/slowpoke/delta/normal.gbapal.lz");
+// const u32 gMonShinyPalette_SlowpokeDelta[] = INCBIN_U32("graphics/pokemon/slowpoke/delta/shiny.gbapal.lz");
+const u32 gMonBackPic_SlowpokeDelta[] = INCBIN_U32("graphics/pokemon/slowpoke/delta/back.4bpp.lz");
+// const u8 gMonIcon_SlowpokeDelta[] = INCBIN_U8("graphics/pokemon/slowpoke/delta/icon.4bpp");
+
+const u32 gMonFrontPic_LunatoneDelta[] = INCBIN_U32("graphics/pokemon/lunatone/delta/anim_front.4bpp.lz");
+const u32 gMonPalette_LunatoneDelta[] = INCBIN_U32("graphics/pokemon/lunatone/delta/normal.gbapal.lz");
+// const u32 gMonShinyPalette_LunatoneDelta[] = INCBIN_U32("graphics/pokemon/lunatone/delta/shiny.gbapal.lz");
+// const u32 gMonBackPic_LunatoneDelta[] = INCBIN_U32("graphics/pokemon/lunatone/delta/back.4bpp.lz");
+// const u8 gMonIcon_LunatoneDelta[] = INCBIN_U8("graphics/pokemon/lunatone/delta/icon.4bpp");
+
+const u32 gMonFrontPic_SolrockDelta[] = INCBIN_U32("graphics/pokemon/solrock/delta/anim_front.4bpp.lz");
+const u32 gMonPalette_SolrockDelta[] = INCBIN_U32("graphics/pokemon/solrock/delta/normal.gbapal.lz");
+// const u32 gMonShinyPalette_SolrockDelta[] = INCBIN_U32("graphics/pokemon/solrock/delta/shiny.gbapal.lz");
+// const u32 gMonBackPic_SolrockDelta[] = INCBIN_U32("graphics/pokemon/solrock/delta/back.4bpp.lz");
+// const u8 gMonIcon_SolrockDelta[] = INCBIN_U8("graphics/pokemon/solrock/delta/icon.4bpp");
+
+// Skarmory
+// const u32 gMonFrontPic_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/anim_front.4bpp.lz");
+// const u32 gMonPalette_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/normal.gbapal.lz");
+// const u32 gMonShinyPalette_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/shiny.gbapal.lz");
+// const u32 gMonBackPic_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/back.4bpp.lz");
+// const u8 gMonIcon_RhyhornDelta[] = INCBIN_U8("graphics/pokemon/rhyhorn/delta/icon.4bpp");
+
+// Camerupt
+// const u32 gMonFrontPic_CacturneDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/anim_front.4bpp.lz");
+// const u32 gMonPalette_CacturneDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/normal.gbapal.lz");
+// const u32 gMonShinyPalette_CacturneDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/shiny.gbapal.lz");
+// const u32 gMonBackPic_CacturneDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/back.4bpp.lz");
+// const u8 gMonIcon_CacturneDelta[] = INCBIN_U8("graphics/pokemon/rhyhorn/delta/icon.4bpp");
+
+// Cacturne
+const u32 gMonFrontPic_CacturneDelta[] = INCBIN_U32("graphics/pokemon/cacturne/delta/anim_front.4bpp.lz");
+const u32 gMonPalette_CacturneDelta[] = INCBIN_U32("graphics/pokemon/cacturne/delta/normal.gbapal.lz");
+// const u32 gMonShinyPalette_CacturneDelta[] = INCBIN_U32("graphics/pokemon/cacturne/delta/shiny.gbapal.lz");
+const u32 gMonBackPic_CacturneDelta[] = INCBIN_U32("graphics/pokemon/cacturne/delta/back.4bpp.lz");
+// const u8 gMonIcon_CacturneDelta[] = INCBIN_U8("graphics/pokemon/cacturne/delta/icon.4bpp");
+
+// const u32 gMonFrontPic_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/anim_front.4bpp.lz");
+// const u32 gMonPalette_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/normal.gbapal.lz");
+// const u32 gMonShinyPalette_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/shiny.gbapal.lz");
+// const u32 gMonBackPic_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/back.4bpp.lz");
+// const u8 gMonIcon_RhyhornDelta[] = INCBIN_U8("graphics/pokemon/rhyhorn/delta/icon.4bpp");
+
+// const u32 gMonFrontPic_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/anim_front.4bpp.lz");
+// const u32 gMonPalette_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/normal.gbapal.lz");
+// const u32 gMonShinyPalette_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/shiny.gbapal.lz");
+// const u32 gMonBackPic_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/back.4bpp.lz");
+// const u8 gMonIcon_RhyhornDelta[] = INCBIN_U8("graphics/pokemon/rhyhorn/delta/icon.4bpp");
+
+const u32 gMonFrontPic_MetangDelta[] = INCBIN_U32("graphics/pokemon/metang/delta/anim_front.4bpp.lz");
+const u32 gMonPalette_MetangDelta[] = INCBIN_U32("graphics/pokemon/metang/delta/normal.gbapal.lz");
+// const u32 gMonShinyPalette_MetangDelta[] = INCBIN_U32("graphics/pokemon/metang/delta/shiny.gbapal.lz");
+// const u32 gMonBackPic_MetangDelta[] = INCBIN_U32("graphics/pokemon/metang/delta/back.4bpp.lz");
+// const u8 gMonIcon_MetangDelta[] = INCBIN_U8("graphics/pokemon/metang/delta/icon.4bpp");

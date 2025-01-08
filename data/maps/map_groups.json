@@ -622,7 +622,9 @@
   ],
   "gMapGroup_MountKiri": [
     "MountKiri_1F",
-    "MountKiri_Exterior"
+    "MountKiri_Exterior",
+    "MountKiri_B1F",
+    "MountKiri_B2F"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

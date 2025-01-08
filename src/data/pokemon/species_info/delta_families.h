@@ -1670,3 +1670,670 @@
     },
 
 // END FOSSIL FAMILIES
+
+/* ========================== */
+/* ====== LAB B DELTAS ====== */
+/* ========================== */
+
+// Rhyhorn δ	Ground/Electric	54	53	40	104	80	94
+    [SPECIES_RHYHORN_DELTA] =
+    {
+        .baseHP        = 54,
+        .baseAttack    = 53,
+        .baseDefense   = 40,
+        .baseSpeed     = 104,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 94,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_ELECTRIC),
+        .catchRate = 120,
+        .expYield = 155,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_ROCK_HEAD, ABILITY_RECKLESS },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Rhyhorn δ"),
+        .cryId = CRY_RHYHORN,
+        .natDexNum = NATIONAL_DEX_RHYHORN,
+        .categoryName = _("Spikes"),
+        .height = 10,
+        .weight = 1150,
+        .description = COMPOUND_STRING(
+            "Once it starts running, it doesn't stop.\n"
+            "Its tiny brain makes it so stupid that it\n"
+            "can't remember why it started running in\n"
+            "the first place."),
+        .pokemonScale = 267,
+        .pokemonOffset = 6,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Rhyhorn,
+        .frontPicFemale = gMonFrontPic_RhyhornF,
+        .frontPicSize = MON_COORDS_SIZE(56, 40),
+        .frontPicSizeFemale = MON_COORDS_SIZE(56, 40),
+        .frontPicYOffset = 12,
+        .frontAnimFrames = sAnims_Rhyhorn,
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_Rhyhorn,
+        .backPicFemale = gMonBackPic_RhyhornF,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
+        .palette = gMonPalette_Rhyhorn,
+        .shinyPalette = gMonShinyPalette_Rhyhorn,
+        .iconSprite = gMonIcon_Rhyhorn,
+        .iconPalIndex = 1,
+        FOOTPRINT(Rhyhorn)
+        OVERWORLD(
+            sPicTable_Rhyhorn,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Rhyhorn,
+            gShinyOverworldPalette_Rhyhorn
+        )
+        .levelUpLearnset = sRhyhornLevelUpLearnset,
+        .teachableLearnset = sRhyhornTeachableLearnset,
+    },
+
+// Slowpoke δ	Water/Dark	150	75	92	20	75	58
+    [SPECIES_SLOWPOKE_DELTA] =
+    {
+        .baseHP        = 150,
+        .baseAttack    = 75,
+        .baseDefense   = 82,
+        .baseSpeed     = 20,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 58,
+        .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
+        .catchRate = 190,
+        .expYield = 178,
+        .evYield_HP = 3,
+        .itemRare = ITEM_LAGGING_TAIL,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_OBLIVIOUS, ABILITY_OWN_TEMPO, ABILITY_REGENERATOR },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Slowpoke δ"),
+        .cryId = CRY_SLOWPOKE,
+        .natDexNum = NATIONAL_DEX_SLOWPOKE,
+        .categoryName = _("Dopey"),
+        .height = 12,
+        .weight = 360,
+        .description = COMPOUND_STRING(
+            "It catches prey by dipping its tail in\n"
+            "water at the side of a river. But it often\n"
+            "forgets what it is doing and spends entire\n"
+            "days just loafing at water's edge."),
+        .pokemonScale = 256,
+        .pokemonOffset = 10,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_SlowpokeDelta,
+        .frontPicSize = MON_COORDS_SIZE(64, 32),
+        .frontPicYOffset = 16,
+        .frontAnimFrames = sAnims_Slowpoke,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
+        .backPic = gMonBackPic_SlowpokeDelta,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 13,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_SlowpokeDelta,
+        .shinyPalette = gMonShinyPalette_Slowpoke,
+        .iconSprite = gMonIcon_Slowpoke,
+        .iconPalIndex = 0,
+        FOOTPRINT(Slowpoke)
+        OVERWORLD(
+            sPicTable_Slowpoke,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Slowpoke,
+            gShinyOverworldPalette_Slowpoke
+        )
+        .levelUpLearnset = sSlowpokeLevelUpLearnset,
+        .teachableLearnset = sSlowpokeTeachableLearnset,
+        .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
+    },
+
+// Lunatone δ	Rock/Ghost	100	50	105	95	105	60
+    [SPECIES_LUNATONE_DELTA] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 50,
+        .baseDefense   = 105,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_GHOST),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 161,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 154,
+    #else
+        .expYield = 150,
+    #endif
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
+        .itemCommon = ITEM_STARDUST,
+        .itemRare = ITEM_MOON_STONE,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Lunatone δ"),
+        .cryId = CRY_LUNATONE,
+        .natDexNum = NATIONAL_DEX_LUNATONE,
+        .categoryName = _("Meteorite"),
+        .height = 10,
+        .weight = 1680,
+        .description = COMPOUND_STRING(
+            "It becomes very active on the night of\n"
+            "a full moon. This Pokémon was first\n"
+            "discovered 40 years ago at the site of\n"
+            "a meteor strike."),
+        .pokemonScale = 300,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_LunatoneDelta,
+        .frontPicSize = MON_COORDS_SIZE(48, 48),
+        .frontPicYOffset = 9,
+        .frontAnimFrames = sAnims_Lunatone,
+        .frontAnimId = ANIM_SWING_CONVEX_FAST,
+        .enemyMonElevation = 13,
+        .backPic = gMonBackPic_Lunatone,
+        .backPicSize = MON_COORDS_SIZE(48, 48),
+        .backPicYOffset = 8,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_LunatoneDelta,
+        .shinyPalette = gMonShinyPalette_Lunatone,
+        .iconSprite = gMonIcon_Lunatone,
+        .iconPalIndex = 1,
+        FOOTPRINT(Lunatone)
+        OVERWORLD(
+            sPicTable_Lunatone,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            gOverworldPalette_Lunatone,
+            gShinyOverworldPalette_Lunatone
+        )
+        .levelUpLearnset = sLunatoneLevelUpLearnset,
+        .teachableLearnset = sLunatoneTeachableLearnset,
+    },
+
+// Solrock δ	Rock/Fire	60	105	100	95	50	105
+    [SPECIES_SOLROCK_DELTA] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 105,
+        .baseDefense   = 100,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 105,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_FIRE),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 161,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 154,
+    #else
+        .expYield = 150,
+    #endif
+        .evYield_Attack = 1,
+        .evYield_SpDefense = 1,
+        .itemCommon = ITEM_STARDUST,
+        .itemRare = ITEM_SUN_STONE,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Solrock δ"),
+        .cryId = CRY_SOLROCK,
+        .natDexNum = NATIONAL_DEX_SOLROCK,
+        .categoryName = _("Meteorite"),
+        .height = 12,
+        .weight = 1540,
+        .description = COMPOUND_STRING(
+            "Solar energy is the source of this \n"
+            "Pokémon's power. On sunny days, groups of\n"
+            "Solrock line up facing the sun and absorb\n"
+            "its light."),
+        .pokemonScale = 328,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_SolrockDelta,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Solrock,
+        .frontAnimId = ANIM_ROTATE_TO_SIDES_TWICE,
+        .enemyMonElevation = 4,
+        .backPic = gMonBackPic_Solrock,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 2,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_SolrockDelta,
+        .shinyPalette = gMonShinyPalette_Solrock,
+        .iconSprite = gMonIcon_Solrock,
+        .iconPalIndex = 0,
+        FOOTPRINT(Solrock)
+        OVERWORLD(
+            sPicTable_Solrock,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            gOverworldPalette_Solrock,
+            gShinyOverworldPalette_Solrock
+        )
+        .levelUpLearnset = sSolrockLevelUpLearnset,
+        .teachableLearnset = sSolrockTeachableLearnset,
+    },
+
+// Skarmory δ	Steel/Fire	75	127	88	82	48	70
+    [SPECIES_SKARMORY_DELTA] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 127,
+        .baseDefense   = 88,
+        .baseSpeed     = 82,
+        .baseSpAttack  = 48,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_STEEL, TYPE_FIRE),
+        .catchRate = 25,
+        .expYield = 175,
+        .evYield_Attack = 2,
+        .itemRare = ITEM_METAL_COAT,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_KEEN_EYE, ABILITY_STURDY, ABILITY_WEAK_ARMOR },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Skarmory δ"),
+        .cryId = CRY_SKARMORY,
+        .natDexNum = NATIONAL_DEX_SKARMORY,
+        .categoryName = _("Armor Bird"),
+        .height = 17,
+        .weight = 505,
+        .description = COMPOUND_STRING(
+            "A Pokémon that has a body and wings of\n"
+            "steel. People in the past used feathers\n"
+            "fallen from Skarmory to make swords and\n"
+            "knives."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 271,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_Skarmory,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_Skarmory,
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_Skarmory,
+        .backPicSize = MON_COORDS_SIZE(48, 64),
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_Skarmory,
+        .shinyPalette = gMonShinyPalette_Skarmory,
+        .iconSprite = gMonIcon_Skarmory,
+        .iconPalIndex = 0,
+        FOOTPRINT(Skarmory)
+        OVERWORLD(
+            sPicTable_Skarmory,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Skarmory,
+            gShinyOverworldPalette_Skarmory
+        )
+        .levelUpLearnset = sSkarmoryLevelUpLearnset,
+        .teachableLearnset = sSkarmoryTeachableLearnset,
+        .eggMoveLearnset = sSkarmoryEggMoveLearnset,
+    },
+
+// Camerupt δ	Fire/Water	95	90	90	80	75	90
+    [SPECIES_CAMERUPT_DELTA] =
+    {
+        .baseHP        = 95,
+        .baseAttack    = 90,
+        .baseDefense   = 90,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_WATER),
+        .catchRate = 150,
+        .expYield = 182,
+        .evYield_HP = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_EVAPORATE, ABILITY_SOLID_ROCK, ABILITY_ANGER_POINT },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Camerupt δ"),
+        .cryId = CRY_CAMERUPT,
+        .natDexNum = NATIONAL_DEX_CAMERUPT,
+        .categoryName = _("Eruption"),
+        .height = 19,
+        .weight = 2200,
+        .description = COMPOUND_STRING(
+            "A Pokémon that lives in the crater of\n"
+            "a volcano. Every 10 years, the volcanoes\n"
+            "on its back erupt violently. Research is\n"
+            "under way on the cause of eruption."),
+        .pokemonScale = 256,
+        .pokemonOffset = 7,
+        .trainerScale = 345,
+        .trainerOffset = 6,
+        .frontPic = gMonFrontPic_Camerupt,
+        .frontPicFemale = gMonFrontPic_CameruptF,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = sAnims_Camerupt,
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_Camerupt,
+        .backPicFemale = gMonBackPic_CameruptF,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicSizeFemale = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 13,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
+        .palette = gMonPalette_Camerupt,
+        .shinyPalette = gMonShinyPalette_Camerupt,
+        .iconSprite = gMonIcon_Camerupt,
+        .iconPalIndex = 0,
+        FOOTPRINT(Camerupt)
+        OVERWORLD(
+            sPicTable_Camerupt,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Camerupt,
+            gShinyOverworldPalette_Camerupt
+        )
+        .levelUpLearnset = sCameruptLevelUpLearnset,
+        .teachableLearnset = sCameruptTeachableLearnset,
+        .formSpeciesIdTable = sCameruptFormSpeciesIdTable,
+        .formChangeTable = sCameruptFormChangeTable,
+    },
+
+    [SPECIES_CACTURNE_DELTA] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 60,
+        .baseDefense   = 75,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 115,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FIGHTING),
+        .catchRate = 60,
+        .expYield = 185,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_STICKY_BARB,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 35,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_WATER_ABSORB },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Cacturne δ"),
+        .cryId = CRY_CACTURNE,
+        .natDexNum = NATIONAL_DEX_CACTURNE,
+        .categoryName = _("Scarecrow"),
+        .height = 13,
+        .weight = 774,
+        .description = COMPOUND_STRING(
+            "After spending thousands of years in\n"
+            "harsh deserts, its blood transformed into\n"
+            "the same substances as sand. It is\n"
+            "nocturnal, so it hunts at night."),
+        .pokemonScale = 327,
+        .pokemonOffset = 5,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CacturneDelta,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Cacturne,
+        .frontAnimId = ANIM_V_SLIDE,
+        .backPic = gMonBackPic_CacturneDelta,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_H_SHAKE,
+        .palette = gMonPalette_CacturneDelta,
+        .shinyPalette = gMonShinyPalette_Cacturne,
+        .iconSprite = gMonIcon_Cacturne,
+        .iconPalIndex = 1,
+        FOOTPRINT(Cacturne)
+        OVERWORLD(
+            sPicTable_Cacturne,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Cacturne,
+            gShinyOverworldPalette_Cacturne
+        )
+        .levelUpLearnset = sCacturneLevelUpLearnset,
+        .teachableLearnset = sCacturneTeachableLearnset,
+    },
+
+// Clefable δ	Fairy/Electric	95	95	60	95	95	95
+    [SPECIES_CLEFABLE_DELTA] =
+    {
+        .baseHP        = 99,
+        .baseAttack    = 95,
+        .baseDefense   = 60,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_ELECTRIC),
+        .catchRate = 25,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 242,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 217,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 213,
+    #else
+        .expYield = 129,
+    #endif
+        .evYield_HP = 3,
+        .itemRare = ITEM_MOON_STONE,
+        .genderRatio = PERCENT_FEMALE(75),
+        .eggCycles = 10,
+        .friendship = 140,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+    #if P_UPDATED_ABILITIES >= GEN_4
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_MAGIC_GUARD, ABILITY_UNAWARE },
+    #else
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_UNAWARE },
+    #endif
+        .bodyColor = BODY_COLOR_PINK,
+        .noFlip = TRUE,
+        .speciesName = _("Clefable δ"),
+        .cryId = CRY_CLEFABLE,
+        .natDexNum = NATIONAL_DEX_CLEFABLE,
+        .categoryName = _("Fairy"),
+        .height = 13,
+        .weight = 400,
+        .description = COMPOUND_STRING(
+            "A Clefable uses its wings to skip lightly \n"
+            "as if it were flying. Its bouncy step\n"
+            "lets it even walk on water. On quiet,\n"
+            "moonlit nights, it strolls on lakes."),
+        .pokemonScale = 256,
+        .pokemonOffset = 5,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Clefable,
+        .frontPicSize = MON_COORDS_SIZE(56, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = sAnims_Clefable,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Clefable,
+        .backPicSize = MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 10,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Clefable,
+        .shinyPalette = gMonShinyPalette_Clefable,
+        .iconSprite = gMonIcon_Clefable,
+        .iconPalIndex = 0,
+        FOOTPRINT(Clefable)
+        OVERWORLD(
+            sPicTable_Clefable,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Clefable,
+            gShinyOverworldPalette_Clefable
+        )
+        .levelUpLearnset = sClefableLevelUpLearnset,
+        .teachableLearnset = sClefableTeachableLearnset,
+    },
+
+    [SPECIES_VIBRAVA_DELTA] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 70,
+        .baseDefense   = 50,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_DRAGON),
+        .catchRate = 120,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 119 : 126,
+        .evYield_Attack = 1,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Vibrava δ"),
+        .cryId = CRY_VIBRAVA,
+        .natDexNum = NATIONAL_DEX_VIBRAVA,
+        .categoryName = _("Vibration"),
+        .height = 11,
+        .weight = 153,
+        .description = COMPOUND_STRING(
+            "It looses ultrasonic waves by rubbing its\n"
+            "wings together. Since a Vibrava's wings\n"
+            "are still in the process of growing, it can\n"
+            "only fly short distances."),
+        .pokemonScale = 370,
+        .pokemonOffset = 11,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Vibrava,
+        .frontPicSize = MON_COORDS_SIZE(64, 48),
+        .frontPicYOffset = 10,
+        .frontAnimFrames = sAnims_Vibrava,
+        .frontAnimId = ANIM_H_SHAKE,
+        .backPic = gMonBackPic_Vibrava,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 12,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Vibrava,
+        .shinyPalette = gMonShinyPalette_Vibrava,
+        .iconSprite = gMonIcon_Vibrava,
+        .iconPalIndex = 1,
+        FOOTPRINT(Vibrava)
+        OVERWORLD(
+            sPicTable_Vibrava,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Vibrava,
+            gShinyOverworldPalette_Vibrava
+        )
+        .levelUpLearnset = sVibravaLevelUpLearnset,
+        .teachableLearnset = sVibravaTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_FLYGON}),
+    },
+
+// Metang δ	Steel/Fairy	75	106	94	62	68	100
+    [SPECIES_METANG_DELTA] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 106,
+        .baseDefense   = 94,
+        .baseSpeed     = 62,
+        .baseSpAttack  = 68,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_STEEL, TYPE_FAIRY),
+        .catchRate = 3,
+        .expYield = 184,
+        .evYield_Defense = 2,
+        .itemRare = ITEM_METAL_COAT,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 40,
+        .friendship = 35,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_LIGHT_METAL },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Metang δ"),
+        .cryId = CRY_METANG,
+        .natDexNum = NATIONAL_DEX_METANG,
+        .categoryName = _("Iron Claw"),
+        .height = 12,
+        .weight = 2025,
+        .description = COMPOUND_STRING(
+            "The claws tipping its arms pack the\n"
+            "destructive power to tear through thick\n"
+            "iron sheets as if they were silk. It flies\n"
+            "at over 60 miles per hour."),
+        .pokemonScale = 256,
+        .pokemonOffset = 6,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MetangDelta,
+        .frontPicSize = MON_COORDS_SIZE(64, 48),
+        .frontPicYOffset = 9,
+        .frontAnimFrames = sAnims_Metang,
+        .frontAnimId = ANIM_V_SLIDE,
+        .backPic = gMonBackPic_Metang,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 13,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_MetangDelta,
+        .shinyPalette = gMonShinyPalette_Metang,
+        .iconSprite = gMonIcon_Metang,
+        .iconPalIndex = 0,
+        FOOTPRINT(Metang)
+        OVERWORLD(
+            sPicTable_Metang,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            gOverworldPalette_Metang,
+            gShinyOverworldPalette_Metang
+        )
+        .levelUpLearnset = sMetangLevelUpLearnset,
+        .teachableLearnset = sMetangTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_METAGROSS}),
+    },
+

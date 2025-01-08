@@ -14,97 +14,87 @@ LabB_B1F_EventScript_DeltaMachine::
 
 LabB_B1F_EventScript_DeltaMachineInfo::
 	msgbox LabB_B1F_Text_AvailableConversions, MSGBOX_DEFAULT
-	@ .macro multichoicegrid x:req, y:req, multichoiceId:req, per_row:req, ignoreBPress:req
-	multichoicegrid 0, 0, MULTI_LAB_A_DELTAS, 2, FALSE
+	multichoicegrid 0, 0, MULTI_LAB_B_DELTAS, 2, FALSE
 	switch VAR_RESULT
-	case 0, LabB_B1F_EventScript_GolbatData
-	case 1, LabB_B1F_EventScript_VenonatData
-	case 2, LabB_B1F_EventScript_SilcoonData
-	case 3, LabB_B1F_EventScript_WhismurData
-	case 4, LabB_B1F_EventScript_SandslashData
-	case 5, LabB_B1F_EventScript_DustoxData
-	case 6, LabB_B1F_EventScript_LaironData
-	case 7, LabB_B1F_EventScript_FearowData
-	case 8, LabB_B1F_EventScript_BeedrillData
-	case 9, LabB_B1F_EventScript_ShedinjaData
+	case 0, LabB_B1F_EventScript_RhyhornData
+	case 1, LabB_B1F_EventScript_SlowpokeData
+	case 2, LabB_B1F_EventScript_LunatoneData
+	case 3, LabB_B1F_EventScript_SolrockData
+	case 4, LabB_B1F_EventScript_SkarmoryData
+	case 5, LabB_B1F_EventScript_CameruptData
+	case 6, LabB_B1F_EventScript_CacturneData
+	case 7, LabB_B1F_EventScript_ClefableData
+	case 8, LabB_B1F_EventScript_VibravaData
+	case 9, LabB_B1F_EventScript_MetangData
 	goto LabB_B1F_EventScript_DeltaMachine
 	end
 
-LabB_B1F_EventScript_GolbatData::
-	showmonpic SPECIES_GOLBAT_DELTA, 10, 3
-	msgbox LabB_B1F_Text_GolbatData, MSGBOX_DEFAULT
-	@ closemessage
+LabB_B1F_EventScript_RhyhornData::
+	showmonpic SPECIES_RHYHORN_DELTA, 10, 3
+	msgbox LabB_B1F_Text_RhyhornData, MSGBOX_DEFAULT
 	hidemonpic
 	goto LabB_B1F_EventScript_DeltaMachineInfo
 	end
 
-LabB_B1F_EventScript_VenonatData::
-	showmonpic SPECIES_VENONAT_DELTA, 10, 3
-	msgbox LabB_B1F_Text_VenonatData, MSGBOX_DEFAULT
-	@ closemessage
+LabB_B1F_EventScript_SlowpokeData::
+	showmonpic SPECIES_SLOWPOKE_DELTA, 10, 3
+	msgbox LabB_B1F_Text_SlowpokeData, MSGBOX_DEFAULT
 	hidemonpic
 	goto LabB_B1F_EventScript_DeltaMachineInfo
 	end
 
-LabB_B1F_EventScript_SilcoonData::
-	showmonpic SPECIES_SILCOON_DELTA, 10, 3
-	msgbox LabB_B1F_Text_SilcoonData, MSGBOX_DEFAULT
-	@ closemessage
+LabB_B1F_EventScript_LunatoneData::
+	showmonpic SPECIES_LUNATONE_DELTA, 10, 3
+	msgbox LabB_B1F_Text_LunatoneData, MSGBOX_DEFAULT
 	hidemonpic
 	goto LabB_B1F_EventScript_DeltaMachineInfo
 	end
 
-LabB_B1F_EventScript_WhismurData::
-	showmonpic SPECIES_WHISMUR, 10, 3
-	msgbox LabB_B1F_Text_WhismurData, MSGBOX_DEFAULT
-	@ closemessage
+LabB_B1F_EventScript_SolrockData::
+	showmonpic SPECIES_SOLROCK_DELTA, 10, 3
+	msgbox LabB_B1F_Text_SolrockData, MSGBOX_DEFAULT
 	hidemonpic
 	goto LabB_B1F_EventScript_DeltaMachineInfo
 	end
 	
-LabB_B1F_EventScript_SandslashData::
-	showmonpic SPECIES_SANDSLASH_DELTA, 10, 3
-	msgbox LabB_B1F_Text_SandslashData, MSGBOX_DEFAULT
-	@ closemessage
+LabB_B1F_EventScript_SkarmoryData::
+	showmonpic SPECIES_SKARMORY_DELTA, 10, 3
+	msgbox LabB_B1F_Text_SkarmoryData, MSGBOX_DEFAULT
 	hidemonpic
 	goto LabB_B1F_EventScript_DeltaMachineInfo
 	end
 
-LabB_B1F_EventScript_DustoxData::
-	showmonpic SPECIES_DUSTOX_DELTA, 10, 3
-	msgbox LabB_B1F_Text_DustoxData, MSGBOX_DEFAULT
-	@ closemessage
+LabB_B1F_EventScript_CameruptData::
+	showmonpic SPECIES_CAMERUPT_DELTA, 10, 3
+	msgbox LabB_B1F_Text_CameruptData, MSGBOX_DEFAULT
 	hidemonpic
 	goto LabB_B1F_EventScript_DeltaMachineInfo
 	end
 
-LabB_B1F_EventScript_LaironData::
-	showmonpic SPECIES_LAIRON_DELTA, 10, 3
-	msgbox LabB_B1F_Text_LaironData, MSGBOX_DEFAULT
-	@ closemessage
+LabB_B1F_EventScript_CacturneData::
+	showmonpic SPECIES_CACTURNE_DELTA, 10, 3
+	msgbox LabB_B1F_Text_CacturneData, MSGBOX_DEFAULT
 	hidemonpic
 	goto LabB_B1F_EventScript_DeltaMachineInfo
 	end
 
-LabB_B1F_EventScript_FearowData::
-	showmonpic SPECIES_FEAROW_DELTA, 10, 3
-	msgbox LabB_B1F_Text_FearowData, MSGBOX_DEFAULT
-	@ closemessage
+LabB_B1F_EventScript_ClefableData::
+	showmonpic SPECIES_CLEFABLE_DELTA, 10, 3
+	msgbox LabB_B1F_Text_ClefableData, MSGBOX_DEFAULT
 	hidemonpic
 	goto LabB_B1F_EventScript_DeltaMachineInfo
 	end
 
-LabB_B1F_EventScript_BeedrillData::
-	showmonpic SPECIES_BEEDRILL_DELTA, 10, 3
-	msgbox LabB_B1F_Text_BeedrillData, MSGBOX_DEFAULT
-	@ closemessage
+LabB_B1F_EventScript_VibravaData::
+	showmonpic SPECIES_VIBRAVA_DELTA, 10, 3
+	msgbox LabB_B1F_Text_VibravaData, MSGBOX_DEFAULT
 	hidemonpic
 	goto LabB_B1F_EventScript_DeltaMachineInfo
 	end
 
-LabB_B1F_EventScript_ShedinjaData::
-	showmonpic SPECIES_SHEDINJA_DELTA, 10, 3
-	msgbox LabB_B1F_Text_ShedinjaData, MSGBOX_DEFAULT
+LabB_B1F_EventScript_MetangData::
+	showmonpic SPECIES_METANG_DELTA, 10, 3
+	msgbox LabB_B1F_Text_MetangData, MSGBOX_DEFAULT
 	hidemonpic
 	goto LabB_B1F_EventScript_DeltaMachineInfo
 	end
@@ -112,45 +102,45 @@ LabB_B1F_EventScript_ShedinjaData::
 LabB_B1F_Text_AvailableConversions:
 	.string "> CONVERSIONS INFO$"
 
-LabB_B1F_Text_GolbatData:
-	.string "> GOLBAT δ\n"
-	.string "> TYPE: DRAGON$"
+LabB_B1F_Text_RhyhornData:
+	.string "> RHYHORN δ\n"
+	.string "> TYPE: GROUND / ELECTRIC$"
 
-LabB_B1F_Text_VenonatData:
-	.string "> VENONAT δ\n"
-	.string "> TYPE: FAIRY / POISON$"
+LabB_B1F_Text_SlowpokeData:
+	.string "> SLOWPOKE δ\n"
+	.string "> TYPE: WATER / DARK$"
 
-LabB_B1F_Text_SilcoonData:
-	.string "> SILCOON δ\n"
-	.string "> TYPE: GROUND$"
+LabB_B1F_Text_LunatoneData:
+	.string "> LUNATONE δ\n"
+	.string "> TYPE: ROCK / GHOST$"
 
-LabB_B1F_Text_WhismurData:
-	.string "> WHISMUR δ\n"
-	.string "> TYPE: POISON$"
+LabB_B1F_Text_SolrockData:
+	.string "> SOLROCK δ\n"
+	.string "> TYPE: ROCK / FIRE$"
 
-LabB_B1F_Text_SandslashData:
-	.string "> SANDSLASH δ\n"
-	.string "> TYPE: FIGHTING$"
+LabB_B1F_Text_SkarmoryData:
+	.string "> SKARMORY δ\n"
+	.string "> TYPE: STEEL / FIRE$"
 
-LabB_B1F_Text_DustoxData:
-	.string "> DUSTOX δ\n"
-	.string "> TYPE: FIRE / POISON$"
+LabB_B1F_Text_CameruptData:
+	.string "> CAMERUPT δ\n"
+	.string "> TYPE: FIRE / WATER$"
 
-LabB_B1F_Text_LaironData:
-	.string "> LAIRON δ\n"
-	.string "> TYPE: ICE / ROCK$"
+LabB_B1F_Text_CacturneData:
+	.string "> CACTURNE δ\n"
+	.string "> TYPE: GRASS / FIGHTING$"
 
-LabB_B1F_Text_FearowData:
-	.string "> FEAROW δ\n"
-	.string "> TYPE: DARK / POISON$"
+LabB_B1F_Text_ClefableData:
+	.string "> CLEFABLE δ\n"
+	.string "> TYPE: FAIRY / ELECTRIC$"
 
-LabB_B1F_Text_BeedrillData:
-	.string "> BEEDRILL δ\n"
+LabB_B1F_Text_VibravaData:
+	.string "> VIBRAVA δ\n"
 	.string "> TYPE: FIGHTING / POISON$"
 
-LabB_B1F_Text_ShedinjaData:
-	.string "> SHEDINJA δ\n"
-	.string "> TYPE: FAIRY / GHOST$"
+LabB_B1F_Text_MetangData:
+	.string "> METANG δ\n"
+	.string "> TYPE: STEEL / FAIRY$"
 
 LabB_B1F_EventScript_ConfirmDeltaConversion::
 	msgbox LabB_B1F_Text_ConfirmDeltaConversion, MSGBOX_YESNO

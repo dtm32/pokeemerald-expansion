@@ -66,7 +66,7 @@ Route101_NormansLab_EventScript_PokeballAnorith::
 	end
 
 Route101_NormansLab_EventScript_TakeAnorith::
-	givemon SPECIES_ANORITH_DELTA, 5, item=ITEM_ORAN_BERRY, isShiny=TRUE
+	givemon SPECIES_ANORITH_DELTA, 5, item=ITEM_ORAN_BERRY
 	msgbox Route101_NormansLab_Text_ReceivedAnorith, MSGBOX_DEFAULT
 	closemessage
 	playfanfare MUS_OBTAIN_ITEM
@@ -85,7 +85,7 @@ Route101_NormansLab_EventScript_PokeballLileep::
 	end
 
 Route101_NormansLab_EventScript_TakeLileep::
-	givemon SPECIES_LILEEP_DELTA, 5, item=ITEM_ORAN_BERRY, isShiny=TRUE
+	givemon SPECIES_LILEEP_DELTA, 5, item=ITEM_ORAN_BERRY
 	msgbox Route101_NormansLab_Text_ReceivedLileep, MSGBOX_DEFAULT
 	closemessage
 	playfanfare MUS_OBTAIN_ITEM
