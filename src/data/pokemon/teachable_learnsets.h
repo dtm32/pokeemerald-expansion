@@ -15803,6 +15803,7 @@ static const u16 sSeviperTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_SWIFT,
     MOVE_SWORDS_DANCE,
+    MOVE_LEECH_LIFE
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SEVIPER
@@ -16971,6 +16972,8 @@ static const u16 sWalreinTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SWAGGER,
     MOVE_SWORDS_DANCE,
+    MOVE_THUNDER_FANG,
+    MOVE_FIRE_FANG,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SPHEAL

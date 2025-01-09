@@ -3961,8 +3961,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_NIDOQUEEN] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 92,
+        .baseHP        = 99,
+        .baseAttack    = 88,
         .baseDefense   = 97,
         .baseSpeed     = 76,
         .baseSpAttack  = 85,
@@ -4160,10 +4160,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_NIDOKING] =
     {
-        .baseHP        = 96,
-        .baseAttack    = 117,
+        .baseHP        = 81,
+        .baseAttack    = 102,
         .baseDefense   = 77,
-        .baseSpeed     = 90,
+        .baseSpeed     = 85,
         .baseSpAttack  = 85,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_POISON, TYPE_GROUND),
@@ -8284,7 +8284,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseDefense   = 130,
         .baseSpeed     = 45,
         .baseSpAttack  = 55,
-        .baseSpDefense = 65,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_ROCK, TYPE_GROUND),
         .catchRate = 45,
         .expYield = GOLEM_EXP_YIELD,
@@ -10822,7 +10822,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_DROWZEE
     [SPECIES_DROWZEE] =
     {
-        .baseHP        = 60,
+        .baseHP        = 65,
         .baseAttack    = 48,
         .baseDefense   = 45,
         .baseSpeed     = 42,
@@ -10889,11 +10889,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_HYPNO] =
     {
-        .baseHP        = 85,
+        .baseHP        = 95,
         .baseAttack    = 73,
         .baseDefense   = 70,
         .baseSpeed     = 67,
-        .baseSpAttack  = 73,
+        .baseSpAttack  = 88,
         .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 75,
@@ -12321,11 +12321,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_WEEZING] =
     {
-        .baseHP        = 65,
+        .baseHP        = 70,
         .baseAttack    = 90,
         .baseDefense   = 120,
         .baseSpeed     = 60,
-        .baseSpAttack  = 85,
+        .baseSpAttack  = 90,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_POISON),
         .catchRate = 60,

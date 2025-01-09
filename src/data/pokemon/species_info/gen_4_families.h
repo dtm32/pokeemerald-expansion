@@ -1197,10 +1197,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_LUXRAY] =
     {
-        .baseHP        = 80,
+        .baseHP        = 70,
         .baseAttack    = 120,
         .baseDefense   = 79,
-        .baseSpeed     = 70,
+        .baseSpeed     = 90,
         .baseSpAttack  = 95,
         .baseSpDefense = 79,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DARK),
