@@ -4260,11 +4260,15 @@ Pic: Kindler
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Numel
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Camerupt
+Level: 41
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Arcanine-Hisuian
+Level: 41
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_JEFF ===
 Name: JEFF
@@ -4273,15 +4277,11 @@ Pic: Kindler
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Slugma
-Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Slugma
-Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Magmortar
+Level: 46
+EVs: 200 SpA / 200 Spe
 
 === TRAINER_AXLE ===
 Name: AXLE
@@ -4290,11 +4290,24 @@ Pic: Kindler
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Numel
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Magmar
+Level: 42
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Combusken
+Level: 42
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Typhlosion-Hisuian @ Sitrus Berry
+Level: 43
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+EVs: 100 SpA / 160 Spe
+- Infernal Parade
+- Lava Plume
+- Eruption
+- Scorching Sands
 
 === TRAINER_JACE ===
 Name: JACE
@@ -4303,11 +4316,15 @@ Pic: Kindler
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Slugma
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Marowak
+Level: 45
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Marowak-Alola
+Level: 45
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_KEEGAN ===
 Name: KEEGAN
@@ -4316,11 +4333,23 @@ Pic: Kindler
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Slugma
-Level: 23
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Growlithe
+Level: 43
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Vulpix
+Level: 43
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Charizard
+Level: 45
+EVs: 100 SpA / 100 Spe
+- Flamethrower
+- Dragon Breath
+- Air Slash
+- Fire Spin
 
 === TRAINER_BERNIE_1 ===
 Name: BERNIE
@@ -5696,39 +5725,63 @@ Gender: Female
 Music: Female
 Items: Hyper Potion / Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Numel
-Level: 24
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Take Down
-- Magnitude
-- Sunny Day
-
-Slugma
-Level: 24
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Smog
-- Light Screen
-- Sunny Day
-
-Camerupt
-Level: 26
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Tackle
-- Sunny Day
-- Attract
+AI: Check Bad Move / Try To Faint / Check Viability / Setup First Turn / Omniscient
 
 Torkoal @ White Herb
-Level: 29
+Level: 49
+Ability: Drought
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 200 HP / 100 Def / 100 SpD
 - Overheat
-- Sunny Day
+- Shell Smash
 - Body Slam
 - Attract
+
+Magcargo @ Leftovers
+Level: 46
+Ability: Evaporate
+Nature: Calm
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 248 HP / 8 Def / 252 SpD
+- Stealth Rock
+- Recover
+- Toxic
+- Lava Plume
+
+Sunflora
+Level: 46
+Ability: Sunny Flower
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Fire Blast
+- Solar Beam
+- Extrasensory
+- Giga Drain
+
+Infernape @ Life Orb
+Level: 48
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 200 Atk / 200 Spe
+- Mach Punch
+- Fire Punch
+- Raging Fury
+- Plasma Fists
+
+Chandelure
+Level: 48
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Calm Mind
+- Shadow Ball
+- Flamethrower
+- Fire Blast
+
+Rotom-Heat
+Level: 47
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 200 SpA / 200 Spe
+- Overheat
+- Volt Switch
+- Toxic
+- Pain Split
 
 === TRAINER_NORMAN_LAB_B_LILEEP ===
 Name: NORMAN
@@ -5788,6 +5841,7 @@ EVs: 120 HP / 120 Atk
 Armountan @ Leftovers
 Level: 44
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 252 Atk / 252 Def
 - Earthquake
 - Bug Bite
 - Leaf Blade
@@ -5845,6 +5899,7 @@ EVs: 120 HP / 120 Atk
 Abyssilily @ Leftovers
 Level: 44
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 252 Def / 252 SpD
 - Giga Drain
 - Dark Pulse
 - Scald
@@ -7307,7 +7362,6 @@ EVs: 252 Atk / 252 Spe
 Nature: Adamant
 - Tackle
 - Splash
-
 
 === TRAINER_IVAN ===
 Name: IVAN
@@ -10219,11 +10273,19 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Numel
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Rapidash
+Level: 43
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Flareon
+Level: 44
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Ninetales
+Level: 44
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_ANNIKA ===
 Name: ANNIKA
@@ -13084,8 +13146,8 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Kecleon
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Level: 45
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 - Flamethrower
 - Fury Swipes
 - Feint Attack
@@ -13123,15 +13185,19 @@ Pic: Battle Girl
 Gender: Female
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Meditite
-Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Medicham
+Level: 43
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 - Bide
 - Detect
 - Confusion
 - Fire Punch
+
+Monferno
+Level: 43
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_HIDEO ===
 Name: HIDEO
