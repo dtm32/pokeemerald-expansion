@@ -1675,9 +1675,15 @@
 #define SPECIES_ANORITH_DELTA                           1563
 #define SPECIES_ARMALDO_DELTA                           1564
 #define SPECIES_ARMOUNTAN                               1565
-#define SPECIES_THERAZOR                               1565
+#define SPECIES_THERAZOR                                1565
+#define SPECIES_TYROGUE_HP                              1566
+#define SPECIES_TYROGUE_ATK                             1567
+#define SPECIES_TYROGUE_DEF                             1568
+#define SPECIES_TYROGUE_SPE                             1569
+#define SPECIES_TYROGUE_SPA                             1570
+#define SPECIES_TYROGUE_SPD                             1571
 
-#define SPECIES_EGG (SPECIES_ARMOUNTAN + 1)
+#define SPECIES_EGG (SPECIES_TYROGUE_SPD + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

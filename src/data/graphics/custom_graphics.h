@@ -30,6 +30,13 @@ const u32 gShinyOverworldPalette_Bulbasaur[] = INCBIN_U32("graphics/pokemon/bulb
 
 */
 
+const u32 gMonPalette_TyrogueHP[] = INCBIN_U32("graphics/pokemon/tyrogue/training_pals/hp.gbapal.lz");
+const u32 gMonPalette_TyrogueAtk[] = INCBIN_U32("graphics/pokemon/tyrogue/training_pals/atk.gbapal.lz");
+const u32 gMonPalette_TyrogueDef[] = INCBIN_U32("graphics/pokemon/tyrogue/training_pals/def.gbapal.lz");
+const u32 gMonPalette_TyrogueSpe[] = INCBIN_U32("graphics/pokemon/tyrogue/training_pals/spe.gbapal.lz");
+const u32 gMonPalette_TyrogueSpa[] = INCBIN_U32("graphics/pokemon/tyrogue/training_pals/spa.gbapal.lz");
+const u32 gMonPalette_TyrogueSpd[] = INCBIN_U32("graphics/pokemon/tyrogue/training_pals/spd.gbapal.lz");
+
 const u32 gMonFrontPic_WurmpleDelta[] = INCBIN_U32("graphics/pokemon/wurmple/delta/anim_front.4bpp.lz");
 const u32 gMonPalette_WurmpleDelta[] = INCBIN_U32("graphics/pokemon/wurmple/delta/normal.gbapal.lz");
 const u32 gMonBackPic_WurmpleDelta[] = INCBIN_U32("graphics/pokemon/wurmple/delta/back.4bpp.lz");

@@ -672,7 +672,7 @@
 #define FLAG_ITEM_VERDANTURF_RAVINE_MAX_REVIVE              0x26D
 #define FLAG_HIDDEN_ITEM_DIG_SITE_2_STAR_PIECE              0x26E
 #define FLAG_HIDDEN_ITEM_MT_KIRI_1F_NUGGET                  0x26F
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
+#define FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_RARE_CANDY          0x270
 #define FLAG_UNUSED_0x271  0x271 // Unused Flag
 #define FLAG_UNUSED_0x272  0x272 // Unused Flag
 #define FLAG_UNUSED_0x273  0x273 // Unused Flag

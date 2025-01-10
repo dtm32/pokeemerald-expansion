@@ -238,4 +238,5 @@ const struct SpeciesInfo gSpeciesInfo[] =
     */
 
     #include "species_info/delta_families.h"
+    #include "species_info/ev_train_families.h"
 };

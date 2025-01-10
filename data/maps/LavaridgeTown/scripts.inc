@@ -276,6 +276,10 @@ LavaridgeTown_EventScript_HerbShopSign::
 	msgbox LavaridgeTown_Text_HerbShopSign, MSGBOX_SIGN
 	end
 
+LavaridgeTown_EventScript_DojoSign::
+	msgbox LavaridgeTown_Text_DojoSign, MSGBOX_SIGN
+	end
+
 LavaridgeTown_Text_MayNiceBadgesTakeThis:
 	.string "MAY: {PLAYER}{KUN}! Long time no see!\p"
 	.string "Oh? While I visited the hot springs,\n"
@@ -406,4 +410,8 @@ LavaridgeTown_Text_GymSign:
 LavaridgeTown_Text_HerbShopSign:
 	.string "POKéMON HERB SHOP\n"
 	.string "“Bitter taste--better cure!”$"
+
+LavaridgeTown_Text_DojoSign:
+	.string "POKéMON DOJO\n"
+	.string "“Come train with the MASTER!”$"
 

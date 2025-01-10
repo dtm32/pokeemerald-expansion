@@ -886,7 +886,12 @@
 #define TRAINER_EMMETT                      880
 #define TRAINER_OLIVER                      881
 #define TRAINER_RED_1                       882
-#define TRAINER_DOJO_ATTACK                 883
+#define TRAINER_DOJO_HP                     883
+#define TRAINER_DOJO_ATTACK                 884
+#define TRAINER_DOJO_DEFENSE                885
+#define TRAINER_DOJO_SPEED                  886
+#define TRAINER_DOJO_SP_ATTACK              887
+#define TRAINER_DOJO_SP_DEFENSE             888
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

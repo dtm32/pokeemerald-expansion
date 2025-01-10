@@ -18271,8 +18271,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 /* ===== DOJO BATTLES ==== */
 /* ======================= */
 
-=== TRAINER_DOJO_ATTACK ===
-Name: Student
+=== TRAINER_DOJO_HP ===
+Name: STUDENT
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -18280,22 +18280,156 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Flareon
+Tyrogue-Hp
 Level: 15
-- Tackle
 
-Flareon
+Tyrogue-Hp
 Level: 15
-- Tackle
 
-Flareon
+Tyrogue-Hp
 Level: 15
-- Tackle
 
-Flareon
+Tyrogue-Hp
 Level: 15
-- Tackle
 
-Flareon
+Tyrogue-Hp
 Level: 15
-- Tackle
+
+Tyrogue-Hp
+Level: 15
+
+=== TRAINER_DOJO_ATTACK ===
+Name: STUDENT
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move
+
+Tyrogue-Atk
+Level: 15
+
+Tyrogue-Atk
+Level: 15
+
+Tyrogue-Atk
+Level: 15
+
+Tyrogue-Atk
+Level: 15
+
+Tyrogue-Atk
+Level: 15
+
+Tyrogue-Atk
+Level: 15
+
+=== TRAINER_DOJO_DEFENSE ===
+Name: STUDENT
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move
+
+Tyrogue-Def
+Level: 15
+
+Tyrogue-Def
+Level: 15
+
+Tyrogue-Def
+Level: 15
+
+Tyrogue-Def
+Level: 15
+
+Tyrogue-Def
+Level: 15
+
+Tyrogue-Def
+Level: 15
+
+
+=== TRAINER_DOJO_SPEED ===
+Name: STUDENT
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move
+
+Tyrogue-Spe
+Level: 15
+
+Tyrogue-Spe
+Level: 15
+
+Tyrogue-Spe
+Level: 15
+
+Tyrogue-Spe
+Level: 15
+
+Tyrogue-Spe
+Level: 15
+
+Tyrogue-Spe
+Level: 15
+
+=== TRAINER_DOJO_SP_ATTACK ===
+Name: STUDENT
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move
+
+Tyrogue-Spa
+Level: 15
+
+Tyrogue-Spa
+Level: 15
+
+Tyrogue-Spa
+Level: 15
+
+Tyrogue-Spa
+Level: 15
+
+Tyrogue-Spa
+Level: 15
+
+Tyrogue-Spa
+Level: 15
+
+=== TRAINER_DOJO_SP_DEFENSE ===
+Name: STUDENT
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move
+
+Tyrogue-Spd
+Level: 15
+
+Tyrogue-Spd
+Level: 15
+
+Tyrogue-Spd
+Level: 15
+
+Tyrogue-Spd
+Level: 15
+
+Tyrogue-Spd
+Level: 15
+
+Tyrogue-Spd
+Level: 15

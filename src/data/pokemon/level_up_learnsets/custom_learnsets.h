@@ -355,3 +355,9 @@ static const struct LevelUpMove sIgneousaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_RAGING_FURY),
     LEVEL_UP_END
 };
+
+static const struct LevelUpMove sTrainingTyrogueLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_LOW_KICK),
+    LEVEL_UP_END
+};
