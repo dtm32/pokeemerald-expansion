@@ -154,7 +154,7 @@
     {
       "id": "LAYOUT_PACIFIDLOG_TOWN",
       "name": "PacifidlogTown_Layout",
-      "width": 20,
+      "width": 40,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Pacifidlog",
@@ -334,7 +334,7 @@
     {
       "id": "LAYOUT_ROUTE118",
       "name": "Route118_Layout",
-      "width": 80,
+      "width": 120,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
@@ -395,7 +395,7 @@
       "id": "LAYOUT_ROUTE124",
       "name": "Route124_Layout",
       "width": 80,
-      "height": 80,
+      "height": 70,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Route124/border.bin",
@@ -434,7 +434,7 @@
     {
       "id": "LAYOUT_ROUTE128",
       "name": "Route128_Layout",
-      "width": 120,
+      "width": 160,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mossdeep",
@@ -2627,7 +2627,7 @@
       "width": 80,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/Route130/border.bin",
       "blockdata_filepath": "data/layouts/Route130/map.bin"
     },
@@ -4634,7 +4634,7 @@
     {
       "id": "LAYOUT_BLEAKISLE_TOWN",
       "name": "BleakisleTown_Layout",
-      "width": 30,
+      "width": 40,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
