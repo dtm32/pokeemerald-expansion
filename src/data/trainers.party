@@ -557,8 +557,8 @@ EVs: 120 Atk / 120 SpA / 240 Spe
 
 === TRAINER_EMMETT ===
 Name: EMMETT
-Class: Hiker
-Pic: Hiker
+Class: Ruin Maniac
+Pic: Ruin Maniac
 Gender: Male
 Music: Hiker
 Double Battle: No
@@ -572,10 +572,14 @@ Marowak
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
+Shieldon
+Level: 29
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
 === TRAINER_OLIVER ===
 Name: OLIVER
-Class: Hiker
-Pic: Hiker
+Class: Ruin Maniac
+Pic: Ruin Maniac
 Gender: Male
 Music: Hiker
 Double Battle: No
