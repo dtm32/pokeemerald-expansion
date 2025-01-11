@@ -1422,13 +1422,27 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 23
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Pupitar
+Level: 46
+
+Flygon
+Level: 49
+Ability: Levitate
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+- U-turn
+- Earthquake
+- Outrage
+- Aerial Ace
+
+Aerodactyl @ Heavy Duty Boots
+Level: 46
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Stone Edge
+- Earthquake
+- Pursuit
+- Roost
 
 === TRAINER_CHIP ===
 Name: CHIP
@@ -4028,11 +4042,10 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Machop
-Level: 19
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Machamp
+Level: 38
 
 === TRAINER_ATSUSHI ===
 Name: ATSUSHI
@@ -4451,15 +4464,19 @@ Pic: Camper
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Sandshrew
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sandslash
+Level: 48
+EVs: 252 Spe
+- Earthquake
 - Dig
-- Sand Attack
-- Poison Sting
-- Slash
+- Thief
+- Metal Claw
+
+Sandslash-Alola
+Level: 48
+EVs: 252 Def
 
 === TRAINER_BEAU ===
 Name: BEAU
@@ -4468,31 +4485,26 @@ Pic: Camper
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Baltoy
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rapid Spin
-- Mud Slap
-- Psybeam
-- Rock Tomb
+Claydol @ Sitrus Berry
+Level: 47
 
-Sandshrew
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Poison Sting
-- Sand Attack
-- Scratch
-- Dig
+Magneton
+Level: 48
 
-Baltoy
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rapid Spin
-- Mud Slap
-- Psybeam
-- Rock Tomb
+Skarmory
+Level: 48
+
+Nidoqueen @ Life Orb
+Level: 49
+Ability: Sheer Force
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Stealth Rock
+- Earth Power
+- Sludge Wave
+- Toxic
 
 === TRAINER_LARRY ===
 Name: LARRY
@@ -9622,23 +9634,29 @@ Pic: Picnicker
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Sandshrew
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Dig
-- Sand Attack
-- Poison Sting
-- Slash
+Onix @ Quick Claw
+Level: 47
+Ability: Sturdy
+EVs: 200 Atk / 200 Spe
+- Stealth Rock
+- Jagged Blow
+- Earthquake
+- Endure
 
-Baltoy
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rapid Spin
-- Mud Slap
-- Psybeam
-- Rock Tomb
+Probopass
+Level: 48
+
+Nidoking
+Level: 48
+Ability: Sheer Force
+EVs: 4 Def / 252 SpA / 252 Spe
+Timid Nature
+- Sludge Wave
+- Earth Power
+- Ice Beam
+- Substitute
 
 === TRAINER_BECKY ===
 Name: BECKY
@@ -9647,23 +9665,14 @@ Pic: Picnicker
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Sandshrew
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Sand Attack
-- Poison Sting
-- Slash
-- Dig
+Rhydon
+Level: 47
 
-Marill
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rollout
-- Bubble Beam
-- Tail Whip
-- Defense Curl
+Azumarill
+Level: 47
+EVs: 200 HP
 
 === TRAINER_CAROL ===
 Name: CAROL
@@ -15057,15 +15066,21 @@ Pic: Picnicker
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+Items: Full Restore
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Marill
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ludicolo
+Level: 49
 
-Lombre
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Clefable @ Leftovers
+Level: 49
+Ability: Magic Guard
+EVs: 252 HP / 252 Def / 4 SpD
+Bold Nature
+- Thunder Wave
+- Moonblast
+- Soft-Boiled
+- Calm Mind
 
 === TRAINER_BRYAN ===
 Name: BRYAN
@@ -15074,15 +15089,21 @@ Pic: Ruin Maniac
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+Items: Full Restore
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Sandshrew
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rampardos
+Level: 49
 
-Sandslash
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Camerupt
+Level: 48
+
+Torterra
+Level: 50
+- Wood Hammer
+- Earthquake
+- Synthesis
+- Stone Edge
 
 === TRAINER_BRANDEN ===
 Name: BRANDEN
@@ -15091,15 +15112,13 @@ Pic: Camper
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Taillow
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pidgeot
+Level: 50
 
-Nuzleaf
-Level: 22
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Shiftry
+Level: 50
 
 === TRAINER_BRYANT ===
 Name: BRYANT
