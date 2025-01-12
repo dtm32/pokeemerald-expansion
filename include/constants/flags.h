@@ -78,7 +78,7 @@
 #define FLAG_RECEIVED_DELTA_DRIVE_ATK_DEF   0x3F
 #define FLAG_RECEIVED_DELTA_DRIVE_SPA_SPD   0x40
 #define FLAG_RECEIVED_DELTA_DRIVE_CRIT      0x41
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
+#define FLAG_HIDE_ROUTE_110E_COP_BLOCKADE   0x42
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag
 #define FLAG_UNUSED_0x044    0x44 // Unused Flag
 #define FLAG_UNUSED_0x045    0x45 // Unused Flag
@@ -673,8 +673,8 @@
 #define FLAG_HIDDEN_ITEM_DIG_SITE_2_STAR_PIECE              0x26E
 #define FLAG_HIDDEN_ITEM_MT_KIRI_1F_NUGGET                  0x26F
 #define FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_RARE_CANDY          0x270
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
+#define FLAG_HIDDEN_ITEM_BLEAKISLE_WOODS_REAPER_CLOTH       0x271
+#define FLAG_HIDDEN_ITEM_BLEAKISLE_WOODS_FULL_HEAL          0x272
 #define FLAG_UNUSED_0x273  0x273 // Unused Flag
 #define FLAG_UNUSED_0x274  0x274 // Unused Flag
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag

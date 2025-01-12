@@ -4760,6 +4760,36 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/MountKiri_B2F/border.bin",
       "blockdata_filepath": "data/layouts/MountKiri_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE110EAST",
+      "name": "Route110East_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Route110East/border.bin",
+      "blockdata_filepath": "data/layouts/Route110East/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLEAKISLE_TOWN_POKEMON_CENTER_1F",
+      "name": "BleakisleTown_PokemonCenter_1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/BleakisleTown_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/BleakisleTown_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLEAKISLE_TOWN_AROMATICS_SHOP",
+      "name": "BleakisleTown_AromaticsShop_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BleakisleTown_AromaticsShop/border.bin",
+      "blockdata_filepath": "data/layouts/BleakisleTown_AromaticsShop/map.bin"
     }
   ]
 }

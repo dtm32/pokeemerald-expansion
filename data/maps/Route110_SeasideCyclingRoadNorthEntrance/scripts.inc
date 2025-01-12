@@ -41,7 +41,7 @@ Route110_SeasideCyclingRoadNorthEntrance_EventScript_NoBike::
 	end
 
 Route110_SeasideCyclingRoadNorthEntrance_Movement_PushPlayerBackFromCounter:
-	walk_left
+	walk_right
 	step_end
 
 Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad::

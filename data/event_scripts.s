@@ -1144,3 +1144,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MountKiri_B1F/scripts.inc"
 
 	.include "data/maps/MountKiri_B2F/scripts.inc"
+
+	.include "data/maps/Route110East/scripts.inc"
+
+	.include "data/maps/BleakisleTown_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/BleakisleTown_AromaticsShop/scripts.inc"

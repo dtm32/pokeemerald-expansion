@@ -120,6 +120,9 @@ const u32 gMonFrontPic_Tomahtops[] = INCBIN_U32("graphics/pokemon/tricerachop/to
 const u32 gMonPalette_Tomahtops[] = INCBIN_U32("graphics/pokemon/tricerachop/tomahtops/normal.gbapal.lz");
 const u32 gMonBackPic_Tomahtops[] = INCBIN_U32("graphics/pokemon/tricerachop/tomahtops/back.4bpp.lz");
 const u8 gMonIcon_Tomahtops[] = INCBIN_U8("graphics/pokemon/tricerachop/tomahtops/icon.4bpp");
+// Use Terrakion footprint
+const u8 gMonFootprint_Terrakion[] = INCBIN_U8("graphics/pokemon/terrakion/footprint.1bpp");
+
 
 const u32 gMonFrontPic_Abyssilily[] = INCBIN_U32("graphics/pokemon/cradily/anim_front_mega.4bpp.lz");
 const u32 gMonPalette_Abyssilily[] = INCBIN_U32("graphics/pokemon/cradily/mega.gbapal.lz");

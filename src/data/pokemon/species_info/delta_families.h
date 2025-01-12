@@ -1032,7 +1032,7 @@
             gShinyOverworldPalette_Aurorus
         )
         .levelUpLearnset = sPolarisLevelUpLearnset,
-        .teachableLearnset = sDiancieTeachableLearnset,
+        // .teachableLearnset = sDiancieTeachableLearnset,
     },
 
     [SPECIES_VOLTREX] =

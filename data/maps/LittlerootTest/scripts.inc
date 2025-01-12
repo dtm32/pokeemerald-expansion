@@ -55,7 +55,7 @@ cLittlerootTown_EventScript_PickupGoodyBag::
 	msgbox cLittlerootTown_Text_FoundRustyOldBadges
 	giveitem ITEM_MASTER_BALL, 50
 	giveitem ITEM_MAX_REPEL, 50
-	giveitem ITEM_GO_GOGGLES
+	giveitem ITEM_ACRO_BIKE
 	giveitem ITEM_RARE_CANDY, 100
 	@ giveitem ITEM_PROTEIN, 10
 	@ giveitem ITEM_ADAMANT_MUSHROOM, 10

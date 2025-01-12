@@ -18,6 +18,7 @@
     "gMapGroup_IndoorMossdeep",
     "gMapGroup_IndoorSootopolis",
     "gMapGroup_IndoorEverGrande",
+    "gMapGroup_IndoorBleakisle",
     "gMapGroup_IndoorRoute104",
     "gMapGroup_IndoorRoute111",
     "gMapGroup_IndoorRoute112",
@@ -105,7 +106,8 @@
     "BleakisleTown",
     "CherryGarden",
     "LittlerootTest",
-    "LabB"
+    "LabB",
+    "Route110East"
   ],
   "gMapGroup_IndoorDeltaLabs": [
     "ZoneA_Warehouse_1F",
@@ -315,6 +317,10 @@
     "EverGrandeCity_PokemonCenter_1F",
     "EverGrandeCity_PokemonCenter_2F",
     "EverGrandeCity_PokemonLeague_2F"
+  ],
+  "gMapGroup_IndoorBleakisle": [
+    "BleakisleTown_PokemonCenter_1F",
+    "BleakisleTown_AromaticsShop"
   ],
   "gMapGroup_IndoorRoute104": [
     "Route104_MrBrineysHouse",

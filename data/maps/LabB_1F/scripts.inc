@@ -8,7 +8,7 @@ LabB_1F_MapScripts::
 	.byte 0
 
 LabB_1F_OnTransition:
-	call_if_eq VAR_ROUTE114_STATE, 0, LabB_1F_EventScript_LeadScientistFaceDown
+	call_if_eq VAR_LAB_B_STATE, 0, LabB_1F_EventScript_LeadScientistFaceDown
 	end
 
 LabB_1F_EventScript_LeadScientistFaceDown::
@@ -16,7 +16,7 @@ LabB_1F_EventScript_LeadScientistFaceDown::
 	end
 
 LabB_1F_OnFrame:
-	map_script_2 VAR_ROUTE114_STATE, 0, LabB_1F_EventScript_WalkToNorman
+	map_script_2 VAR_LAB_B_STATE, 0, LabB_1F_EventScript_WalkToNorman
 	.2byte 0
 
 LabB_1F_EventScript_WalkToNorman::
@@ -47,7 +47,8 @@ LabB_1F_EventScript_NormanExit::
 	applymovement LOCALID_NORMAN, LabB_1F_Movement_NormanExit
 	waitmovement 0
 	removeobject LOCALID_NORMAN
-	setvar VAR_ROUTE114_STATE, 1
+	setvar VAR_LAB_B_STATE, 1
+	setflag FLAG_HIDE_ROUTE_110E_COP_BLOCKADE
 	setflag FLAG_HIDE_NORMAN_LAB_B
 	end
 

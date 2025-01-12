@@ -3,7 +3,7 @@ LabB_MapScripts::
 
 LabB_EventScript_DebugPokeball::
 	@ Skip norman battle in lab
-	setvar VAR_ROUTE114_STATE, 1
+	setvar VAR_LAB_B_STATE, 1
 	end
 
 LabB_EventScript_LabSign::

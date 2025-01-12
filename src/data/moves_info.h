@@ -13998,6 +13998,32 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = Move_ICICLE_CRASH,
     },
 
+    [MOVE_STATIC_CRASH] =
+    {
+        .name = COMPOUND_STRING("Static Crash"),
+        .description = COMPOUND_STRING(
+            "Charges power and slams the\n"
+            "foe. May cause flinching."),
+        .effect = EFFECT_HIT,
+        .power = 85,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 15,
+        }),
+        .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MON,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = Move_VOLT_TACKLE,
+    },
+
     [MOVE_V_CREATE] =
     {
         .name = COMPOUND_STRING("V-create"),
