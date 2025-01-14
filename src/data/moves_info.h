@@ -6003,6 +6003,33 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = Move_METAL_CLAW,
     },
 
+    [MOVE_SCISSOR_CUT] =
+    {
+        .name = COMPOUND_STRING("Scissor Cut"),
+        .description = COMPOUND_STRING(
+            "Cuts with two sharp blades.\n"
+            "Raises Attack and Speed."),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_STEEL,
+        .accuracy = 95,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ATK_SPD_UP,
+            .self = TRUE,
+            .chance = 100,
+        }),
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_METAL_SOUND},
+        .battleAnimScript = Move_X_SCISSOR,
+    },
+
     [MOVE_VITAL_THROW] =
     {
         .name = COMPOUND_STRING("Vital Throw"),

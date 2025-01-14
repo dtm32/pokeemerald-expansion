@@ -751,7 +751,6 @@ MauvilleCity_Movement_WallyTrigger3:
 
 MauvilleCity_Movement_WallyTrigger4:
 	walk_fast_right
-	walk_fast_right
 	walk_fast_down
 	walk_fast_down
 	walk_fast_right
@@ -767,7 +766,6 @@ MauvilleCity_Movement_WallyTrigger5:
 	step_end
 
 MauvilleCity_Movement_WallyDigSiteExit:
-	walk_fast_left
 	walk_fast_left
 	walk_fast_left
 	walk_fast_left

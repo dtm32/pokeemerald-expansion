@@ -53,10 +53,10 @@ cLittlerootTown_EventScript_PickupGoodyBag::
 	setflag FLAG_HIDE_DIG_SITE_2_ARCO_MEMBERS
 	msgbox cLittlerootTown_Text_PickupGoodyBag
 	msgbox cLittlerootTown_Text_FoundRustyOldBadges
-	giveitem ITEM_MASTER_BALL, 50
-	giveitem ITEM_MAX_REPEL, 50
-	giveitem ITEM_ACRO_BIKE
-	giveitem ITEM_RARE_CANDY, 100
+	additem ITEM_MASTER_BALL, 50
+	additem ITEM_MAX_REPEL, 50
+	additem ITEM_ACRO_BIKE
+	additem ITEM_RARE_CANDY, 100
 	@ giveitem ITEM_PROTEIN, 10
 	@ giveitem ITEM_ADAMANT_MUSHROOM, 10
 	call LittlerootTown_Script_SkipBirchEncounter
@@ -90,12 +90,18 @@ LittlerootTown_Script_GiveStartingMons::
 	getpartysize
 	compare VAR_RESULT, 6
 	goto_if_eq Script_PlayerHasFullParty
-	givemon SPECIES_VAPOREON, 45, item=ITEM_LEFTOVERS, move1=MOVE_SCALD, move2=MOVE_SURF, move3=MOVE_BADDY_BAD, move4=MOVE_SPLASH, isShiny=TRUE;
-	givemon SPECIES_BEEDRILL_DELTA, 65, move1=MOVE_ROCK_CANNON, move2=MOVE_ICE_PUNCH, move3=MOVE_POISON_JAB, move4=MOVE_BRILLIANT_PUNCH, isShiny=TRUE;
-	givemon SPECIES_EMPOLEON, 44
-	givemon SPECIES_SUDOWOODO, 45, move1=MOVE_ROCK_CLIMB, move2=MOVE_JAGGED_BLOW, move3=MOVE_WATERFALL, move4=MOVE_BRILLIANT_PUNCH
+	@ givemon SPECIES_VAPOREON, 45, item=ITEM_LEFTOVERS, move1=MOVE_SCALD, move2=MOVE_SURF, move3=MOVE_BADDY_BAD, move4=MOVE_SPLASH, isShiny=TRUE;
+	@ givemon SPECIES_BEEDRILL_DELTA, 65, move1=MOVE_ROCK_CANNON, move2=MOVE_ICE_PUNCH, move3=MOVE_POISON_JAB, move4=MOVE_BRILLIANT_PUNCH, isShiny=TRUE;
+	@ givemon SPECIES_EMPOLEON, 44
+	@ givemon SPECIES_SUDOWOODO, 45, move1=MOVE_ROCK_CLIMB, move2=MOVE_JAGGED_BLOW, move3=MOVE_WATERFALL, move4=MOVE_BRILLIANT_PUNCH
 	@ givemon SPECIES_SHEDINJA_DELTA, 65, item=ITEM_LEFTOVERS, ball=ITEM_MASTER_BALL, nature=NATURE_MODEST, abilityNum=1, gender=MON_FEMALE, hpEv=252, atkEv=0, defEv=0, speedEv=4, spAtkEv=252, spDefEv=0, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31, move1=MOVE_POISON_STING, move2=MOVE_EARTHQUAKE, move3=MOVE_GIGA_DRAIN, move4=MOVE_SPLASH, isShiny=TRUE;
 	@ givemon SPECIES_DUSTOX_DELTA, 60
+	givemon SPECIES_THERAZOR, 46, move1=MOVE_SCISSOR_CUT, move2=MOVE_SWORDS_DANCE, move3=MOVE_AGILITY
+	givemon SPECIES_SWELLOW, 46
+	givemon SPECIES_MANECTRIC, 46
+	givemon SPECIES_SLOWBRO, 46, move1=MOVE_ZEN_HEADBUTT, move2=MOVE_SURF, move3=MOVE_PSYCHIC, move4=MOVE_RAIN_DANCE
+	givemon SPECIES_MEDICHAM, 46, move1=MOVE_ZEN_HEADBUTT, move2=MOVE_FORCE_PALM, move3=MOVE_HIGH_JUMP_KICK, move4=MOVE_THUNDER_PUNCH
+	givemon SPECIES_JOLTEON, 46
 	return
 
 

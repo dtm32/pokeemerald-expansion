@@ -4504,8 +4504,8 @@
     {
       "id": "LAYOUT_BLEAKISLE_CAVE",
       "name": "BleakisleCave_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 22,
+      "height": 22,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/BleakisleCave/border.bin",
@@ -4785,11 +4785,81 @@
       "id": "LAYOUT_BLEAKISLE_TOWN_AROMATICS_SHOP",
       "name": "BleakisleTown_AromaticsShop_Layout",
       "width": 10,
-      "height": 9,
+      "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
+      "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/BleakisleTown_AromaticsShop/border.bin",
       "blockdata_filepath": "data/layouts/BleakisleTown_AromaticsShop/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUNTED_PATH_NORTH",
+      "name": "HauntedPath_North_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/HauntedPath_North/border.bin",
+      "blockdata_filepath": "data/layouts/HauntedPath_North/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUNTED_PATH_SOUTH",
+      "name": "HauntedPath_South_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/HauntedPath_South/border.bin",
+      "blockdata_filepath": "data/layouts/HauntedPath_South/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAUNTED_PATH",
+      "name": "HauntedPath_Layout",
+      "width": 20,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/HauntedPath/border.bin",
+      "blockdata_filepath": "data/layouts/HauntedPath/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLEAKISLE_TOWN_HOUSE1",
+      "name": "BleakisleTown_House1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BleakisleTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/BleakisleTown_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLEAKISLE_TOWN_HOUSE2",
+      "name": "BleakisleTown_House2_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BleakisleTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/BleakisleTown_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLEAKISLE_CAVE_SPIRIT_ROOM",
+      "name": "BleakisleCave_SpiritRoom_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/BleakisleCave_SpiritRoom/border.bin",
+      "blockdata_filepath": "data/layouts/BleakisleCave_SpiritRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIG_SITE3",
+      "name": "DigSite3_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/DigSite3/border.bin",
+      "blockdata_filepath": "data/layouts/DigSite3/map.bin"
     }
   ]
 }

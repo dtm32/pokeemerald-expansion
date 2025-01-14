@@ -1150,3 +1150,17 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/BleakisleTown_PokemonCenter_1F/scripts.inc"
 
 	.include "data/maps/BleakisleTown_AromaticsShop/scripts.inc"
+
+	.include "data/maps/HauntedPath_North/scripts.inc"
+
+	.include "data/maps/HauntedPath_South/scripts.inc"
+
+	.include "data/maps/HauntedPath/scripts.inc"
+
+	.include "data/maps/BleakisleTown_House1/scripts.inc"
+
+	.include "data/maps/BleakisleTown_House2/scripts.inc"
+
+	.include "data/maps/BleakisleCave_SpiritRoom/scripts.inc"
+
+	.include "data/maps/DigSite3/scripts.inc"

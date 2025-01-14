@@ -202,7 +202,7 @@ Route120_EventScript_StevenBattleKecleon::
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route120_EventScript_RemoveBridgeKecleonPostBattle
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route120_EventScript_RemoveBridgeKecleonPostBattle
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route120_EventScript_RemoveBridgeKecleonPostBattle
-	goto Route120_EventScript_StevenGiveDeconScope
+	goto Route120_EventScript_StevenGiveDevonScope
 	end
 
 Route120_EventScript_RemoveBridgeKecleonPostBattle::
@@ -210,10 +210,10 @@ Route120_EventScript_RemoveBridgeKecleonPostBattle::
 	removeobject LOCALID_BRIDGE_KECLEON
 	removeobject LOCALID_BRIDGE_KECLEON_SHADOW
 	fadescreenswapbuffers FADE_FROM_BLACK
-	goto Route120_EventScript_StevenGiveDeconScope
+	goto Route120_EventScript_StevenGiveDevonScope
 	end
 
-Route120_EventScript_StevenGiveDeconScope::
+Route120_EventScript_StevenGiveDevonScope::
 	applymovement LOCALID_STEVEN, Common_Movement_WalkInPlaceFasterDown
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0

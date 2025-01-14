@@ -107,7 +107,8 @@
     "CherryGarden",
     "LittlerootTest",
     "LabB",
-    "Route110East"
+    "Route110East",
+    "DigSite3"
   ],
   "gMapGroup_IndoorDeltaLabs": [
     "ZoneA_Warehouse_1F",
@@ -320,7 +321,9 @@
   ],
   "gMapGroup_IndoorBleakisle": [
     "BleakisleTown_PokemonCenter_1F",
-    "BleakisleTown_AromaticsShop"
+    "BleakisleTown_AromaticsShop",
+    "BleakisleTown_House1",
+    "BleakisleTown_House2"
   ],
   "gMapGroup_IndoorRoute104": [
     "Route104_MrBrineysHouse",
@@ -468,7 +471,11 @@
     "BleakisleCave_B1F_1R",
     "BleakisleCave_B1F_2R",
     "MauvilleTunnel",
-    "AppleWoods"
+    "AppleWoods",
+    "HauntedPath_North",
+    "HauntedPath_South",
+    "HauntedPath",
+    "BleakisleCave_SpiritRoom"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

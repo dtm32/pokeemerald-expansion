@@ -319,7 +319,7 @@
 #define P_FAMILY_BLITZLE                 P_GEN_5_POKEMON
 #define P_FAMILY_ROGGENROLA              P_GEN_5_POKEMON
 #define P_FAMILY_WOOBAT                  P_GEN_5_POKEMON
-#define P_FAMILY_DRILBUR                 P_GEN_5_POKEMON
+#define P_FAMILY_DRILBUR                 TRUE
 #define P_FAMILY_AUDINO                  P_GEN_5_POKEMON
 #define P_FAMILY_TIMBURR                 P_GEN_5_POKEMON
 #define P_FAMILY_TYMPOLE                 P_GEN_5_POKEMON
@@ -417,7 +417,7 @@
 #define P_FAMILY_PHANTUMP                TRUE
 #define P_FAMILY_PUMPKABOO               P_GEN_6_POKEMON
 #define P_FAMILY_BERGMITE                P_GEN_6_POKEMON
-#define P_FAMILY_NOIBAT                  P_GEN_6_POKEMON
+#define P_FAMILY_NOIBAT                  TRUE
 #define P_FAMILY_XERNEAS                 P_GEN_6_POKEMON
 #define P_FAMILY_YVELTAL                 P_GEN_6_POKEMON
 #define P_FAMILY_ZYGARDE                 P_GEN_6_POKEMON
@@ -458,7 +458,7 @@
 #define P_FAMILY_MIMIKYU                 P_GEN_7_POKEMON
 #define P_FAMILY_BRUXISH                 P_GEN_7_POKEMON
 #define P_FAMILY_DRAMPA                  P_GEN_7_POKEMON
-#define P_FAMILY_DHELMISE                P_GEN_7_POKEMON
+#define P_FAMILY_DHELMISE                TRUE
 #define P_FAMILY_JANGMO_O                TRUE
 #define P_FAMILY_TAPU_KOKO               P_GEN_7_POKEMON
 #define P_FAMILY_TAPU_LELE               P_GEN_7_POKEMON
@@ -496,10 +496,10 @@
 #define P_FAMILY_APPLIN                  TRUE
 #define P_FAMILY_SILICOBRA               P_GEN_8_POKEMON
 #define P_FAMILY_CRAMORANT               P_GEN_8_POKEMON
-#define P_FAMILY_ARROKUDA                P_GEN_8_POKEMON
+#define P_FAMILY_ARROKUDA                TRUE
 #define P_FAMILY_TOXEL                   P_GEN_8_POKEMON
 #define P_FAMILY_SIZZLIPEDE              P_GEN_8_POKEMON
-#define P_FAMILY_CLOBBOPUS               P_GEN_8_POKEMON
+#define P_FAMILY_CLOBBOPUS               TRUE
 #define P_FAMILY_SINISTEA                P_GEN_8_POKEMON
 #define P_FAMILY_HATENNA                 P_GEN_8_POKEMON
 #define P_FAMILY_IMPIDIMP                P_GEN_8_POKEMON

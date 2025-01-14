@@ -1669,6 +1669,66 @@
         .teachableLearnset = sArmaldoTeachableLearnset,
     },
 
+    [SPECIES_THERAZOR] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 85,
+        .baseDefense   = 85,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_STEEL),
+        .catchRate = 45,
+        .expYield = 165,
+        .evYield_HP = 2,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_SHARPNESS, ABILITY_DEFIANT, ABILITY_SAND_RUSH },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Therazor"),
+        .cryId = CRY_ARMALDO,
+        .natDexNum = NATIONAL_DEX_ARMALDO,
+        .categoryName = _("Razor1"),
+        .height = 17,
+        .weight = 914,
+        .description = COMPOUND_STRING(
+            "Armaldo usually lives on land. However,\n"
+            "when it hunts for prey, it dives beneath\n"
+            "the ocean. It swims around using its two\n"
+            "large wings."),
+        .pokemonScale = 344,
+        .pokemonOffset = 3,
+        .trainerScale = 271,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Therazor,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = sAnims_Armaldo,
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_Therazor,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_Therazor,
+        .shinyPalette = gMonShinyPalette_Therazor,
+        .iconSprite = gMonIcon_Therazor,
+        .iconPalIndex = 1,
+        FOOTPRINT(Armaldo)
+        OVERWORLD(
+            sPicTable_Armaldo,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Armaldo,
+            gShinyOverworldPalette_Armaldo
+        )
+        .levelUpLearnset = sTherazorLevelUpLearnset,
+        .teachableLearnset = sAggronTeachableLearnset,
+    },
+
 // END FOSSIL FAMILIES
 
 /* ========================== */

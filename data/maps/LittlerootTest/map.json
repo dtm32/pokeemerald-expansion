@@ -124,8 +124,8 @@
       "x": 4,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_FIERY_PATH",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_LAVARIDGE_TOWN_GYM_1F",
+      "dest_warp_id": "25"
     },
     {
       "x": 5,

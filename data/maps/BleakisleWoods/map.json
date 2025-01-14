@@ -88,13 +88,6 @@
       "elevation": 0,
       "dest_map": "MAP_BLEAKISLE_CAVE",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 10,
-      "y": 15,
-      "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN",
-      "dest_warp_id": "3"
     }
   ],
   "coord_events": [
