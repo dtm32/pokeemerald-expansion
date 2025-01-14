@@ -6010,7 +6010,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Cuts with two sharp blades.\n"
             "Raises Attack and Speed."),
         .effect = EFFECT_HIT,
-        .power = 50,
+        .power = 25,
         .type = TYPE_STEEL,
         .accuracy = 95,
         .pp = 10,
@@ -6018,6 +6018,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
+        .slicingMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_ATK_SPD_UP,
             .self = TRUE,

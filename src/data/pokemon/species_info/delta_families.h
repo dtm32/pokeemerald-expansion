@@ -1671,10 +1671,10 @@
 
     [SPECIES_THERAZOR] =
     {
-        .baseHP        = 80,
+        .baseHP        = 85,
         .baseAttack    = 85,
         .baseDefense   = 85,
-        .baseSpeed     = 85,
+        .baseSpeed     = 75,
         .baseSpAttack  = 75,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_ROCK, TYPE_STEEL),
@@ -1685,13 +1685,13 @@
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_SHARPNESS, ABILITY_DEFIANT, ABILITY_SAND_RUSH },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Therazor"),
         .cryId = CRY_ARMALDO,
         .natDexNum = NATIONAL_DEX_ARMALDO,
-        .categoryName = _("Razor1"),
+        .categoryName = _("Razor"),
         .height = 17,
         .weight = 914,
         .description = COMPOUND_STRING(

@@ -4554,6 +4554,12 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
                     StageStatId = STAT_CHANGE_ATK_2 + gMovesInfo[move].additionalEffects[i].moveEffect - MOVE_EFFECT_ATK_PLUS_1;
                     ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, StageStatId));
                     break;
+                case MOVE_EFFECT_ATK_SPD_UP:
+                    if (BattlerStatCanRise(battlerAtk, aiData->abilities[battlerAtk], STAT_ATK))
+                        ADJUST_SCORE(GOOD_EFFECT);
+                    else
+                        ADJUST_SCORE(WEAK_EFFECT);
+                    break;
                 case MOVE_EFFECT_ACC_PLUS_1:
                 case MOVE_EFFECT_ACC_PLUS_2:
                     ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_ACC));
