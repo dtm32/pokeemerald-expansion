@@ -675,8 +675,8 @@
 #define FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_RARE_CANDY          0x270
 #define FLAG_HIDDEN_ITEM_BLEAKISLE_WOODS_REAPER_CLOTH       0x271
 #define FLAG_HIDDEN_ITEM_BLEAKISLE_WOODS_FULL_HEAL          0x272
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
+#define FLAG_HIDDEN_ITEM_DIG_SITE_3_HARD_STONE              0x273
+#define FLAG_ITEM_DIG_SITE_3_TM_BULLDOZE                    0x274
 #define FLAG_UNUSED_0x275  0x275 // Unused Flag
 #define FLAG_UNUSED_0x276  0x276 // Unused Flag
 #define FLAG_UNUSED_0x277  0x277 // Unused Flag

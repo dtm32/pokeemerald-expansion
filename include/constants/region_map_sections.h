@@ -229,7 +229,8 @@
 #define MAPSEC_MAUVILLE_TUNNEL              0xE0
 #define MAPSEC_MT_KIRI                      0xE1
 #define MAPSEC_APPLE_WOODS                  0xE2
-#define MAPSEC_NONE                         0xE3
+#define MAPSEC_DIG_SITE_3                   0xE3
+#define MAPSEC_NONE                         0xE4
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

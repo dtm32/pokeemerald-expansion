@@ -1815,6 +1815,14 @@
       "y": 9,
       "width": 2,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_DIG_SITE_3",
+      "name": "DIG SITE 3",
+      "x": 9,
+      "y": 3,
+      "width": 1,
+      "height": 1
     }
   ]
 }

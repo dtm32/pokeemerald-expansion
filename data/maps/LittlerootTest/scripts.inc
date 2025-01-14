@@ -138,6 +138,8 @@ LittlerootTown_Script_SetFlyFlags::
 	setflag FLAG_VISITED_SOOTOPOLIS_CITY
 	setflag FLAG_VISITED_EVER_GRANDE_CITY
 	setflag FLAG_VISITED_BLEAKISLE_TOWN
+	setflag FLAG_LANDMARK_BATTLE_FRONTIER
+	setflag FLAG_LANDMARK_SOUTHERN_ISLAND
 	return
 
 cLittlerootTown_Text_PickupGoodyBag:

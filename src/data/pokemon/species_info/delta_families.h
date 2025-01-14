@@ -1726,7 +1726,7 @@
             gShinyOverworldPalette_Armaldo
         )
         .levelUpLearnset = sTherazorLevelUpLearnset,
-        .teachableLearnset = sAggronTeachableLearnset,
+        .teachableLearnset = sTherazorTeachableLearnset,
     },
 
 // END FOSSIL FAMILIES

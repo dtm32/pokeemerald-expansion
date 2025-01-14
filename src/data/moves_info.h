@@ -6385,6 +6385,111 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = Move_ANCIENT_POWER,
     },
 
+    [MOVE_ANCIENT_EMBER] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("AncientEmber", "Ancient Ember"),
+        .description = COMPOUND_STRING(
+            "An attack that may raise\n"
+            "all stats."),
+        .effect = EFFECT_HIT,
+        .power = 60,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ALL_STATS_UP,
+            .self = TRUE,
+            .chance = 25,
+        }),
+        .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = Move_SACRED_FIRE,
+    },
+
+    [MOVE_ANCIENT_VINE] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("AncientVines", "Ancient Vines"),
+        .description = COMPOUND_STRING(
+            "An attack that may raise\n"
+            "all stats."),
+        .effect = EFFECT_HIT,
+        .power = 60,
+        .type = TYPE_GRASS,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ALL_STATS_UP,
+            .self = TRUE,
+            .chance = 25,
+        }),
+        .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = Move_VINE_WHIP,
+    },
+
+    [MOVE_ANCIENT_FLOOD] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("AncientFlood", "Ancient Flood"),
+        .description = COMPOUND_STRING(
+            "An attack that may raise\n"
+            "all stats."),
+        .effect = EFFECT_HIT,
+        .power = 60,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ALL_STATS_UP,
+            .self = TRUE,
+            .chance = 25,
+        }),
+        .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = Move_SURF,
+    },
+
+    [MOVE_ANCIENT_SPARK] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("AncientSpark", "Ancient Spark"),
+        .description = COMPOUND_STRING(
+            "An attack that may raise\n"
+            "all stats."),
+        .effect = EFFECT_HIT,
+        .power = 60,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ALL_STATS_UP,
+            .self = TRUE,
+            .chance = 25,
+        }),
+        .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = Move_SPARK,
+    },
+
     [MOVE_SHADOW_BALL] =
     {
         .name = COMPOUND_STRING("Shadow Ball"),

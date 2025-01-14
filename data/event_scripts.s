@@ -1164,3 +1164,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/BleakisleCave_SpiritRoom/scripts.inc"
 
 	.include "data/maps/DigSite3/scripts.inc"
+
+	.include "data/maps/DigSite3_/scripts.inc"
+
+	.include "data/maps/DigSite3_Lab/scripts.inc"

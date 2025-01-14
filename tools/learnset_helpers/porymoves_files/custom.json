@@ -1,0 +1,36 @@
+{
+    "BULBASAUR": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": []
+    },
+    "SWELLOW": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": []
+    },
+    "THERAZOR": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_BULLDOZE",
+            "MOVE_ANCIENT_VINE"
+        ]
+    },
+    "IGNEOUSAUR": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_BULLDOZE",
+            "MOVE_ANCIENT_EMBER"
+        ]
+    }
+}
