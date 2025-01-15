@@ -9,6 +9,17 @@ Common_EventScript_PkmnCenterNurse::
 	goto_if_eq VAR_RESULT, NO, EventScript_PkmnCenterNurse_Goodbye
 	end
 
+Common_EventScript_PkmnCenterNurseSafe::
+	lock
+	faceplayer
+	setvar VAR_0x8004, 0
+	specialvar VAR_RESULT, CountPlayerTrainerStars
+	goto_if_eq VAR_RESULT, 4, EventScript_PkmnCenterNurse_GoldCard
+	msgbox gText_WouldYouLikeToRestYourPkmn, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, EventScript_PkmnCenterNurse_HealPkmnSafe
+	goto_if_eq VAR_RESULT, NO, EventScript_PkmnCenterNurse_Goodbye
+	end
+
 EventScript_PkmnCenterNurse_Goodbye::
 	message gText_WeHopeToSeeYouAgain
 	return
@@ -22,6 +33,16 @@ EventScript_PkmnCenterNurse_HealPkmn::
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
 	goto_if_unset FLAG_POKERUS_EXPLAINED, EventScript_PkmnCenterNurse_CheckPokerus
 	goto EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom
+	end
+
+EventScript_PkmnCenterNurse_HealPkmnSafe::
+	incrementgamestat GAME_STAT_USED_POKECENTER
+	call_if_eq VAR_0x8004, 0, EventScript_PkmnCenterNurse_IllTakeYourPkmn
+	call_if_eq VAR_0x8004, 1, EventScript_PkmnCenterNurse_IllTakeYourPkmn2
+	waitmessage
+	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
+	goto_if_unset FLAG_POKERUS_EXPLAINED, EventScript_PkmnCenterNurse_CheckPokerusSafe
+	goto EventScript_PkmnCenterNurse_ReturnPkmn
 	end
 
 EventScript_PkmnCenterNurse_IllTakeYourPkmn::
@@ -85,6 +106,12 @@ EventScript_PkmnCenterNurse_CheckPokerus::
 	specialvar VAR_RESULT, IsPokerusInParty
 	goto_if_eq VAR_RESULT, TRUE, EventScript_PkmnCenterNurse_ExplainPokerus
 	goto_if_eq VAR_RESULT, FALSE, EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom
+	end
+
+EventScript_PkmnCenterNurse_CheckPokerusSafe::
+	specialvar VAR_RESULT, IsPokerusInParty
+	goto_if_eq VAR_RESULT, TRUE, EventScript_PkmnCenterNurse_ExplainPokerus
+	goto_if_eq VAR_RESULT, FALSE, EventScript_PkmnCenterNurse_ReturnPkmn
 	end
 
 EventScript_PkmnCenterNurse_ExplainPokerus::

@@ -3069,6 +3069,11 @@ extern const u8 gText_Cacturne[];
 extern const u8 gText_Clefable[];
 extern const u8 gText_Vibrava[];
 extern const u8 gText_Metang[];
+// Custom Move Tutors
+extern const u8 gText_AncientVine[];
+extern const u8 gText_AncientFlood[];
+extern const u8 gText_AncientEmber[];
+extern const u8 gText_AncientSpark[];
 
 // Map name pop-up
 extern const u8 gText_AM[];

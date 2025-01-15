@@ -124,8 +124,8 @@
       "x": 4,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_LAVARIDGE_TOWN_GYM_1F",
-      "dest_warp_id": "25"
+      "dest_map": "MAP_DIG_SITE3",
+      "dest_warp_id": "0"
     },
     {
       "x": 5,

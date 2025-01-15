@@ -52,8 +52,7 @@
     F(SKILL_SWAP) \
     F(SNATCH) \
     F(OVERHEAT) \
-    F(BULLDOZE) \
-    F(SPLASH)
+    F(BULLDOZE)
 
 #define FOREACH_HM(F) \
     F(CUT) \

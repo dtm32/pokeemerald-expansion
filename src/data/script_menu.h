@@ -829,6 +829,14 @@ static const struct MenuAction MultichoiceList_DojoTrainingTypes[] =
     {gText_Speed},
 };
 
+static const struct MenuAction MultichoiceList_AncientMoveTutor[] =
+{
+    {gText_AncientVine},
+    {gText_AncientEmber},
+    {gText_AncientFlood},
+    {gText_AncientSpark},
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -962,6 +970,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_LAB_A_DELTAS]               = MULTICHOICE(MultichoiceList_LabADeltas),
     [MULTI_LAB_B_DELTAS]               = MULTICHOICE(MultichoiceList_LabBDeltas),
     [MULTI_DOJO_TRAINING_TYPES]        = MULTICHOICE(MultichoiceList_DojoTrainingTypes),
+    [MULTI_ANCIENT_MOVE_TUTOR]         = MULTICHOICE(MultichoiceList_AncientMoveTutor),
 };
 
 const u8 *const gStdStrings[] =

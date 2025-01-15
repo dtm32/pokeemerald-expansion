@@ -1858,4 +1858,7 @@ const u8 gText_Cacturne[] = _("CACTURNE");
 const u8 gText_Clefable[] = _("CLEFABLE");
 const u8 gText_Vibrava[] = _("VIBRAVA");
 const u8 gText_Metang[] = _("METANG");
-
+const u8 gText_AncientVine[] = _("ANCIENT VINE");
+const u8 gText_AncientEmber[] = _("ANCIENT EMBER");
+const u8 gText_AncientFlood[] = _("ANCIENT FLOOD");
+const u8 gText_AncientSpark[] = _("ANCIENT SPARK");

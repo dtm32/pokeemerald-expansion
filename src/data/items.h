@@ -11286,8 +11286,8 @@ const struct Item gItemsInfo[] =
         .name = _("TM51"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Stomps down on the\n
-            ground. Lowers\n"
+            "Stomps down on the\n"
+            "ground. Lowers\n"
             "Speed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,

@@ -4437,7 +4437,7 @@
       "width": 24,
       "height": 20,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Facility",
+      "secondary_tileset": "gTileset_DeltaLab",
       "border_filepath": "data/layouts/ZoneA_Warehouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/ZoneA_Warehouse_1F/map.bin"
     },
@@ -4447,7 +4447,7 @@
       "width": 20,
       "height": 16,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
+      "secondary_tileset": "gTileset_DeltaLab",
       "border_filepath": "data/layouts/ZoneA_Warehouse_B1F/border.bin",
       "blockdata_filepath": "data/layouts/ZoneA_Warehouse_B1F/map.bin"
     },
@@ -4717,7 +4717,7 @@
       "width": 18,
       "height": 14,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
+      "secondary_tileset": "gTileset_DeltaLab",
       "border_filepath": "data/layouts/LabB_1F/border.bin",
       "blockdata_filepath": "data/layouts/LabB_1F/map.bin"
     },
@@ -4726,8 +4726,8 @@
       "name": "LabB_B1F_Layout",
       "width": 18,
       "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DeltaLab",
       "border_filepath": "data/layouts/LabB_B1F/border.bin",
       "blockdata_filepath": "data/layouts/LabB_B1F/map.bin"
     },

@@ -54,5 +54,7 @@ static const u16 sTherazorTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_THUNDER_PUNCH,
     MOVE_THUNDER_WAVE,
+    MOVE_ANCIENT_VINE,
+    MOVE_BULLDOZE,
     MOVE_UNAVAILABLE,
 };

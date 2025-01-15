@@ -13,16 +13,6 @@
         "EggMoves": [],
         "TutorMoves": []
     },
-    "THERAZOR": {
-        "LevelMoves": [],
-        "PreEvoMoves": [],
-        "TMMoves": [],
-        "EggMoves": [],
-        "TutorMoves": [
-            "MOVE_BULLDOZE",
-            "MOVE_ANCIENT_VINE"
-        ]
-    },
     "IGNEOUSAUR": {
         "LevelMoves": [],
         "PreEvoMoves": [],
@@ -30,7 +20,101 @@
         "EggMoves": [],
         "TutorMoves": [
             "MOVE_BULLDOZE",
+            "MOVE_ANCIENT_POWER",
             "MOVE_ANCIENT_EMBER"
+        ]
+    },
+    "POLARIS": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_BULLDOZE",
+            "MOVE_ANCIENT_POWER",
+            "MOVE_ANCIENT_FLOOD"
+        ]
+    },
+    "VOLTREX": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_BULLDOZE",
+            "MOVE_ANCIENT_POWER",
+            "MOVE_ANCIENT_SPARK"
+        ]
+    },
+    "ELECTROSAUR": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_BULLDOZE",
+            "MOVE_ANCIENT_POWER",
+            "MOVE_ANCIENT_SPARK",
+            "MOVE_ICE_FANG"
+        ]
+    },
+    "TRICERACHOP": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_BULLDOZE",
+            "MOVE_ANCIENT_POWER"
+        ]
+    },
+    "TOMAHTOPS": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_BULLDOZE",
+            "MOVE_ANCIENT_POWER"
+        ]
+    },
+    "ABYSSILILY": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_BULLDOZE",
+            "MOVE_ANCIENT_POWER",
+            "MOVE_ANCIENT_EMBER",
+            "MOVE_ANCIENT_VINE",
+            "MOVE_ANCIENT_FLOOD",
+            "MOVE_ANCIENT_SPARK"
+        ]
+    },
+    "ARMOUNTAN": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_BULLDOZE",
+            "MOVE_ANCIENT_POWER",
+            "MOVE_ANCIENT_EMBER",
+            "MOVE_ANCIENT_VINE",
+            "MOVE_ANCIENT_FLOOD",
+            "MOVE_ANCIENT_SPARK"
+        ]
+    },
+    "THERAZOR": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_BULLDOZE",
+            "MOVE_ANCIENT_POWER",
+            "MOVE_ANCIENT_VINE"
         ]
     }
 }

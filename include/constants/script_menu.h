@@ -130,6 +130,7 @@
 #define MULTI_LAB_C_DELTAS                 119
 #define MULTI_LAB_D_DELTAS                 120
 #define MULTI_DOJO_TRAINING_TYPES          121
+#define MULTI_ANCIENT_MOVE_TUTOR           122
 
 // Lilycove SS Tidal Multichoice Selections
 #define SSTIDAL_SELECTION_SLATEPORT        0

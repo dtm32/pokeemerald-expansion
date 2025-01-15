@@ -46594,3 +46594,88 @@ F_TRAINER_FEMALE |
             },
         },
     },
+#line 18540
+    [TRAINER_JOAQUIN] =
+    {
+#line 18541
+        .trainerName = _("JOAQUIN"),
+#line 18542
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+#line 18543
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .encounterMusic_gender = 
+#line 18545
+            TRAINER_ENCOUNTER_MUSIC_HIKER,
+#line 18546
+        .doubleBattle = FALSE,
+#line 18547
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .partySize = 4,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 18549
+            .species = SPECIES_KABUTOPS,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 18551
+            .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+#line 18550
+            .lvl = 48,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 18553
+            .species = SPECIES_TYRANTRUM,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 18555
+            .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+#line 18554
+            .lvl = 49,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 18557
+            .species = SPECIES_ONIX,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 18557
+            .heldItem = ITEM_EVIOLITE,
+#line 18560
+            .ev = TRAINER_PARTY_EVS(0, 0, 0, 200, 0, 0),
+#line 18559
+            .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+#line 18558
+            .lvl = 49,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 18561
+                MOVE_JAGGED_BLOW,
+                MOVE_SMACK_DOWN,
+                MOVE_DIG,
+                MOVE_ROCK_SMASH,
+            },
+            },
+            {
+#line 18566
+            .species = SPECIES_ELECTROSAUR,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 18569
+            .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
+#line 18568
+            .ability = ABILITY_STRONG_JAW,
+#line 18567
+            .lvl = 51,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 18570
+                MOVE_ANCIENT_SPARK,
+                MOVE_ICE_FANG,
+                MOVE_CRUNCH,
+                MOVE_ZEN_HEADBUTT,
+            },
+            },
+        },
+    },
