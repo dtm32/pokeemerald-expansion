@@ -893,12 +893,12 @@
               },
               {
                 "min_level": 27,
-                "max_level": 30,
+                "max_level": 33,
                 "species": "SPECIES_TRAPINCH"
               },
               {
                 "min_level": 30,
-                "max_level": 30,
+                "max_level": 34,
                 "species": "SPECIES_SANDSLASH"
               },
               {
@@ -908,7 +908,7 @@
               },
               {
                 "min_level": 28,
-                "max_level": 30,
+                "max_level": 31,
                 "species": "SPECIES_BALTOY"
               },
               {
@@ -14543,21 +14543,21 @@
             "mons": [
               {
                 "min_level": 29,
-                "max_level": 30,
+                "max_level": 31,
                 "species": "SPECIES_SANDSLASH"
               },
               {
                 "min_level": 28,
-                "max_level": 30,
+                "max_level": 31,
                 "species": "SPECIES_TYRUNT"
               },
               {
                 "min_level": 27,
-                "max_level": 27,
+                "max_level": 28,
                 "species": "SPECIES_CRANIDOS"
               },
               {
-                "min_level": 28,
+                "min_level": 29,
                 "max_level": 32,
                 "species": "SPECIES_CRANIDOS"
               },
@@ -14568,7 +14568,7 @@
               },
               {
                 "min_level": 30,
-                "max_level": 31,
+                "max_level": 33,
                 "species": "SPECIES_THERAZOR"
               },
               {

@@ -6434,7 +6434,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = Move_VINE_WHIP,
+        .battleAnimScript = Move_POWER_WHIP,
     },
 
     [MOVE_ANCIENT_FLOOD] =
