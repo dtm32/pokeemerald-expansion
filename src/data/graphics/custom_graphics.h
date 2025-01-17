@@ -186,11 +186,11 @@ const u32 gMonPalette_CacturneDelta[] = INCBIN_U32("graphics/pokemon/cacturne/de
 const u32 gMonBackPic_CacturneDelta[] = INCBIN_U32("graphics/pokemon/cacturne/delta/back.4bpp.lz");
 // const u8 gMonIcon_CacturneDelta[] = INCBIN_U8("graphics/pokemon/cacturne/delta/icon.4bpp");
 
-// const u32 gMonFrontPic_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/anim_front.4bpp.lz");
-// const u32 gMonPalette_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/normal.gbapal.lz");
-// const u32 gMonShinyPalette_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/shiny.gbapal.lz");
-// const u32 gMonBackPic_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/back.4bpp.lz");
-// const u8 gMonIcon_RhyhornDelta[] = INCBIN_U8("graphics/pokemon/rhyhorn/delta/icon.4bpp");
+const u32 gMonFrontPic_ClefableDelta[] = INCBIN_U32("graphics/pokemon/clefable/delta/anim_front.4bpp.lz");
+const u32 gMonPalette_ClefableDelta[] = INCBIN_U32("graphics/pokemon/clefable/delta/normal.gbapal.lz");
+const u32 gMonShinyPalette_ClefableDelta[] = INCBIN_U32("graphics/pokemon/clefable/delta/shiny.gbapal.lz");
+const u32 gMonBackPic_ClefableDelta[] = INCBIN_U32("graphics/pokemon/clefable/delta/back.4bpp.lz");
+const u8 gMonIcon_ClefableDelta[] = INCBIN_U8("graphics/pokemon/clefable/delta/icon.4bpp");
 
 // const u32 gMonFrontPic_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/anim_front.4bpp.lz");
 // const u32 gMonPalette_RhyhornDelta[] = INCBIN_U32("graphics/pokemon/rhyhorn/delta/normal.gbapal.lz");

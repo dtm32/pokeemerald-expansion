@@ -88,15 +88,14 @@ DigSite3_EventScript_ConfirmMoveSelection::
 	msgbox DigSite3_Text_AreYouSureMove, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, DigSite3_EventScript_PickMon
 	goto_if_eq VAR_RESULT, NO, DigSite3_EventScript_JoaquinTutorPickNewMove
-	@ specialvar VAR_TEMP_1, GetFrontierBattlePoints
-	@ goto_if_ge VAR_TEMP_1, VAR_0x8008, BattleFrontier_Lounge7_EventScript_TeachTutorMove
-	@ msgbox BattleFrontier_Lounge7_Text_HaventGotEnoughPoints, MSGBOX_DEFAULT
-	@ goto BattleFrontier_Lounge7_EventScript_ChooseNewMove
 	release
 	end
 
 DigSite3_EventScript_PickMon::
-	call MoveTutor_EventScript_OpenPartyMenu
+	special ChooseMonForMoveTutor
+	waitstate
+	lock
+	faceplayer
 	goto_if_eq VAR_RESULT, 0, DigSite3_EventScript_MaybeNextTime
 	msgbox DigSite3_Text_BringMeMoreFossils, MSGBOX_AUTOCLOSE
 	applymovement LOCALID_JOAQUIN, Common_Movement_FaceDown

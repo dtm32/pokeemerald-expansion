@@ -266,7 +266,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_STEVEN",
-      "x": 44,
+      "x": 50,
       "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -332,9 +332,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_RED",
       "x": 94,
-      "y": 6,
+      "y": 7,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -369,8 +369,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 43,
-      "y": 11,
+      "x": 48,
+      "y": 7,
       "elevation": 3,
       "var": "VAR_ROUTE118_STATE",
       "var_value": "0",
@@ -378,21 +378,30 @@
     },
     {
       "type": "trigger",
-      "x": 44,
-      "y": 11,
+      "x": 97,
+      "y": 4,
       "elevation": 3,
       "var": "VAR_ROUTE118_STATE",
       "var_value": "0",
-      "script": "Route118_EventScript_StevenTrigger1"
+      "script": "NULL"
     },
     {
       "type": "trigger",
-      "x": 45,
-      "y": 11,
+      "x": 98,
+      "y": 4,
       "elevation": 3,
       "var": "VAR_ROUTE118_STATE",
       "var_value": "0",
-      "script": "Route118_EventScript_StevenTrigger2"
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 99,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
     }
   ],
   "bg_events": [

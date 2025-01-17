@@ -66,6 +66,10 @@
 // - MOVE_DIVE                                         //
 // *************************************************** //
 // Tutor moves found in map scripts:                   //
+// - MOVE_ANCIENT_EMBER                                //
+// - MOVE_ANCIENT_FLOOD                                //
+// - MOVE_ANCIENT_SPARK                                //
+// - MOVE_ANCIENT_VINE                                 //
 // - MOVE_BODY_SLAM                                    //
 // - MOVE_COUNTER                                      //
 // - MOVE_DEFENSE_CURL                                 //
@@ -36069,5 +36073,6 @@ static const u16 sPecharuntTeachableLearnset[] = {
 
 static const u16 sIgneousaurTeachableLearnset[] = {
     MOVE_BULLDOZE,
+    MOVE_ANCIENT_EMBER,
     MOVE_UNAVAILABLE,
 };

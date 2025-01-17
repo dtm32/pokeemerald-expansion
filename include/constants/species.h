@@ -1682,8 +1682,9 @@
 #define SPECIES_TYROGUE_SPE                             1570
 #define SPECIES_TYROGUE_SPA                             1571
 #define SPECIES_TYROGUE_SPD                             1572
+#define SPECIES_SPIRITOMB_CURSED                        1573
 
-#define SPECIES_EGG (SPECIES_TYROGUE_SPD + 1)
+#define SPECIES_EGG (SPECIES_SPIRITOMB_CURSED + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

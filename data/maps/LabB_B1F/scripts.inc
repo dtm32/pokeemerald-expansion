@@ -181,3 +181,45 @@ LabB_B1F_Text_SelectMon:
 
 LabB_B1F_Text_PoweringOff:
 	.string "> POWERING OFF…$"
+
+LabB_B1F_EventScript_Man::
+	msgbox LabB_B1F_Text_Man, MSGBOX_NPC
+	end
+
+LabB_B1F_EventScript_Scientist1::
+	msgbox LabB_B1F_Text_Scientist1, MSGBOX_NPC
+	end
+
+LabB_B1F_EventScript_Scientist2::
+	msgbox LabB_B1F_Text_Scientist2, MSGBOX_NPC
+	end
+
+LabB_B1F_EventScript_Scientist3::
+	msgbox LabB_B1F_Text_Scientist3, MSGBOX_NPC
+	end
+
+LabB_B1F_EventScript_Pokeball::
+	msgbox LabB_B1F_Text_Pokeball, MSGBOX_AUTOCLOSE
+	end
+
+LabB_B1F_Text_Man:
+	.string "Hey, I'm the Project Manager here!\n"
+	.string "Everyone is doing their jobs so\l"
+	.string "well that I hardly have to work!$"
+
+LabB_B1F_Text_Scientist1:
+	.string "Did you know that DELTA SPECIES\n"
+	.string "technology was originally\l"
+	.string "discovered entirely by accident?$"
+
+LabB_B1F_Text_Scientist2:
+	.string "I'm kinda new here…\n"
+	.string "Electromagnetism is so complex…$"
+
+LabB_B1F_Text_Scientist3:
+	.string "CLEFABLE is my favorite!\n"
+	.string "I'm so happy the boss let me\l"
+	.string "pick it for our testing!$"
+
+LabB_B1F_Text_Pokeball:
+	.string "Probably shouldn't take this…$"

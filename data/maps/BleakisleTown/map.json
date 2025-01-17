@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_ZONE_B",
-      "offset": -50,
+      "offset": -28,
       "direction": "right"
     },
     {
@@ -66,16 +66,29 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
-      "x": 8,
+      "x": 20,
       "y": 10,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_BLEAKISLE_POLICEMEN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_AGATHA",
+      "x": 21,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -142,6 +155,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "BleakisleTown_EventScript_AromaticsShop"
+    },
+    {
+      "type": "hidden_item",
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "item": "ITEM_GENIUS_FEATHER",
+      "flag": "FLAG_HIDDEN_ITEM_BLEAKISLE_TOWN_GENIUS_FEATHER"
     }
   ]
 }

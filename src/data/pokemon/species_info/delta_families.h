@@ -2205,18 +2205,10 @@
         .baseDefense   = 60,
         .baseSpeed     = 95,
         .baseSpAttack  = 95,
-        .baseSpDefense = 95,
+        .baseSpDefense = 101,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_ELECTRIC),
         .catchRate = 25,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 242,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 217,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 213,
-    #else
-        .expYield = 129,
-    #endif
+        .expYield = 265,
         .evYield_HP = 3,
         .itemRare = ITEM_MOON_STONE,
         .genderRatio = PERCENT_FEMALE(75),
@@ -2224,12 +2216,8 @@
         .friendship = 140,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-    #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_MAGIC_GUARD, ABILITY_UNAWARE },
-    #else
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_UNAWARE },
-    #endif
-        .bodyColor = BODY_COLOR_PINK,
+        .abilities = { ABILITY_RECKLESS, ABILITY_VOLT_ABSORB, ABILITY_SURGE_SURFER },
+        .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
         .speciesName = _("Clefable δ"),
         .cryId = CRY_CLEFABLE,
@@ -2246,18 +2234,18 @@
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Clefable,
+        .frontPic = gMonFrontPic_ClefableDelta,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 6,
         .frontAnimFrames = sAnims_Clefable,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Clefable,
+        .backPic = gMonBackPic_ClefableDelta,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Clefable,
-        .shinyPalette = gMonShinyPalette_Clefable,
-        .iconSprite = gMonIcon_Clefable,
+        .palette = gMonPalette_ClefableDelta,
+        .shinyPalette = gMonShinyPalette_ClefableDelta,
+        .iconSprite = gMonIcon_ClefableDelta,
         .iconPalIndex = 0,
         FOOTPRINT(Clefable)
         OVERWORLD(
@@ -2268,7 +2256,7 @@
             gOverworldPalette_Clefable,
             gShinyOverworldPalette_Clefable
         )
-        .levelUpLearnset = sClefableLevelUpLearnset,
+        .levelUpLearnset = sClefableDeltaLevelUpLearnset,
         .teachableLearnset = sClefableTeachableLearnset,
     },
 
@@ -2397,3 +2385,64 @@
         .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_METAGROSS}),
     },
 
+    [SPECIES_SPIRITOMB_CURSED] =
+    {
+        .baseHP        = 150,
+        .baseAttack    = 92,
+        .baseDefense   = 133,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 92,
+        .baseSpDefense = 133,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_DARK),
+        .catchRate = 0,
+        .expYield = 280,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INFILTRATOR },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Spiritomb"),
+        .cryId = CRY_SPIRITOMB,
+        .natDexNum = NATIONAL_DEX_SPIRITOMB,
+        .categoryName = _("Forbidden"),
+        .height = 10,
+        .weight = 1080,
+        .description = COMPOUND_STRING(
+            "A Pokémon that was formed by 108 spirits.\n"
+            "Its constant mischief and misdeeds\n"
+            "resulted in it being bound to an\n"
+            "Odd Keystone by a mysterious spell."),
+        .pokemonScale = 305,
+        .pokemonOffset = 7,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Spiritomb,
+        .frontPicSize = MON_COORDS_SIZE(56, 56),
+        .frontPicYOffset = 6,
+        .frontAnimFrames = sAnims_Spiritomb,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
+        .backPic = gMonBackPic_Spiritomb,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 5,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        .palette = gMonPalette_Spiritomb,
+        .shinyPalette = gMonShinyPalette_Spiritomb,
+        .iconSprite = gMonIcon_Spiritomb,
+        .iconPalIndex = 5,
+        FOOTPRINT(Spiritomb)
+        OVERWORLD(
+            sPicTable_Spiritomb,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Spiritomb,
+            gShinyOverworldPalette_Spiritomb
+        )
+        .levelUpLearnset = sSpiritombLevelUpLearnset,
+        .teachableLearnset = sSpiritombTeachableLearnset,
+        .eggMoveLearnset = sSpiritombEggMoveLearnset,
+    },

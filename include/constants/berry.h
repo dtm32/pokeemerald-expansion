@@ -136,6 +136,9 @@
 #define BERRY_TREE_SLATEPORT_CITY_1   90
 #define BERRY_TREE_SLATEPORT_CITY_2   91
 #define BERRY_TREE_SLATEPORT_CITY_3   92
+#define BERRY_TREE_ROUTE_B_1          93
+#define BERRY_TREE_ROUTE_B_2          94
+#define BERRY_TREE_ROUTE_B_3          95
 
 // Remainder are unused
 

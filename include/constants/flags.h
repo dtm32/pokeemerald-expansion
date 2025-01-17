@@ -677,7 +677,7 @@
 #define FLAG_HIDDEN_ITEM_BLEAKISLE_WOODS_FULL_HEAL          0x272
 #define FLAG_HIDDEN_ITEM_DIG_SITE_3_HARD_STONE              0x273
 #define FLAG_ITEM_DIG_SITE_3_TM_BULLDOZE                    0x274
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
+#define FLAG_HIDDEN_ITEM_BLEAKISLE_TOWN_GENIUS_FEATHER      0x275
 #define FLAG_UNUSED_0x276  0x276 // Unused Flag
 #define FLAG_UNUSED_0x277  0x277 // Unused Flag
 #define FLAG_UNUSED_0x278  0x278 // Unused Flag
