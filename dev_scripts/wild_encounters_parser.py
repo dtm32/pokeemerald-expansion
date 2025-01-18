@@ -11,15 +11,48 @@ def camel_case_to_words(name):
     # Remove the word "SPECIES_" and convert the rest to camel case with spaces
     return ' '.join(word.capitalize() for word in name.replace('SPECIES_', '').lower().split('_'))
 
+def included_species(index, name):
+    indexes = [544, 545] # drillbur
+    indexes += [581, 582, 583, 584] # tirtouga archen
+    indexes += [602, 603, 604, 605, 1160, 1161, 1162, 1163, 1164, 1665] # deerling
+    indexes += [606] # emolga
+    indexes += [609, 610]
+    indexes += [614, 615] # joltik
+    indexes += [626, 627, 628] # litwick
+    indexes += [652, 653, 654, 655, 656] # deino, larvesta
+    indexes += [723, 724] # skrelp
+    indexes += [729, 730, 731, 732] # tyrunt, amaura
+    indexes += [737, 738, 739] # goomy
+    indexes += [741, 742] # phantump
+    indexes += [749, 750] # noibat
+    indexes += [809, 810] # wimpod
+    indexes += [828, 829, 830, 831] # dhelmise, jagmo-o
+    indexes += [887, 888, 889, 1509, 1531] # applin
+    indexes += [893, 894] # arrokuda
+    indexes += [900, 901] # clobbopus
+    indexes += [941, 942, 943] # dreepy
+    indexes += [1397, 1398, 1399] # pawmi
+    indexes += [1473, 1474, 1475, 1476, 1477, 1478, 1496, 1506, 1532, 1533] # paradoxes
+    indexes += [1485, 1486, 1487] # frigibax
+    return (index in indexes) or name.find('GALAR') or name.find('ALOLA') or name.find('WORMADAM')
+
 def parse_species_file(file_path):
     with open(file_path, 'r') as file:
         lines = file.readlines()
 
     species = OrderedDict()
-    for line in lines:
+    egg_index = 9999
+    for index, line in enumerate(lines):
         species_match = species_regex.search(line)
         if species_match:
             species_name = species_match.group().replace('#define ', '')
+            # if index > 508 and index < 1633 and not included_species(index, species_name):
+            #     continue
+            # if species_name == 'SPECIES_EGG':
+            #     egg_index = index
+            # if index > egg_index and not included_species(index, species_name):
+            #     continue
+            # if species_name.find('')
             species[species_name] = []
 
     return species
@@ -64,9 +97,10 @@ def write_to_csv(species_dict, output_file):
     with open(output_file, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
         for key, data in species_dict.items():
+            count = f"  {len(data)}" if len(data) > 0 else '__0'
             if key == 'SPECIES_NONE':
                 continue
-            row = [camel_case_to_words(key)] + data
+            row = [count, camel_case_to_words(key).ljust(15) + ' '] + data
             csvwriter.writerow(row)
 
 if __name__ == '__main__':
