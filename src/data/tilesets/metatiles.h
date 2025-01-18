@@ -213,3 +213,6 @@ const u16 gMetatileAttributes_MountainTop[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_DeltaLab[] = INCBIN_U16("data/tilesets/secondary/delta_lab/metatiles.bin");
 const u16 gMetatileAttributes_DeltaLab[] = INCBIN_U16("data/tilesets/secondary/delta_lab/metatile_attributes.bin");
+
+const u16 gMetatiles_SaffronGym[] = INCBIN_U16("data/tilesets/secondary/saffron_gym/metatiles.bin");
+const u16 gMetatileAttributes_SaffronGym[] = INCBIN_U16("data/tilesets/secondary/saffron_gym/metatile_attributes.bin");
