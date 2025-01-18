@@ -1325,13 +1325,23 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Roselia
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sunflora
+Level: 49
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+EVs: 200 SpA
 
-Gloom
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Roserade
+Level: 48
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+EVs: 200 SpA / 200 Spe
+
+Bellossom
+Level: 48
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Vileplume
+Level: 48
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_ROSE_2 ===
 Name: ROSE
@@ -5943,6 +5953,67 @@ Pikachu-Original-Cap @ Light Ball
 Level: 37
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
+=== TRAINER_RED_2 ===
+Name: RED
+Class: RIVAL
+Pic: Red
+Gender: Male
+Music: Male
+Double Battle: No
+Items: Hyper Potion / Hyper Potion
+AI: Check Bad Move / Try To Faint / Check Viability / Ace Pokemon
+
+Magmortar
+Level: 53
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Fire Blast
+- Thunderbolt
+- Focus Blast
+- Hyper Beam
+
+Claydol
+Level: 51
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+EVs: 80 HP / 80 Def / 80 SpD
+- Reflect
+- Light Screen
+- Power Split
+- Self Destruct
+
+Shuckle
+Level: 52
+EVs: 200 Def / 200 SpD
+- Toxic
+- Protect
+- Knock Off
+- Rest
+
+Gyarados
+Level: 54
+- Waterfall
+- Ice Fang
+- Bounce
+- Stone Edge
+
+Snorlax @ Leftovers
+Level: 54
+Happiness: 255
+EVs: 100 HP / 200 Atk
+- Return
+- Crunch
+- Earthquake
+- Curse
+
+Pikachu-Original-Cap @ Light Ball
+Level: 55
+EVs: 100 Atk / 100 SpA / 240 Spe
+- Volt Tackle
+- Play Rough
+- Surf
+- Knock Off
+
 === TRAINER_WINONA_1 ===
 Name: WINONA
 Class: Leader
@@ -7514,13 +7585,13 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Tentacruel
+Level: 45
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Carvanha
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sharpedo
+Level: 45
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_WADE ===
 Name: WADE
@@ -8432,8 +8503,8 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
-Level: 26
+Pelipper
+Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HUGH ===
@@ -8594,13 +8665,62 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Taillow
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Skarmory
+Level: 48
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Swellow
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Swellow @ Flame Orb
+Level: 51
+Ability: Guts
+EVs: 200 Spe
+- Facade
+- Quick Attack
+- Aerial Ace
+- Thief
+
+=== TRAINER_AXEL ===
+Name: AXEL
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient
+
+Lapras @ Sitrus Berry
+Level: 54
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Ice Beam
+- Hydro Pump
+- Bulldoze
+- Life Dew
+
+Hariyama
+Level: 53
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+Chansey @ Leftovers
+Level: 54
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+
+=== TRAINER_GABBEY ===
+Name: GABBEY
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Pidgeot
+Level: 47
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+EVs: 200 Spe
+
+Haunter
+Level: 47
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_ROBERT_2 ===
 Name: ROBERT
@@ -9967,11 +10087,19 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Beautifly
-Level: 26
+Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Dustox
-Level: 26
+Level: 50
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Butterfree
+Level: 52
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Beedrill
+Level: 52
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_AMY_AND_LIV_3 ===
@@ -10352,8 +10480,16 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Absol
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 49
+EVs: 252 Spe
+
+Noctowl
+Level: 49
+EVs: 200 Atk
+
+Whiscash
+Level: 49
+EVs: 200 Atk / 200 Spe
 
 === TRAINER_JONAS ===
 Name: JONAS
@@ -11060,12 +11196,91 @@ Double Battle: No
 AI: Check Bad Move
 
 Pinsir
-Level: 27
+Level: 47
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Heracross
-Level: 27
+Level: 47
+EVs: 200 Atk / 200 Spe
+
+=== TRAINER_JON ===
+Name: JON
+Class: Bird Keeper
+Pic: Bird Keeper
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move
+
+Yanmega
+Level: 47
+
+Dodrio
+Level: 49
+EVs: 200 Atk / 200 Spe
+- Drill Run
+- Drill Peck
+- Knock Off
+- Lunge
+
+Sirfetch-d
+Level: 46
+
+=== TRAINER_DEVIN ===
+Name: DEVIN
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Lotad
+Level: 47
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Linoone
+Level: 50
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_DAXTER ===
+Name: DAXTER
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Double Battle: No
+Items: Full Restore / Full Restore
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Metagross
+Level: 52
+EVs: 200 Atk / 200 Spe
+
+Tyranitar
+Level: 52
+EVs: 200 HP / 200 Atk
+
+Hydreigon
+Level: 52
+EVs: 200 SpA / 200 Spe
+
+=== TRAINER_POPPY ===
+Name: POPPY
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move
+
+Vespiquen @ Sitrus Berry
+Level: 58
+EVs: 252 HP / 252 Atk
+- Attack Order
+- Defend Order
+- Power Gem
+- Toxic
 
 === TRAINER_MITCHELL ===
 Name: MITCHELL

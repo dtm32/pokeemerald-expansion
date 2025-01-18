@@ -71,8 +71,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
-      "x": 104,
-      "y": 10,
+      "x": 103,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -306,14 +306,14 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 77,
-      "y": 9,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Route118_EventScript_Gabbey",
       "flag": "0"
     },
     {
@@ -324,14 +324,14 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Route118_EventScript_Axel",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RED",
-      "x": 94,
+      "x": 93,
       "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -339,8 +339,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "Route118_EventScript_Red",
+      "flag": "FLAG_HIDE_RED_ROUTE_118"
     }
   ],
   "warp_events": [
@@ -381,27 +381,27 @@
       "x": 97,
       "y": 4,
       "elevation": 3,
-      "var": "VAR_ROUTE118_STATE",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_RED_STATE",
+      "var_value": "1",
+      "script": "Route118_EventScript_RedTrigger1"
     },
     {
       "type": "trigger",
       "x": 98,
       "y": 4,
       "elevation": 3,
-      "var": "VAR_ROUTE118_STATE",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_RED_STATE",
+      "var_value": "1",
+      "script": "Route118_EventScript_RedTrigger2"
     },
     {
       "type": "trigger",
       "x": 99,
       "y": 4,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_RED_STATE",
+      "var_value": "1",
+      "script": "Route118_EventScript_RedTrigger3"
     }
   ],
   "bg_events": [

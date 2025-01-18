@@ -1,4 +1,5 @@
 .set LOCALID_STEVEN, 19
+.set LOCALID_RED, 24
 
 Route118_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route118_OnTransition
@@ -245,6 +246,144 @@ Route118_EventScript_Deandre::
 	msgbox Route118_Text_DeandrePostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route118_EventScript_Axel::
+	trainerbattle_single TRAINER_AXEL, Route118_Text_AxelIntro, Route118_Text_AxelDefeat
+	msgbox Route118_Text_AxelPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route118_EventScript_Gabbey::
+	trainerbattle_single TRAINER_GABBEY, Route118_Text_GabbeyIntro, Route118_Text_GabbeyDefeat
+	msgbox Route118_Text_GabbeyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route118_EventScript_Red::
+	lock
+	setvar VAR_0x8006, 0
+	goto Route118_EventScript_RedBattle
+	end
+
+Route118_EventScript_RedTrigger1::
+	lock
+	setvar VAR_0x8006, 1
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	applymovement LOCALID_RED, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	applymovement LOCALID_RED, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_RED, Route118_Movement_RedApproach1
+	waitmovement 0
+	goto Route118_EventScript_RedBattle
+	end
+
+Route118_EventScript_RedTrigger2::
+	lock
+	setvar VAR_0x8006, 1
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	applymovement LOCALID_RED, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	applymovement LOCALID_RED, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_RED, Route118_Movement_RedApproach2
+	waitmovement 0
+	goto Route118_EventScript_RedBattle
+	end
+
+Route118_EventScript_RedTrigger3::
+	lock
+	setvar VAR_0x8006, 1
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	applymovement LOCALID_RED, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	applymovement LOCALID_RED, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_RED, Route118_Movement_RedApproach3
+	waitmovement 0
+	goto Route118_EventScript_RedBattle
+	end
+
+Route118_EventScript_RedBattle::
+	lock
+	trainerbattle_single TRAINER_RED_2, Route118_Text_RedIntro, Route118_Text_RedDefeat, Route118_EventScript_RedPostBattle
+	msgbox Route118_Text_RedPostBattle, MSGBOX_AUTOCLOSE
+	call_if_eq VAR_0x8006, 0, Route118_EventScript_RedExitLedge
+	call_if_eq VAR_0x8006, 1, Route118_EventScript_RedExit
+	removeobject LOCALID_RED
+	setvar VAR_RED_STATE, 2
+	release
+	end
+
+Route118_EventScript_RedPostBattle::
+	msgbox Route118_Text_RedPostBattle, MSGBOX_AUTOCLOSE
+	call_if_eq VAR_0x8006, 0, Route118_EventScript_RedExitLedge
+	call_if_eq VAR_0x8006, 1, Route118_EventScript_RedExit
+	removeobject LOCALID_RED
+	setvar VAR_RED_STATE, 2
+	release
+	end
+
+Route118_EventScript_RedExitLedge::
+	applymovement LOCALID_RED, Route118_Movement_RedExitLedge
+	waitmovement 0
+	return
+
+Route118_EventScript_RedExit::
+	applymovement LOCALID_RED, Route118_Movement_RedExit
+	waitmovement 0
+	return
+
+Route118_Movement_RedApproach1:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	step_end
+
+Route118_Movement_RedApproach2:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	step_end
+
+Route118_Movement_RedApproach3:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	step_end
+
+Route118_Movement_RedExit:
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	step_end
+
+Route118_Movement_RedExitLedge:
+	jump_2_down
+	delay_16
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	step_end
+
 Route118_Text_StevenQuestions:
 	.string "STEVEN: Hi, {PLAYER}{KUN}!\p"
 	.string "It's me, STEVEN!\n"
@@ -300,3 +439,33 @@ Route118_Text_RouteSign119:
 	.string "ROUTE 118\n"
 	.string "{UP_ARROW} ROUTE 119$"
 
+Route118_Text_AxelIntro:
+	.string "You look tired.\n"
+	.string "This will be too easy.$"
+
+Route118_Text_AxelDefeat:
+	.string "Apparently you weren't!$"
+
+Route118_Text_AxelPostBattle:
+	.string "Wheh, now I'm exhausted.$"
+
+Route118_Text_GabbeyIntro:
+	.string "I've been training really hard!$"
+
+Route118_Text_GabbeyDefeat:
+	.string "I gotta keep trying!$"
+
+Route118_Text_GabbeyPostBattle:
+	.string "I wanna be a trainer like you\n"
+	.string "one day!$"
+
+Route118_Text_RedIntro:
+	.string "RED: Hey! Long time no see.\n"
+	.string "Let's battle!$"
+
+Route118_Text_RedDefeat:
+	.string "Wait I lost???$"
+
+Route118_Text_RedPostBattle:
+	.string "RED: Welp, I gotta go do more stuff.\n"
+	.string "Catch ya later {PLAYER}!$"

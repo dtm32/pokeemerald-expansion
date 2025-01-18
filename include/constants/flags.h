@@ -80,8 +80,8 @@
 #define FLAG_RECEIVED_DELTA_DRIVE_CRIT      0x41
 #define FLAG_HIDE_ROUTE_110E_COP_BLOCKADE   0x42
 #define FLAG_HIDE_BLEAKISLE_POLICEMEN       0x43
-#define FLAG_UNUSED_0x044    0x44 // Unused Flag
-#define FLAG_UNUSED_0x045    0x45 // Unused Flag
+#define FLAG_HIDE_RED_ROUTE_118             0x44
+#define FLAG_HIDE_BLEAKISLE_CURSED_GIRL     0x45
 #define FLAG_UNUSED_0x046    0x46 // Unused Flag
 #define FLAG_UNUSED_0x047    0x47 // Unused Flag
 #define FLAG_UNUSED_0x048    0x48 // Unused Flag
@@ -678,8 +678,8 @@
 #define FLAG_HIDDEN_ITEM_DIG_SITE_3_HARD_STONE              0x273
 #define FLAG_ITEM_DIG_SITE_3_TM_BULLDOZE                    0x274
 #define FLAG_HIDDEN_ITEM_BLEAKISLE_TOWN_GENIUS_FEATHER      0x275
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
+#define FLAG_HIDDEN_ITEM_ROUTE_B_BLACK_SLUDGE               0x276
+#define FLAG_ITEM_ROUTE_B_PP_UP                             0x277
 #define FLAG_UNUSED_0x278  0x278 // Unused Flag
 #define FLAG_UNUSED_0x279  0x279 // Unused Flag
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag

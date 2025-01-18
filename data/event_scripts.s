@@ -1168,3 +1168,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DigSite3_/scripts.inc"
 
 	.include "data/maps/DigSite3_Lab/scripts.inc"
+
+	.include "data/maps/RouteB_AgathasHouse/scripts.inc"

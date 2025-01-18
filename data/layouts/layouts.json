@@ -4880,6 +4880,16 @@
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/DigSite3_Lab/border.bin",
       "blockdata_filepath": "data/layouts/DigSite3_Lab/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE_B_AGATHAS_HOUSE",
+      "name": "RouteB_AgathasHouse_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/RouteB_AgathasHouse/border.bin",
+      "blockdata_filepath": "data/layouts/RouteB_AgathasHouse/map.bin"
     }
   ]
 }
