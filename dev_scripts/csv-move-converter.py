@@ -58,7 +58,7 @@ def write_to_csv(data, max_moves, output_file):
             csvwriter.writerow(row)
 
 if __name__ == '__main__':
-    input_file = '../../src/data/pokemon/level_up_learnsets/gen_9.h'  # Change this to your file path
+    input_file = '../src/data/pokemon/level_up_learnsets/gen_9.h'  # Change this to your file path
     output_file = 'pokemon_level_up_moves.csv'
     data, max_moves = parse_file(input_file)
     write_to_csv(data, max_moves, output_file)
