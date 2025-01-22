@@ -1,6 +1,6 @@
 .set LOCALID_WALLY, 2
 .set LOCALID_BOY, 3
-.set LOCALID_MAY, 9
+.set LOCALID_RIVAL, 9
 .set LOCALID_GYM_BOY, 7
 .set LOCALID_SCOTT, 8
 .set LOCALID_DAD, 10
@@ -19,6 +19,7 @@ PetalburgCity_MapScripts::
 
 PetalburgCity_OnTransition:
 	setflag FLAG_VISITED_PETALBURG_CITY
+	call Common_EventScript_SetupRivalGfxId
 	@ call_if_eq VAR_PETALBURG_CITY_STATE, 0, 
 	call_if_eq VAR_PETALBURG_CITY_STATE, 1, PetalburgCity_EventScript_MakeWallyFaceUp
 	call_if_eq VAR_PETALBURG_CITY_STATE, 3, PetalburgCity_EventScript_PutWallyNextToDad
@@ -378,42 +379,53 @@ PetalburgCity_EventScript_HelpWally3::
 	end
 
 PetalburgCity_EventScript_HiPlayer::
-	applymovement LOCALID_MAY, Common_Movement_WalkInPlaceFasterLeft
+	checkplayergender
+	call_if_eq VAR_RESULT, MALE, PetalburgCity_EventScript_BufferMay
+	call_if_eq VAR_RESULT, FEMALE, PetalburgCity_EventScript_BufferBrendan
+	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterLeft
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	applymovement LOCALID_MAY, Common_Movement_ExclamationMark
+	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
 	waitmovement 0
 	msgbox PetalburgCity_Text_MayHiPlayer, MSGBOX_DEFAULT
 	closemessage
 	return
 
+PetalburgCity_EventScript_BufferMay::
+	bufferstring STR_VAR_1, PetalburgCity_Text_May
+	return
+
+PetalburgCity_EventScript_BufferBrendan::
+	bufferstring STR_VAR_1, PetalburgCity_Text_Brendan
+	return
+
 PetalburgCity_EventScript_ExplainLab::
-	applymovement LOCALID_MAY, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
-	applymovement LOCALID_MAY, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox PetalburgCity_Text_IntroduceWally, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_MAY, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterDown
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox PetalburgCity_Text_WallyExplainsProblem, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_MAY, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterDown
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox PetalburgCity_Text_MayVolunteersPlayer, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_MAY, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	msgbox PetalburgCity_Text_MayLeaves, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_MAY, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterRight
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0 
-	applymovement LOCALID_MAY, PetalburgCity_Movement_MayLeaves
+	applymovement LOCALID_RIVAL, PetalburgCity_Movement_MayLeaves
 	waitmovement 0 
-	removeobject LOCALID_MAY
+	removeobject LOCALID_RIVAL
 	setflag FLAG_HIDE_PETALBURG_CITY_MAY
 	call PetalburgCity_EventScript_RegisterWallyPokenav
 	return
@@ -460,16 +472,22 @@ PetalburgCity_Movement_MayLeaves:
 	walk_fast_right
 	step_end
 
+PetalburgCity_Text_May:
+	.string "MAY$"
+
+PetalburgCity_Text_Brendan:
+	.string "BRENDAN$"
+
 PetalburgCity_Text_MayHiPlayer:
-	.string "MAY: Hey, {PLAYER}!$"
+	.string "{STR_VAR_1}: Hey, {PLAYER}!$"
 
 PetalburgCity_Text_IntroduceWally:
-	.string "MAY: This is my friend Wally!\n"
+	.string "{STR_VAR_1}: This is my friend Wally!\n"
 	.string "He lives here in Rustboro.$"
 
 PetalburgCity_Text_WallyExplainsProblem:
-	.string "WALLY: Hi {PLAYER}, thanks for coming\n"
-	.string "here so quickly.\p"
+	.string "WALLY: Hi {PLAYER}, thanks for\n"
+	.string "getting here so quickly.\p"
 	.string "I noticed some weird activity\n"
 	.string "NORTH of ROUTE 102.\p"
 	.string "Strange men have been coming and going\n"
@@ -479,13 +497,13 @@ PetalburgCity_Text_WallyExplainsProblem:
 	.string "do that {PLAYER}?$"
 
 PetalburgCity_Text_MayVolunteersPlayer:
-	.string "MAY: Of course, {PLAYER} is the\n"
-	.string "perfect person to help you!\p"
+	.string "{STR_VAR_1}: Of course, {PLAYER} is\n"
+	.string "the perfect person to help you!\p"
 	.string "They're an even stronger TRAINER\n"
 	.string "than me!$"
 
 PetalburgCity_Text_MayLeaves:
-	.string "MAY: I have to go run an errand\n"
+	.string "{STR_VAR_1}: I have to go run an errand\n"
 	.string "for my dad, I'm sure you can handle\l"
 	.string "this on your own {PLAYER}!$"
 

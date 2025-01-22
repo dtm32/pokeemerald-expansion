@@ -855,9 +855,7 @@ RustboroCity_EventScript_RivalEncounter::
 	end
 
 RustboroCity_EventScript_MayEncounter::
-	goto_if_set FLAG_DEFEATED_RIVAL_RUSTBORO, RustboroCity_EventScript_MayCallFromWally
-	goto_if_set FLAG_MET_RIVAL_RUSTBORO, RustboroCity_EventScript_MayAskToBattle
-	setflag FLAG_MET_RIVAL_RUSTBORO
+	goto_if_set FLAG_ENABLE_RIVAL_MATCH_CALL, RustboroCity_EventScript_MaySkipMatchCall
 	msgbox RustboroCity_Text_MayHiLetsRegister, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -867,33 +865,26 @@ RustboroCity_EventScript_MayEncounter::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
-	setvar VAR_RUSTBORO_CITY_STATE, 8
-	setvar VAR_ROUTE104_STATE, 2
+RustboroCity_EventScript_MaySkipMatchCall::
 	setvar VAR_0x8008, 0
-	msgbox RustboroCity_Text_MayPassedBrineyWantToBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleMay
-	msgbox RustboroCity_Text_MayOhHaventRaisedPokemonEnough, MSGBOX_DEFAULT
-	call RustboroCity_EventScript_RestoreBgm
-	releaseall
-	end
-
-RustboroCity_EventScript_MayAskToBattle::
-	setvar VAR_0x8008, 1
-	msgbox RustboroCity_Text_MayWantToBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleMay
-	msgbox RustboroCity_Text_MayOhHaventRaisedPokemonEnough, MSGBOX_DEFAULT
+	msgbox RustboroCity_Text_MayPassedBrineyWantToBattle, MSGBOX_AUTOCLOSE
+	goto RustboroCity_EventScript_BattleMay
 	releaseall
 	end
 
 RustboroCity_EventScript_BattleMay::
-	msgbox RustboroCity_Text_MayImNotGoingToLose, MSGBOX_DEFAULT
-	switch VAR_STARTER_MON
-	case 0, RustboroCity_EventScript_BattleMayTreecko
-	case 1, RustboroCity_EventScript_BattleMayTorchic
-	case 2, RustboroCity_EventScript_BattleMayMudkip
+	lockall
+	goto RustboroCity_EventScript_BattleMayTreecko
+	end
+
+RustboroCity_EventScript_BattleMayTreecko::
+	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TREECKO, RustboroCity_Text_MayDefeat
+	goto RustboroCity_EventScript_MayCallFromWally
 	end
 
 RustboroCity_EventScript_MayCallFromWally::
+	setvar VAR_RUSTBORO_CITY_STATE, 8
+	setvar VAR_ROUTE104_STATE, 2
 	msgbox RustboroCity_Text_MayPostBattle, MSGBOX_DEFAULT
 	applymovement LOCALID_RIVAL, Common_Movement_FaceAwayPlayer
 	waitmovement 0
@@ -902,9 +893,9 @@ RustboroCity_EventScript_MayCallFromWally::
 	waitmovement 0
 	msgbox RustboroCity_Text_MayGoHelpWally, MSGBOX_DEFAULT
 	closemessage
-	call_if_eq VAR_0x8004, 0, RustboroCity_EventScript_MayLeaveRight
-	call_if_eq VAR_0x8004, 1, RustboroCity_EventScript_MayLeaveLeft
-	call_if_eq VAR_0x8004, 2, RustboroCity_EventScript_MayLeaveDown
+	call_if_eq VAR_0x8004, 0, RustboroCity_EventScript_RivalLeaveRight
+	call_if_eq VAR_0x8004, 1, RustboroCity_EventScript_RivalLeaveLeft
+	call_if_eq VAR_0x8004, 2, RustboroCity_EventScript_RivalLeaveDown
 	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
 	removeobject LOCALID_RIVAL
 	setflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
@@ -914,22 +905,22 @@ RustboroCity_EventScript_MayCallFromWally::
 	releaseall
 	end
 
-RustboroCity_EventScript_MayLeaveRight::
-	applymovement LOCALID_RIVAL, RustboroCity_Movement_MayLeaveRight
+RustboroCity_EventScript_RivalLeaveRight::
+	applymovement LOCALID_RIVAL, RustboroCity_Movement_RivalLeaveRight
 	waitmovement 0
 	return
 
-RustboroCity_EventScript_MayLeaveLeft::
-	applymovement LOCALID_RIVAL, RustboroCity_Movement_MayLeaveLeft
+RustboroCity_EventScript_RivalLeaveLeft::
+	applymovement LOCALID_RIVAL, RustboroCity_Movement_RivalLeaveLeft
 	waitmovement 0
 	return
 
-RustboroCity_EventScript_MayLeaveDown::
-	applymovement LOCALID_RIVAL, RustboroCity_Movement_MayLeaveDown
+RustboroCity_EventScript_RivalLeaveDown::
+	applymovement LOCALID_RIVAL, RustboroCity_Movement_RivalLeaveDown
 	waitmovement 0
 	return
 
-RustboroCity_Movement_MayLeaveRight:
+RustboroCity_Movement_RivalLeaveRight:
 	walk_fast_right
 	walk_fast_down
 	walk_fast_down
@@ -940,7 +931,7 @@ RustboroCity_Movement_MayLeaveRight:
 	walk_fast_down
 	step_end
 
-RustboroCity_Movement_MayLeaveLeft:
+RustboroCity_Movement_RivalLeaveLeft:
 	walk_fast_left
 	walk_fast_down
 	walk_fast_down
@@ -951,7 +942,7 @@ RustboroCity_Movement_MayLeaveLeft:
 	walk_fast_down
 	step_end
 
-RustboroCity_Movement_MayLeaveDown:
+RustboroCity_Movement_RivalLeaveDown:
 	walk_fast_down
 	walk_fast_down
 	walk_fast_down
@@ -966,28 +957,8 @@ RustboroCity_EventScript_RestoreBgm::
 	fadedefaultbgm
 	return
 
-RustboroCity_EventScript_BattleMayTreecko::
-	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TREECKO, RustboroCity_Text_MayDefeat
-	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
-	goto RustboroCity_EventScript_MayCallFromWally
-	end
-
-RustboroCity_EventScript_BattleMayTorchic::
-	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TORCHIC, RustboroCity_Text_MayDefeat
-	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
-	goto RustboroCity_EventScript_MayCallFromWally
-	end
-
-RustboroCity_EventScript_BattleMayMudkip::
-	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_MUDKIP, RustboroCity_Text_MayDefeat
-	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
-	goto RustboroCity_EventScript_MayCallFromWally
-	end
-
 RustboroCity_EventScript_BrendanEncounter::
-	goto_if_set FLAG_DEFEATED_RIVAL_RUSTBORO, RustboroCity_EventScript_BrendanBrineyHint
-	goto_if_set FLAG_MET_RIVAL_RUSTBORO, RustboroCity_EventScript_BrendanAskToBattle
-	setflag FLAG_MET_RIVAL_RUSTBORO
+	goto_if_set FLAG_ENABLE_RIVAL_MATCH_CALL, RustboroCity_EventScript_BrendanSkipMatchCall
 	msgbox RustboroCity_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -997,52 +968,44 @@ RustboroCity_EventScript_BrendanEncounter::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
-	setvar VAR_RUSTBORO_CITY_STATE, 8
-	setvar VAR_ROUTE104_STATE, 2
-	msgbox RustboroCity_Text_BrendanPassedBrineyWantToBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleBrendan
-	msgbox RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT
-	call RustboroCity_EventScript_RestoreBgm
-	releaseall
-	end
-
-RustboroCity_EventScript_BrendanAskToBattle::
-	msgbox RustboroCity_Text_BrendanWantToBattle, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_BattleBrendan
-	msgbox RustboroCity_Text_BrendanNoConfidenceInPokemon, MSGBOX_DEFAULT
+RustboroCity_EventScript_BrendanSkipMatchCall::
+	setvar VAR_0x8008, 0
+	msgbox RustboroCity_Text_BrendanPassedBrineyWantToBattle, MSGBOX_AUTOCLOSE
+	goto RustboroCity_EventScript_BattleBrendan
 	releaseall
 	end
 
 RustboroCity_EventScript_BattleBrendan::
-	msgbox RustboroCity_Text_BrendanIWontGoEasy, MSGBOX_DEFAULT
-	switch VAR_STARTER_MON
-	case 0, RustboroCity_EventScript_BattleBrendanTreecko
-	case 1, RustboroCity_EventScript_BattleBrendanTorchic
-	case 2, RustboroCity_EventScript_BattleBrendanMudkip
-	end
-
-RustboroCity_EventScript_BrendanBrineyHint::
-	msgbox RustboroCity_Text_BrendanMrBrineyHint, MSGBOX_DEFAULT
-	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
-	releaseall
+	lockall
+	goto RustboroCity_EventScript_BattleBrendanTreecko
 	end
 
 RustboroCity_EventScript_BattleBrendanTreecko::
 	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TREECKO, RustboroCity_Text_BrendanDefeat
-	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
-	goto RustboroCity_EventScript_BrendanBrineyHint
+	goto RustboroCity_EventScript_BrendanCallFromWally
 	end
 
-RustboroCity_EventScript_BattleBrendanTorchic::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TORCHIC, RustboroCity_Text_BrendanDefeat
-	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
-	goto RustboroCity_EventScript_BrendanBrineyHint
-	end
-
-RustboroCity_EventScript_BattleBrendanMudkip::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_MUDKIP, RustboroCity_Text_BrendanDefeat
-	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
-	goto RustboroCity_EventScript_BrendanBrineyHint
+RustboroCity_EventScript_BrendanCallFromWally::
+	setvar VAR_RUSTBORO_CITY_STATE, 8
+	setvar VAR_ROUTE104_STATE, 2
+	msgbox RustboroCity_Text_BrendanPostBattle, MSGBOX_DEFAULT
+	applymovement LOCALID_RIVAL, Common_Movement_FaceAwayPlayer
+	waitmovement 0
+	msgbox RustboroCity_Text_BrendanOnPokenav, MSGBOX_DEFAULT
+	applymovement LOCALID_RIVAL, Common_Movement_FacePlayer
+	waitmovement 0
+	msgbox RustboroCity_Text_BrendanGoHelpWally, MSGBOX_DEFAULT
+	closemessage
+	call_if_eq VAR_0x8004, 0, RustboroCity_EventScript_RivalLeaveRight
+	call_if_eq VAR_0x8004, 1, RustboroCity_EventScript_RivalLeaveLeft
+	call_if_eq VAR_0x8004, 2, RustboroCity_EventScript_RivalLeaveDown
+	call_if_eq VAR_0x8008, 0, RustboroCity_EventScript_RestoreBgm
+	removeobject LOCALID_RIVAL
+	setflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
+	clearflag FLAG_HIDE_PETALBURG_CITY_MAY
+	clearflag FLAG_HIDE_PETALBURG_CITY_WALLY
+	setvar VAR_PETALBURG_CITY_STATE, 1
+	releaseall
 	end
 
 RustboroCity_Movement_RivalApproachPlayer0:
@@ -1238,21 +1201,13 @@ RustboroCity_Text_MayPassedBrineyWantToBattle:
 	.string "How's your POKéDEX coming along,\n"
 	.string "{PLAYER}{KUN}? Mine's looking pretty decent!\p"
 	.string "So…\n"
-	.string "How about a little battle?$"
+	.string "How about a little battle!$"
 
 RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
 	.string "MAY: Oh, what's the matter?\p"
 	.string "Haven't you caught or raised your\n"
 	.string "POKéMON very much?\p"
 	.string "That's not very good for a TRAINER!$"
-
-RustboroCity_Text_MayWantToBattle:
-	.string "MAY: So, what do you think?\n"
-	.string "How about a little battle here?$"
-
-RustboroCity_Text_MayImNotGoingToLose:
-	.string "MAY: You just became a TRAINER,\n"
-	.string "{PLAYER}{KUN}. I'm not going to lose!$"
 
 RustboroCity_Text_MayDefeat:
 	.string "Yikes!\n"
@@ -1299,20 +1254,8 @@ RustboroCity_Text_BrendanPassedBrineyWantToBattle:
 	.string "{PLAYER}, how's your POKéDEX?\n"
 	.string "Have you filled in any pages yet?\p"
 	.string "Mine rules.\p"
-	.string "Want to have a battle to test how\n"
-	.string "far you've progressed?$"
-
-RustboroCity_Text_BrendanNoConfidenceInPokemon:
-	.string "BRENDAN: What's the matter? Don't have\n"
-	.string "any confidence in your POKéMON?$"
-
-RustboroCity_Text_BrendanWantToBattle:
-	.string "BRENDAN: What's up?\n"
-	.string "Want to have a battle with me?$"
-
-RustboroCity_Text_BrendanIWontGoEasy:
-	.string "BRENDAN: I know you just became\n"
-	.string "a TRAINER, but I won't go easy!$"
+	.string "We should have a battle to test how\n"
+	.string "far you've progressed!$"
 
 RustboroCity_Text_BrendanDefeat:
 	.string "Hmm…\n"
@@ -1324,6 +1267,28 @@ RustboroCity_Text_BrendanMrBrineyHint:
 	.string "I bet you didn't know this, since you\n"
 	.string "just moved here, {PLAYER}, but\l"
 	.string "MR. BRINEY was once a great sailor.$"
+
+RustboroCity_Text_BrendanPostBattle:
+	.string "BRENDAN: Wow, that was fun!\p"
+	.string "You're really keeping up with your\n"
+	.string "training!\p"
+	.string "Oh, hang on, I'm getting a call\n"
+	.string "on my POKéNAV…$"
+
+RustboroCity_Text_BrendanOnPokenav:
+	.string "BRENDAN: Hello?\n"
+	.string "… … …\l"
+	.string "Okay…\l"
+	.string "… … …\l"
+	.string "Of course!\l"
+	.string "See ya soon!$"
+
+RustboroCity_Text_BrendanGoHelpWally:
+	.string "BRENDAN: Sorry about that!\n"
+	.string "That was my pal WALLY, he needs\l"
+	.string "some help in PETALBURG CITY.\p"
+	.string "We should hurry over to see\n"
+	.string "what's going on!$"
 
 RustboroCity_Text_TunnelNearingCompletion:
 	.string "“Timesaving tunnel nearing\n"
