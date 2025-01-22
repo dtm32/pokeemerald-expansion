@@ -35,7 +35,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BleakisleTown_EventScript_GenericPoliceman",
       "flag": "FLAG_HIDE_BLEAKISLE_POLICEMEN"
     },
     {
@@ -70,12 +70,12 @@
       "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_HIDE_BLEAKISLE_POLICEMEN"
+      "script": "BleakisleTown_EventScript_CenterPoliceman",
+      "flag": "FLAG_RECEIVED_AMULET_COIN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AGATHA",
@@ -87,8 +87,34 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
+      "script": "BleakisleTown_EventScript_Agatha",
+      "flag": "FLAG_HIDE_BLEAKISLE_POLICEMEN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 21,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_BLEAKISLE_TOWN_DAD"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "x": 24,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_BLEAKISLE_TOWN_DAD"
     }
   ],
   "warp_events": [
@@ -163,6 +189,14 @@
       "elevation": 0,
       "item": "ITEM_GENIUS_FEATHER",
       "flag": "FLAG_HIDDEN_ITEM_BLEAKISLE_TOWN_GENIUS_FEATHER"
+    },
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "BleakisleTown_EventScript_HauntedPathSign"
     }
   ]
 }

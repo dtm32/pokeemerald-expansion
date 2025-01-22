@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
-      "x": 16,
+      "x": 15,
       "y": 2,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -38,7 +38,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_BLEAKISLE_WOODS_TRAINERS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
@@ -84,8 +84,8 @@
       "y": 6,
       "elevation": 0,
       "var": "VAR_BLEAKISLE_TOWN_STATE",
-      "var_value": "0",
-      "script": "NULL"
+      "var_value": "2",
+      "script": "BleakisleCave_EventScript_HelpTrigger"
     },
     {
       "type": "trigger",
@@ -93,8 +93,8 @@
       "y": 6,
       "elevation": 0,
       "var": "VAR_BLEAKISLE_TOWN_STATE",
-      "var_value": "0",
-      "script": "NULL"
+      "var_value": "2",
+      "script": "BleakisleCave_EventScript_HelpTrigger"
     },
     {
       "type": "trigger",
@@ -102,8 +102,8 @@
       "y": 6,
       "elevation": 0,
       "var": "VAR_BLEAKISLE_TOWN_STATE",
-      "var_value": "0",
-      "script": "NULL"
+      "var_value": "2",
+      "script": "BleakisleCave_EventScript_HelpTrigger"
     }
   ],
   "bg_events": [

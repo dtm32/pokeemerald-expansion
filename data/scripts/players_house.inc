@@ -336,18 +336,18 @@ PlayersHouse_1F_EventScript_TryRegisterMom::
 	end
 
 PlayersHouse_1F_EventScript_CheckGiveAmuletCoin::
-	goto_if_set FLAG_BADGE05_GET, PlayersHouse_1F_EventScript_TryGiveAmuletCoin
+	@ goto_if_set FLAG_BADGE05_GET, PlayersHouse_1F_EventScript_TryGiveAmuletCoin
 	goto PlayersHouse_1F_EventScript_MomHealsParty
 
-PlayersHouse_1F_EventScript_TryGiveAmuletCoin::
-	goto_if_set FLAG_RECEIVED_AMULET_COIN, PlayersHouse_1F_EventScript_MomHealsParty
-	msgbox PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom, MSGBOX_DEFAULT
-	giveitem ITEM_AMULET_COIN
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	msgbox PlayersHouse_1F_Text_DontPushYourselfTooHard, MSGBOX_DEFAULT
-	setflag FLAG_RECEIVED_AMULET_COIN
-	release
-	end
+@ PlayersHouse_1F_EventScript_TryGiveAmuletCoin::
+@ 	goto_if_set FLAG_RECEIVED_AMULET_COIN, PlayersHouse_1F_EventScript_MomHealsParty
+@ 	msgbox PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom, MSGBOX_DEFAULT
+@ 	giveitem ITEM_AMULET_COIN
+@ 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+@ 	msgbox PlayersHouse_1F_Text_DontPushYourselfTooHard, MSGBOX_DEFAULT
+@ 	setflag FLAG_RECEIVED_AMULET_COIN
+@ 	release
+@ 	end
 
 PlayersHouse_1F_EventScript_MomHealsParty::
 	msgbox PlayersHouse_1F_Text_YouShouldRestABit, MSGBOX_DEFAULT

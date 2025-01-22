@@ -263,7 +263,7 @@ Route118_EventScript_Red::
 	end
 
 Route118_EventScript_RedTrigger1::
-	lock
+	lockall
 	setvar VAR_0x8006, 1
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	applymovement LOCALID_RED, Common_Movement_WalkInPlaceFasterRight
@@ -276,7 +276,7 @@ Route118_EventScript_RedTrigger1::
 	end
 
 Route118_EventScript_RedTrigger2::
-	lock
+	lockall
 	setvar VAR_0x8006, 1
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	applymovement LOCALID_RED, Common_Movement_WalkInPlaceFasterRight
@@ -289,7 +289,7 @@ Route118_EventScript_RedTrigger2::
 	end
 
 Route118_EventScript_RedTrigger3::
-	lock
+	lockall
 	setvar VAR_0x8006, 1
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	applymovement LOCALID_RED, Common_Movement_WalkInPlaceFasterRight
@@ -302,14 +302,14 @@ Route118_EventScript_RedTrigger3::
 	end
 
 Route118_EventScript_RedBattle::
-	lock
+	lockall
 	trainerbattle_single TRAINER_RED_2, Route118_Text_RedIntro, Route118_Text_RedDefeat, Route118_EventScript_RedPostBattle
 	msgbox Route118_Text_RedPostBattle, MSGBOX_AUTOCLOSE
 	call_if_eq VAR_0x8006, 0, Route118_EventScript_RedExitLedge
 	call_if_eq VAR_0x8006, 1, Route118_EventScript_RedExit
 	removeobject LOCALID_RED
 	setvar VAR_RED_STATE, 2
-	release
+	releaseall
 	end
 
 Route118_EventScript_RedPostBattle::

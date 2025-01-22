@@ -81,9 +81,9 @@
 #define FLAG_HIDE_ROUTE_110E_COP_BLOCKADE   0x42
 #define FLAG_HIDE_BLEAKISLE_POLICEMEN       0x43
 #define FLAG_HIDE_RED_ROUTE_118             0x44
-#define FLAG_HIDE_BLEAKISLE_CURSED_GIRL     0x45
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
-#define FLAG_UNUSED_0x047    0x47 // Unused Flag
+#define FLAG_HIDE_BLEAKISLE_CURSED_GIRL     0x45 // unused
+#define FLAG_HIDE_BLEAKISLE_WOODS_TRAINERS  0x46
+#define FLAG_HIDE_BLEAKISLE_TOWN_DAD        0x47
 #define FLAG_UNUSED_0x048    0x48 // Unused Flag
 // Custom fly flags
 // Must be consecutive to properly color on region map

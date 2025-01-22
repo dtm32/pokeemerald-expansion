@@ -50,6 +50,12 @@ Route110East_EventScript_BlockadeCop::
 	msgbox Route110East_Text_OnTheJob, MSGBOX_NPC
 	end
 
+Route110East_EventScript_Dad::
+	msgbox Route110East_Text_Dad, MSGBOX_NPC
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	end
+
 Route110East_EventScript_PoliceBlockRight:
 	walk_fast_down
 	walk_in_place_faster_left
@@ -89,3 +95,7 @@ Route110East_Text_CrimeSceneAhead:
 Route110East_Text_OnTheJob:
 	.string "… … …\n"
 	.string "Sorry can't talk right now.$"
+
+Route110East_Text_Dad:
+	.string "My little girl PINA has gone missing!\n"
+	.string "What am I to do?$"

@@ -174,7 +174,7 @@
 #define VAR_RUSTURF_TUNNEL_STATE                         0x409A
 #define VAR_RED_STATE                                    0x409B // 0: in Fiery Path // 1: Route 118
 #define VAR_ELITE_4_STATE                                0x409C
-#define VAR_BLEAKISLE_TOWN_STATE                         0x409D // Custom
+#define VAR_BLEAKISLE_TOWN_STATE                         0x409D // 0: Agatha in town 1: let into forest 2: yell in cave 3: spirit encounter 4: return to Agatha
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E
 #define VAR_MOSSDEEP_SPACE_CENTER_STATE                  0x409F
 #define VAR_SLATEPORT_HARBOR_STATE                       0x40A0

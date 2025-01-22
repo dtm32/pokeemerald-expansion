@@ -128,6 +128,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
+      "x": 14,
+      "y": 39,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZoneB_EventScript_Policeman",
+      "flag": "FLAG_HIDE_BLEAKISLE_POLICEMEN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
+      "x": 11,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BleakisleTown_EventScript_GenericPoliceman",
+      "flag": "FLAG_HIDE_BLEAKISLE_POLICEMEN"
     }
   ],
   "warp_events": [
@@ -147,7 +173,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_BLEAKISLE_TOWN_STATE",
+      "var_value": "0",
+      "script": "ZoneB_EventScript_PoliceTrigger0"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 39,
+      "elevation": 0,
+      "var": "VAR_BLEAKISLE_TOWN_STATE",
+      "var_value": "1",
+      "script": "ZoneB_EventScript_PoliceTrigger1"
+    }
   ],
   "bg_events": [
 
