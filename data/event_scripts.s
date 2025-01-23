@@ -1184,3 +1184,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/OldChateau_Connector2/scripts.inc"
 
 	.include "data/maps/OldChateau_Connector3/scripts.inc"
+
+	.include "data/maps/OldChateau_HiddenRoom/scripts.inc"

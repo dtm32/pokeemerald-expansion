@@ -1,2 +1,14 @@
 OldChateau_Connector2_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, OldChateau_Connector2_OnTransition
 	.byte 0
+
+OldChateau_Connector2_OnTransition:
+	goto_if_unset FLAG_DEFEATED_ROTOM_1, OldChateau_Connector2_EventScript_DynamicWarpToStart
+	goto_if_unset FLAG_DEFEATED_ROTOM_2, OldChateau_Connector2_EventScript_DynamicWarpToStart
+	goto_if_unset FLAG_DEFEATED_ROTOM_3, OldChateau_Connector2_EventScript_DynamicWarpToStart
+	setdynamicwarp MAP_OLD_CHATEAU_HIDDEN_ROOM, 9, 13
+	end
+
+OldChateau_Connector2_EventScript_DynamicWarpToStart::
+	setdynamicwarp MAP_PETALBURG_CLUB_1F, 17, 9
+	end

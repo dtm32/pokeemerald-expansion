@@ -4960,6 +4960,16 @@
       "secondary_tileset": "gTileset_OldChateau",
       "border_filepath": "data/layouts/OldChateau_Connector3/border.bin",
       "blockdata_filepath": "data/layouts/OldChateau_Connector3/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_CHATEAU_HIDDEN_ROOM",
+      "name": "OldChateau_HiddenRoom_Layout",
+      "width": 20,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
+      "border_filepath": "data/layouts/OldChateau_HiddenRoom/border.bin",
+      "blockdata_filepath": "data/layouts/OldChateau_HiddenRoom/map.bin"
     }
   ]
 }

@@ -680,7 +680,7 @@
 #define FLAG_HIDDEN_ITEM_BLEAKISLE_TOWN_GENIUS_FEATHER      0x275
 #define FLAG_HIDDEN_ITEM_ROUTE_B_BLACK_SLUDGE               0x276
 #define FLAG_ITEM_ROUTE_B_PP_UP                             0x277
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
+#define FLAG_ITEM_OLD_CHATEAU_ROTOM_CATALOG                 0x278
 #define FLAG_UNUSED_0x279  0x279 // Unused Flag
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag

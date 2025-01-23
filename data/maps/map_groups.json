@@ -644,7 +644,8 @@
     "OldChateau_Connector3",
     "OldChateau_BackRoom1",
     "OldChateau_BackRoom2",
-    "OldChateau_BackRoom3"
+    "OldChateau_BackRoom3",
+    "OldChateau_HiddenRoom"
   ],
   "gMapGroup_MountKiri": [
     "MountKiri_1F",

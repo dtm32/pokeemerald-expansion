@@ -11,7 +11,7 @@ OldChateau_EventScript_BrokenTV1::
 	closemessage
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_ROTOM, 50
+	setwildbattle SPECIES_ROTOM, 40
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -28,7 +28,7 @@ OldChateau_EventScript_BrokenTV2::
 	closemessage
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_ROTOM, 50
+	setwildbattle SPECIES_ROTOM, 40
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
@@ -45,7 +45,7 @@ OldChateau_EventScript_BrokenTV3::
 	closemessage
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_ROTOM, 50
+	setwildbattle SPECIES_ROTOM, 40
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE

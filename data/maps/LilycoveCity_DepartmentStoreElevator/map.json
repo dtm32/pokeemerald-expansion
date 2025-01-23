@@ -44,6 +44,10 @@
       "dest_warp_id": "WARP_ID_DYNAMIC"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
 }
