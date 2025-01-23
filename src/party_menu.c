@@ -7771,37 +7771,65 @@ u16 GetMonDeltaVersion(struct Pokemon *mon)
 {
     u16 deltaSpecies;
     u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0);
-    // u16 labStateA = VarGet(VAR_LAB_A_STATE);
-
-    switch (species) {
-        case SPECIES_WURMPLE: deltaSpecies = SPECIES_WURMPLE_DELTA;
-            break;
-        case SPECIES_SILCOON: deltaSpecies = SPECIES_SILCOON_DELTA;
-            break;
-        case SPECIES_DUSTOX: deltaSpecies = SPECIES_DUSTOX_DELTA;
-            break;
-        case SPECIES_FEAROW: deltaSpecies = SPECIES_FEAROW_DELTA;
-            break;
-        case SPECIES_WHISMUR: deltaSpecies = SPECIES_WHISMUR_DELTA;
-            break;
-        case SPECIES_SHEDINJA: deltaSpecies = SPECIES_SHEDINJA_DELTA;
-            break;
-        case SPECIES_LAIRON: deltaSpecies = SPECIES_LAIRON_DELTA;
-            break;
-        case SPECIES_SANDSLASH: deltaSpecies = SPECIES_SANDSLASH_DELTA;
-            break;
-        case SPECIES_VENONAT: deltaSpecies = SPECIES_VENONAT_DELTA;
-            break;
-        case SPECIES_VENOMOTH: deltaSpecies = SPECIES_VENOMOTH_DELTA;
-            break;
-        case SPECIES_GOLBAT: deltaSpecies = SPECIES_GOLBAT_DELTA;
-            break;
-        case SPECIES_BEEDRILL: deltaSpecies = SPECIES_BEEDRILL_DELTA;
-            break;
-        default: deltaSpecies = SPECIES_NONE;
-    }
 
     // TODO: Filter by lab states
+    // u16 labStateA = VarGet(VAR_LAB_A_STATE);
+
+    if (VarGet(VAR_TEMP_3) == 0) { // LAB A
+        switch (species) {
+            case SPECIES_WURMPLE: deltaSpecies = SPECIES_WURMPLE_DELTA;
+                break;
+            case SPECIES_SILCOON: deltaSpecies = SPECIES_SILCOON_DELTA;
+                break;
+            case SPECIES_VENONAT: deltaSpecies = SPECIES_VENONAT_DELTA;
+                break;
+            case SPECIES_WHISMUR: deltaSpecies = SPECIES_WHISMUR_DELTA;
+                break;
+            case SPECIES_SANDSLASH: deltaSpecies = SPECIES_SANDSLASH_DELTA;
+                break;
+            case SPECIES_LAIRON: deltaSpecies = SPECIES_LAIRON_DELTA;
+                break;
+            case SPECIES_DUSTOX: deltaSpecies = SPECIES_DUSTOX_DELTA;
+                break;
+            case SPECIES_BEEDRILL: deltaSpecies = SPECIES_BEEDRILL_DELTA;
+                break;
+            case SPECIES_FEAROW: deltaSpecies = SPECIES_FEAROW_DELTA;
+                break;
+            case SPECIES_SHEDINJA: deltaSpecies = SPECIES_SHEDINJA_DELTA;
+                break;
+            // case SPECIES_VENOMOTH: deltaSpecies = SPECIES_VENOMOTH_DELTA;
+            //     break;
+            // case SPECIES_GOLBAT: deltaSpecies = SPECIES_GOLBAT_DELTA;
+            //     break;
+            default: deltaSpecies = SPECIES_NONE;
+        }
+    } else if (VarGet(VAR_TEMP_3) == 1) { // LAB B
+        switch (species) {
+            case SPECIES_RHYHORN: deltaSpecies = SPECIES_RHYHORN_DELTA;
+                break;
+            case SPECIES_SLOWPOKE: deltaSpecies = SPECIES_SLOWPOKE_DELTA;
+                break;
+            case SPECIES_LUNATONE: deltaSpecies = SPECIES_LUNATONE_DELTA;
+                break;
+            case SPECIES_SOLROCK: deltaSpecies = SPECIES_SOLROCK_DELTA;
+                break;
+            case SPECIES_SKARMORY: deltaSpecies = SPECIES_SKARMORY_DELTA;
+                break;
+            case SPECIES_CAMERUPT: deltaSpecies = SPECIES_CAMERUPT_DELTA;
+                break;
+            case SPECIES_CACTURNE: deltaSpecies = SPECIES_CACTURNE_DELTA;
+                break;
+            case SPECIES_CLEFABLE: deltaSpecies = SPECIES_CLEFABLE_DELTA;
+                break;
+            case SPECIES_VIBRAVA: deltaSpecies = SPECIES_VIBRAVA_DELTA;
+                break;
+            case SPECIES_METANG: deltaSpecies = SPECIES_METANG_DELTA;
+                break;
+            default: deltaSpecies = SPECIES_NONE;
+        }
+    } else {
+        deltaSpecies = SPECIES_NONE;
+    }
 
     return deltaSpecies;
 }

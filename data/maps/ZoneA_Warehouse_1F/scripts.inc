@@ -225,6 +225,7 @@ ZoneA_Warehouse_1F_EventScript_ConfirmDeltaConversion::
 
 ZoneA_Warehouse_1F_EventScript_ChooseMonToConvert::
 	msgbox ZoneA_Warehouse_1F_Text_SelectMon, MSGBOX_DEFAULT
+	setvar VAR_TEMP_3, 0
 	special ChoosePartyMonForDeltaMachine
 	waitstate
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, ZoneA_Warehouse_1F_EventScript_ExitMachine

@@ -152,6 +152,7 @@ LabB_B1F_EventScript_ConfirmDeltaConversion::
 
 LabB_B1F_EventScript_ChooseMonToConvert::
 	msgbox LabB_B1F_Text_SelectMon, MSGBOX_DEFAULT
+	setvar VAR_TEMP_3, 1
 	special ChoosePartyMonForDeltaMachine
 	waitstate
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, LabB_B1F_EventScript_ExitMachine
