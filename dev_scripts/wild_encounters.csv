@@ -38,12 +38,12 @@ __0,Clefable
 __0,Ninetales       
   4,Jigglypuff      ,Route101,Route112,Route116,Route115
   1,Wigglytuff      ,Route112
-  27,Zubat           ,Granite Cave B1f,Victory Road 1f,Granite Cave B2f,Granite Cave Stevens Room,Seafloor Cavern Room1,Seafloor Cavern Room2,Seafloor Cavern Room3,Seafloor Cavern Room4,Seafloor Cavern Room5,Seafloor Cavern Room6,Seafloor Cavern Room7,Seafloor Cavern Room8,Seafloor Cavern Entrance,Cave Of Origin Entrance,Cave Of Origin 1f,Cave Of Origin Unused Ruby Sapphire Map1,Cave Of Origin Unused Ruby Sapphire Map2,Cave Of Origin Unused Ruby Sapphire Map3,Meteor Falls 1f 1r,Shoal Cave Low Tide Stairs Room,Shoal Cave Low Tide Lower Room,Shoal Cave Low Tide Inner Room,Shoal Cave Low Tide Entrance Room,Shoal Cave Low Tide Ice Room,Altering Cave,Bleakisle Cave 2r,Granite Cave Beldum Room
+  30,Zubat           ,Granite Cave B1f,Victory Road 1f,Granite Cave B2f,Granite Cave Stevens Room,Seafloor Cavern Room1,Seafloor Cavern Room2,Seafloor Cavern Room3,Seafloor Cavern Room4,Seafloor Cavern Room5,Seafloor Cavern Room6,Seafloor Cavern Room7,Seafloor Cavern Room8,Seafloor Cavern Entrance,Cave Of Origin Entrance,Cave Of Origin 1f,Cave Of Origin Unused Ruby Sapphire Map1,Cave Of Origin Unused Ruby Sapphire Map2,Cave Of Origin Unused Ruby Sapphire Map3,Meteor Falls 1f 1r,Shoal Cave Low Tide Stairs Room,Shoal Cave Low Tide Lower Room,Shoal Cave Low Tide Inner Room,Shoal Cave Low Tide Entrance Room,Shoal Cave Low Tide Ice Room,Altering Cave,Bleakisle Cave 2r,Granite Cave Beldum Room,Petalburg Club 2f,Old Chateau Hallway,Petalburg Club 1f
   32,Golbat          ,Victory Road 1f,Meteor Falls B1f 2r,Seafloor Cavern Room1,Seafloor Cavern Room2,Seafloor Cavern Room3,Seafloor Cavern Room4,Seafloor Cavern Room5,Seafloor Cavern Room6,Seafloor Cavern Room7,Seafloor Cavern Room8,Seafloor Cavern Entrance,Cave Of Origin Entrance,Cave Of Origin 1f,Cave Of Origin Unused Ruby Sapphire Map1,Cave Of Origin Unused Ruby Sapphire Map2,Cave Of Origin Unused Ruby Sapphire Map3,Victory Road B1f,Victory Road B2f,Meteor Falls 1f 1r,Meteor Falls 1f 2r,Meteor Falls B1f 1r,Shoal Cave Low Tide Stairs Room,Shoal Cave Low Tide Lower Room,Shoal Cave Low Tide Inner Room,Shoal Cave Low Tide Entrance Room,Shoal Cave Low Tide Ice Room,Sky Pillar 1f,Sky Pillar 3f,Sky Pillar 5f,Meteor Falls Stevens Cave,Bleakisle Cave 2r,Mount Kiri B2f
   9,Oddish          ,Route102,Route110,Route117,Safari Zone South,Route121,Route123,Safari Zone Southwest,Safari Zone North,Safari Zone Northwest
   8,Gloom           ,Safari Zone South,Route120,Route121,Route123,Safari Zone Southwest,Safari Zone North,Safari Zone Northwest,Route110east
 __0,Vileplume       
-  1,Paras           ,Mount Kiri B1f
+  2,Paras           ,Bleakisle Woods,Mount Kiri B1f
   3,Parasect        ,Bleakisle Woods,Mount Kiri B1f,Mount Kiri B2f
   1,Venonat         ,Petalburg City
 __0,Venomoth        
@@ -89,8 +89,8 @@ __0,Dewgong
   1,Muk             ,Route B
   1,Shellder        ,Route107
 __0,Cloyster        
-  2,Gastly          ,Bleakisle Cave,Bleakisle Cave B1f 1r
-  3,Haunter         ,Bleakisle Cave,Bleakisle Cave 2r,Bleakisle Cave B1f 1r
+  9,Gastly          ,Petalburg Club 2f,Old Chateau Hallway,Old Chateau Back Room1,Old Chateau Connector1,Old Chateau Connector2,Old Chateau Connector3,Old Chateau Back Room2,Old Chateau Back Room3,Petalburg Club 1f
+  1,Haunter         ,Old Chateau Back Room1
 __0,Gengar          
   2,Onix            ,Route111,Dig Site3
   1,Drowzee         ,Route114
@@ -353,7 +353,7 @@ __0,Castform Normal
   4,Kecleon         ,Route118,Route120,Route121,Route123
   10,Shuppet         ,Mt Pyre 1f,Route121,Route123,Mt Pyre 2f,Mt Pyre 3f,Mt Pyre 4f,Mt Pyre 5f,Mt Pyre 6f,Mt Pyre Exterior,Mt Pyre Summit
   6,Banette         ,Sky Pillar 1f,Sky Pillar 3f,Sky Pillar 5f,Bleakisle Cave,Bleakisle Cave 2r,Bleakisle Cave B1f 1r
-  5,Duskull         ,Route121,Mt Pyre 4f,Mt Pyre 5f,Mt Pyre 6f,Mt Pyre Summit
+  7,Duskull         ,Route121,Mt Pyre 4f,Mt Pyre 5f,Mt Pyre 6f,Mt Pyre Summit,Bleakisle Cave,Bleakisle Cave 2r
 __0,Dusclops        
   1,Tropius         ,Route119
   2,Chimecho        ,Mt Pyre Summit,Meteor Falls 1f 1r
@@ -619,8 +619,8 @@ __0,Eelektrik
 __0,Eelektross      
 __0,Elgyem          
 __0,Beheeyem        
-  1,Litwick         ,Bleakisle Woods
-  1,Lampent         ,Bleakisle Woods
+  2,Litwick         ,Old Chateau Back Room2,Old Chateau Back Room3
+__0,Lampent         
 __0,Chandelure      
 __0,Axew            
 __0,Fraxure         

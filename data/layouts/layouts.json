@@ -4577,27 +4577,27 @@
       "width": 30,
       "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_PetalburgWoods",
       "border_filepath": "data/layouts/PetalburgWoods2/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgWoods2/map.bin"
     },
     {
       "id": "LAYOUT_PETALBURG_CLUB_1F",
       "name": "PetalburgClub_1F_Layout",
-      "width": 12,
+      "width": 36,
       "height": 10,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
+      "secondary_tileset": "gTileset_OldChateau",
       "border_filepath": "data/layouts/PetalburgClub_1F/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgClub_1F/map.bin"
     },
     {
       "id": "LAYOUT_PETALBURG_CLUB_2F",
       "name": "PetalburgClub_2F_Layout",
-      "width": 11,
+      "width": 23,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
+      "secondary_tileset": "gTileset_OldChateau",
       "border_filepath": "data/layouts/PetalburgClub_2F/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgClub_2F/map.bin"
     },
@@ -4890,6 +4890,76 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/RouteB_AgathasHouse/border.bin",
       "blockdata_filepath": "data/layouts/RouteB_AgathasHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_CHATEAU_HALLWAY",
+      "name": "OldChateau_Hallway_Layout",
+      "width": 35,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
+      "border_filepath": "data/layouts/OldChateau_Hallway/border.bin",
+      "blockdata_filepath": "data/layouts/OldChateau_Hallway/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_CHATEAU_BACK_ROOM1",
+      "name": "OldChateau_BackRoom1_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
+      "border_filepath": "data/layouts/OldChateau_BackRoom1/border.bin",
+      "blockdata_filepath": "data/layouts/OldChateau_BackRoom1/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_CHATEAU_BACK_ROOM2",
+      "name": "OldChateau_BackRoom2_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
+      "border_filepath": "data/layouts/OldChateau_BackRoom2/border.bin",
+      "blockdata_filepath": "data/layouts/OldChateau_BackRoom2/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_CHATEAU_BACK_ROOM3",
+      "name": "OldChateau_BackRoom3_Layout",
+      "width": 7,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
+      "border_filepath": "data/layouts/OldChateau_BackRoom3/border.bin",
+      "blockdata_filepath": "data/layouts/OldChateau_BackRoom3/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_CHATEAU_CONNECTOR1",
+      "name": "OldChateau_Connector1_Layout",
+      "width": 12,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
+      "border_filepath": "data/layouts/OldChateau_Connector1/border.bin",
+      "blockdata_filepath": "data/layouts/OldChateau_Connector1/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_CHATEAU_CONNECTOR2",
+      "name": "OldChateau_Connector2_Layout",
+      "width": 26,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
+      "border_filepath": "data/layouts/OldChateau_Connector2/border.bin",
+      "blockdata_filepath": "data/layouts/OldChateau_Connector2/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_CHATEAU_CONNECTOR3",
+      "name": "OldChateau_Connector3_Layout",
+      "width": 12,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_OldChateau",
+      "border_filepath": "data/layouts/OldChateau_Connector3/border.bin",
+      "blockdata_filepath": "data/layouts/OldChateau_Connector3/map.bin"
     }
   ]
 }

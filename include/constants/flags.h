@@ -70,7 +70,7 @@
 #define FLAG_HIDE_WALLY_ROUTE_111           0x37
 #define FLAG_HIDE_DIG_SITE_2_ARCO_MEMBERS   0x38
 #define FLAG_HIDE_DIG_SITE_2_WALLY          0x39
-#define FLAG_RECEIVED_EXPERT_BELT           0x3A // unused
+#define FLAG_DEFEATED_ROTOM_1               0x3A
 #define FLAG_MET_RED                        0x3B
 #define FLAG_HIDE_RED_FIERY_PATH            0x3C
 #define FLAG_HIDE_NORMAN_LAB_B              0x3D
@@ -81,10 +81,10 @@
 #define FLAG_HIDE_ROUTE_110E_COP_BLOCKADE   0x42
 #define FLAG_HIDE_BLEAKISLE_POLICEMEN       0x43
 #define FLAG_HIDE_RED_ROUTE_118             0x44
-#define FLAG_HIDE_BLEAKISLE_CURSED_GIRL     0x45 // unused
+#define FLAG_DEFEATED_ROTOM_2               0x45
 #define FLAG_HIDE_BLEAKISLE_WOODS_TRAINERS  0x46
 #define FLAG_HIDE_BLEAKISLE_TOWN_DAD        0x47
-#define FLAG_UNUSED_0x048    0x48 // Unused Flag
+#define FLAG_DEFEATED_ROTOM_3               0x48
 // Custom fly flags
 // Must be consecutive to properly color on region map
 #define FLAG_VISITED_BLEAKISLE_TOWN    0x49

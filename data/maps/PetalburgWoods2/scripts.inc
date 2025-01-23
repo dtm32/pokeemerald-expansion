@@ -50,9 +50,9 @@ PetalburgWoods2_Text_WatchTheWater:
 	.string "I just like to come watch the\n"
 	.string "reflections in the water.$"
 
-PetalburgWoods2_EventScript_ClubSign::
-	msgbox PetalburgWoods2_Text_Club, MSGBOX_SIGN
+PetalburgWoods2_EventScript_OldChateauSign::
+	msgbox PetalburgWoods2_Text_OldChateau, MSGBOX_SIGN
 	end
 
-PetalburgWoods2_Text_Club:
-	.string "PETALBURG WOODS CLUB$"
+PetalburgWoods2_Text_OldChateau:
+	.string "OLD CHATEAU$"

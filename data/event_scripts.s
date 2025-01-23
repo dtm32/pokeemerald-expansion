@@ -1170,3 +1170,17 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DigSite3_Lab/scripts.inc"
 
 	.include "data/maps/RouteB_AgathasHouse/scripts.inc"
+
+	.include "data/maps/OldChateau_Hallway/scripts.inc"
+
+	.include "data/maps/OldChateau_BackRoom1/scripts.inc"
+
+	.include "data/maps/OldChateau_BackRoom2/scripts.inc"
+
+	.include "data/maps/OldChateau_BackRoom3/scripts.inc"
+
+	.include "data/maps/OldChateau_Connector1/scripts.inc"
+
+	.include "data/maps/OldChateau_Connector2/scripts.inc"
+
+	.include "data/maps/OldChateau_Connector3/scripts.inc"

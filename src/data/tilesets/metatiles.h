@@ -216,3 +216,9 @@ const u16 gMetatileAttributes_DeltaLab[] = INCBIN_U16("data/tilesets/secondary/d
 
 const u16 gMetatiles_SaffronGym[] = INCBIN_U16("data/tilesets/secondary/saffron_gym/metatiles.bin");
 const u16 gMetatileAttributes_SaffronGym[] = INCBIN_U16("data/tilesets/secondary/saffron_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_PetalburgWoods[] = INCBIN_U16("data/tilesets/secondary/petalburg_woods/metatiles.bin");
+const u16 gMetatileAttributes_PetalburgWoods[] = INCBIN_U16("data/tilesets/secondary/petalburg_woods/metatile_attributes.bin");
+
+const u16 gMetatiles_OldChateau[] = INCBIN_U16("data/tilesets/secondary/old_chateau/metatiles.bin");
+const u16 gMetatileAttributes_OldChateau[] = INCBIN_U16("data/tilesets/secondary/old_chateau/metatile_attributes.bin");
