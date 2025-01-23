@@ -334,7 +334,7 @@
     .baseSpDefense = 33,
     .types = MON_TYPES(TYPE_ELECTRIC, TYPE_GHOST),
     .catchRate = 45,
-    .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 83 : 95,
+    .expYield = 116,
     .evYield_HP = 2,
     .genderRatio = MON_GENDERLESS,
     .eggCycles = 15,
@@ -370,8 +370,8 @@
     .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
     .palette = gMonPalette_ShedinjaDelta,
     .shinyPalette = gMonShinyPalette_Shedinja,
-    .iconSprite = gMonIcon_Shedinja,
-    .iconPalIndex = 1,
+    .iconSprite = gMonIcon_ShedinjaDelta,
+    .iconPalIndex = 0,
     FOOTPRINT(Shedinja)
     OVERWORLD(
         sPicTable_Shedinja,
@@ -1753,7 +1753,7 @@
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_ROCK_HEAD, ABILITY_RECKLESS },
+        .abilities = { ABILITY_WEAK_ARMOR, ABILITY_SAND_RUSH, ABILITY_VOLT_ABSORB },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Rhyhorn δ"),
         .cryId = CRY_RHYHORN,
@@ -1770,22 +1770,20 @@
         .pokemonOffset = 6,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Rhyhorn,
-        .frontPicFemale = gMonFrontPic_RhyhornF,
+        .frontPic = gMonFrontPic_RhyhornDelta,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 12,
         .frontAnimFrames = sAnims_Rhyhorn,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Rhyhorn,
-        .backPicFemale = gMonBackPic_RhyhornF,
+        .backPic = gMonBackPic_RhyhornDelta,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Rhyhorn,
+        .palette = gMonPalette_RhyhornDelta,
         .shinyPalette = gMonShinyPalette_Rhyhorn,
-        .iconSprite = gMonIcon_Rhyhorn,
+        .iconSprite = gMonIcon_RhyhornDelta,
         .iconPalIndex = 1,
         FOOTPRINT(Rhyhorn)
         OVERWORLD(
@@ -1796,7 +1794,7 @@
             gOverworldPalette_Rhyhorn,
             gShinyOverworldPalette_Rhyhorn
         )
-        .levelUpLearnset = sRhyhornLevelUpLearnset,
+        .levelUpLearnset = sRhyhornDeltaLevelUpLearnset,
         .teachableLearnset = sRhyhornTeachableLearnset,
     },
 
@@ -2182,7 +2180,7 @@
         .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_CacturneDelta,
         .shinyPalette = gMonShinyPalette_Cacturne,
-        .iconSprite = gMonIcon_Cacturne,
+        .iconSprite = gMonIcon_CacturneDelta,
         .iconPalIndex = 1,
         FOOTPRINT(Cacturne)
         OVERWORLD(
@@ -2197,7 +2195,6 @@
         .teachableLearnset = sCacturneTeachableLearnset,
     },
 
-// Clefable δ	Fairy/Electric	95	95	60	95	95	95
     [SPECIES_CLEFABLE_DELTA] =
     {
         .baseHP        = 99,
@@ -2319,10 +2316,8 @@
         )
         .levelUpLearnset = sVibravaLevelUpLearnset,
         .teachableLearnset = sVibravaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_FLYGON}),
     },
 
-// Metang δ	Steel/Fairy	75	106	94	62	68	100
     [SPECIES_METANG_DELTA] =
     {
         .baseHP        = 75,
@@ -2341,7 +2336,7 @@
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_LIGHT_METAL },
+        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Metang δ"),
         .cryId = CRY_METANG,
@@ -2369,7 +2364,7 @@
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = gMonPalette_MetangDelta,
         .shinyPalette = gMonShinyPalette_Metang,
-        .iconSprite = gMonIcon_Metang,
+        .iconSprite = gMonIcon_MetangDelta,
         .iconPalIndex = 0,
         FOOTPRINT(Metang)
         OVERWORLD(
@@ -2380,9 +2375,8 @@
             gOverworldPalette_Metang,
             gShinyOverworldPalette_Metang
         )
-        .levelUpLearnset = sMetangLevelUpLearnset,
+        .levelUpLearnset = sMetangDeltaLevelUpLearnset,
         .teachableLearnset = sMetangTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_METAGROSS}),
     },
 
     [SPECIES_SPIRITOMB_CURSED] =
