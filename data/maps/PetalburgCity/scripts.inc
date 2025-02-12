@@ -34,8 +34,8 @@ PetalburgCity_EventScript_MakeWallyFaceUp::
 	return
 
 PetalburgCity_EventScript_PutWallyNextToDad::
-	setobjectxyperm LOCALID_WALLY, 25, 16
-	setobjectmovementtype LOCALID_WALLY, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm LOCALID_WALLY, 15, 13
+	setobjectmovementtype LOCALID_WALLY, MOVEMENT_TYPE_FACE_RIGHT
 	return
 
 PetalburgCity_EventScript_SetGymDoorsUnlocked::

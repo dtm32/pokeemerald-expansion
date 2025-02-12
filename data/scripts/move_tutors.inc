@@ -50,6 +50,23 @@ MoveTutor_EventScript_RolloutTaught::
 	release
 	end
 
+MountKiri_B2F_EventScript_IcicleCrashTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_IcicleCrashTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_RolloutDeclined
+	msgbox MoveTutor_Text_IcicleCrashWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_ICICLE_CRASH
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_IcicleCrashDeclined
+	msgbox MoveTutor_Text_IcicleCrashTaught, MSGBOX_AUTOCLOSE
+	end
+
+MoveTutor_EventScript_IcicleCrashDeclined::
+	msgbox MoveTutor_Text_IcicleCrashDeclined, MSGBOX_DEFAULT
+	release
+	end
+
 VerdanturfTown_PokemonCenter_1F_EventScript_FuryCutterTutor::
 	lock
 	faceplayer

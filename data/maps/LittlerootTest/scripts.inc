@@ -62,6 +62,9 @@ cLittlerootTown_EventScript_PickupGoodyBag::
 	additem ITEM_MAX_REPEL, 50
 	additem ITEM_ACRO_BIKE
 	additem ITEM_GO_GOGGLES
+	setvar VAR_PETALBURG_CITY_STATE, 3
+	clearflag FLAG_HIDE_PETALBURG_CITY_DAD
+	clearflag FLAG_HIDE_PETALBURG_CITY_WALLY
 	additem ITEM_RARE_CANDY, 100
 	@ giveitem ITEM_PROTEIN, 10
 	@ giveitem ITEM_ADAMANT_MUSHROOM, 10

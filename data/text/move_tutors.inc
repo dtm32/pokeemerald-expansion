@@ -235,3 +235,24 @@ MoveTutor_Text_ExplosionTaught:
 	.string "to ignite my own EXPLOSION…\p"
 	.string "Maybe it's because deep down,\n"
 	.string "I would rather stay here…$"
+
+MoveTutor_Text_IcicleCrashTeach:
+	.string "Hohoho! Hey kid, you're brave to be\n"
+	.string "down here in the cold!\p"
+	.string "I'm so old I don't even feel a\n"
+	.string "thing anymore!\p"
+	.string "Hohoho! Hey kid, why don't I teach\n"
+	.string "one of your POKéMON the powerful\l"
+	.string "frozen move ICICLE CRASH?$"
+
+MoveTutor_Text_IcicleCrashDeclined:
+	.string "Oh, feeling under the weather?\n"
+	.string "Come back when you're no longer\l"
+	.string "scared of the cold!$"
+
+MoveTutor_Text_IcicleCrashWhichMon:
+	.string "Hohoho, glorious!\n"
+	.string "Now, who should I be tutoring?$"
+
+MoveTutor_Text_IcicleCrashTaught:
+	.string "Hohoho! Freeze your enemies!$"

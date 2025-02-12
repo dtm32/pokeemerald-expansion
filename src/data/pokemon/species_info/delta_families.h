@@ -194,7 +194,6 @@
         .tmIlliterate = TRUE,
         .levelUpLearnset = sSilcoonDeltaLevelUpLearnset,
         .teachableLearnset = sSilcoonTeachableLearnset,
-        // .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BEAUTIFLY}),
     },
 
     [SPECIES_DUSTOX_DELTA] =
@@ -572,7 +571,6 @@
         .levelUpLearnset = sVenonatDeltaLevelUpLearnset,
         .teachableLearnset = sVenonatTeachableLearnset,
         .eggMoveLearnset = sVenonatEggMoveLearnset,
-        // .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_VENOMOTH_DELTA}),
     },
 
     [SPECIES_VENOMOTH_DELTA] =
@@ -1856,7 +1854,7 @@
             gOverworldPalette_Slowpoke,
             gShinyOverworldPalette_Slowpoke
         )
-        .levelUpLearnset = sSlowpokeLevelUpLearnset,
+        .levelUpLearnset = sSlowpokeDeltaLevelUpLearnset,
         .teachableLearnset = sSlowpokeTeachableLearnset,
         .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
     },
@@ -1872,13 +1870,7 @@
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_ROCK, TYPE_GHOST),
         .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 161,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 154,
-    #else
-        .expYield = 150,
-    #endif
+        .expYield = 181,
         .evYield_Defense = 1,
         .evYield_SpAttack = 1,
         .itemCommon = ITEM_STARDUST,
@@ -1928,11 +1920,10 @@
             gOverworldPalette_Lunatone,
             gShinyOverworldPalette_Lunatone
         )
-        .levelUpLearnset = sLunatoneLevelUpLearnset,
+        .levelUpLearnset = sLunatoneDeltaLevelUpLearnset,
         .teachableLearnset = sLunatoneTeachableLearnset,
     },
 
-// Solrock δ	Rock/Fire	60	105	100	95	50	105
     [SPECIES_SOLROCK_DELTA] =
     {
         .baseHP        = 60,
@@ -1943,13 +1934,7 @@
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FIRE),
         .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 161,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 154,
-    #else
-        .expYield = 150,
-    #endif
+        .expYield = 181,
         .evYield_Attack = 1,
         .evYield_SpDefense = 1,
         .itemCommon = ITEM_STARDUST,
@@ -1999,11 +1984,10 @@
             gOverworldPalette_Solrock,
             gShinyOverworldPalette_Solrock
         )
-        .levelUpLearnset = sSolrockLevelUpLearnset,
+        .levelUpLearnset = sSolrockDeltaLevelUpLearnset,
         .teachableLearnset = sSolrockTeachableLearnset,
     },
 
-// Skarmory δ	Steel/Fire	75	127	88	82	48	70
     [SPECIES_SKARMORY_DELTA] =
     {
         .baseHP        = 75,
@@ -2066,7 +2050,6 @@
         .eggMoveLearnset = sSkarmoryEggMoveLearnset,
     },
 
-// Camerupt δ	Fire/Water	95	90	90	80	75	90
     [SPECIES_CAMERUPT_DELTA] =
     {
         .baseHP        = 95,

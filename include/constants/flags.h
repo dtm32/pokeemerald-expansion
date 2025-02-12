@@ -43,7 +43,7 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-// CUSTOM
+// CUSTOM - FULL
 #define FLAG_HIDE_DEBUG_POKEBALLS           0x20 // DEBUG
 #define FLAG_STOLE_GOODY_BAG                0x21
 #define FLAG_HIDE_ROUTE_102_ARCO_GUARD      0x22
@@ -667,7 +667,7 @@
 #define FLAG_HIDDEN_ITEM_PETALBURG_WOODS_LEFTOVERS          0x268
 #define FLAG_HIDDEN_ITEM_DIG_SITE_2_ULTRA_BALL              0x269
 #define FLAG_ITEM_MAUVILLE_TUNNEL_MOON_STONE                0x26A
-#define FLAG_ITEM_MAUVILLE_TUNNEL_TM_HYPER_BEAM             0x26B
+#define FLAG_ITEM_MAUVILLE_TUNNEL_TM_BULLDOZE               0x26B
 #define FLAG_ITEM_VERDANTURF_RAVINE_TM_02                   0x26C
 #define FLAG_ITEM_VERDANTURF_RAVINE_MAX_REVIVE              0x26D
 #define FLAG_HIDDEN_ITEM_DIG_SITE_2_STAR_PIECE              0x26E
@@ -681,7 +681,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_B_BLACK_SLUDGE               0x276
 #define FLAG_ITEM_ROUTE_B_PP_UP                             0x277
 #define FLAG_ITEM_OLD_CHATEAU_ROTOM_CATALOG                 0x278
-#define FLAG_UNUSED_0x279  0x279 // Unused Flag
+#define FLAG_ITEM_MT_KIRI_B1F_METAL_COAT                    0x279 // Unused Flag
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag
 #define FLAG_UNUSED_0x27C  0x27C // Unused Flag
@@ -1226,7 +1226,8 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-#define FLAG_UNUSED_0x493                                           0x493 // Unused Flag
+// CUSTOM
+#define FLAG_ENABLE_EXP_ALL                                         0x493 // Unused Flag
 #define FLAG_UNUSED_0x494                                           0x494 // Unused Flag
 #define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
 #define FLAG_UNUSED_0x496                                           0x496 // Unused Flag

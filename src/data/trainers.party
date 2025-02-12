@@ -410,6 +410,10 @@ Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Struggle Bug
 
+Pidgeotto
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 === TRAINER_MAXWELL ===
 Name: MAXWELL
 Class: Bug Catcher
@@ -428,6 +432,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Pineco
 Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Pikachu
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_KIT ===
@@ -502,6 +510,12 @@ EVs: 150 Atk / 150 Def
 - Iron Head
 - Thunder Punch
 - Explosion
+
+
+/* =========================== */
+/* ========= MT KIRI ========= */
+/* =========================== */
+
 
 === TRAINER_ADRIANA ===
 Name: ADRIANA
@@ -592,6 +606,88 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Excadrill
 Level: 31
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+=== TRAINER_MIKAEL ===
+Name: MIKAEL
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Golem
+Level: 31
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Machoke
+Level: 31
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+=== TRAINER_ARTY ===
+Name: ARTY
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Cubone
+Level: 27
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Raticate
+Level: 29
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+=== TRAINER_COSWELL ===
+Name: COSWELL
+Class: Ruin Maniac
+Pic: Ruin Maniac
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Dugtrio
+Level: 30
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Electrosaur
+Level: 31
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Aerodactyl
+Level: 31
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+=== TRAINER_MARCO ===
+Name: MARCO
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move
+
+Hariyama
+Level: 29
+Ability: Thick Fat
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Snorlax
+Level: 32
+Ability: Thick Fat
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Grumpig
+Level: 31
+Ability: Thick Fat
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+
+
 
 === TRAINER_FLYNN ===
 Name: FLYNN
@@ -13004,13 +13100,13 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
 - Bug Bite
 
-SPECIES_WORMADAM_PLANT_CLOAK
-Level: 9
+Eevee
+Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Bug Bite
-- Protect
-- Razor Leaf
-- Growth
+- Quick Attack
+- Baby-Doll Eyes
+- Covet
+- Yawn
 
 === TRAINER_JOSE ===
 Name: JOSE

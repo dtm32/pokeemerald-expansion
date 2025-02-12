@@ -316,7 +316,7 @@
 #define P_FAMILY_PANPOUR                 P_GEN_5_POKEMON
 #define P_FAMILY_MUNNA                   P_GEN_5_POKEMON
 #define P_FAMILY_PIDOVE                  P_GEN_5_POKEMON
-#define P_FAMILY_BLITZLE                 P_GEN_5_POKEMON
+#define P_FAMILY_BLITZLE                 TRUE
 #define P_FAMILY_ROGGENROLA              P_GEN_5_POKEMON
 #define P_FAMILY_WOOBAT                  P_GEN_5_POKEMON
 #define P_FAMILY_DRILBUR                 TRUE
@@ -506,7 +506,7 @@
 #define P_FAMILY_MILCERY                 P_GEN_8_POKEMON
 #define P_FAMILY_FALINKS                 P_GEN_8_POKEMON
 #define P_FAMILY_PINCURCHIN              P_GEN_8_POKEMON
-#define P_FAMILY_SNOM                    P_GEN_8_POKEMON
+#define P_FAMILY_SNOM                    TRUE
 #define P_FAMILY_STONJOURNER             P_GEN_8_POKEMON
 #define P_FAMILY_EISCUE                  P_GEN_8_POKEMON
 #define P_FAMILY_INDEEDEE                P_GEN_8_POKEMON

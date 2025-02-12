@@ -1,17 +1,129 @@
 {
-    "BULBASAUR": {
+    "BLASTOISE": {
         "LevelMoves": [],
         "PreEvoMoves": [],
         "TMMoves": [],
         "EggMoves": [],
-        "TutorMoves": []
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
     },
-    "SWELLOW": {
+    "POLIWRATH": {
         "LevelMoves": [],
         "PreEvoMoves": [],
         "TMMoves": [],
         "EggMoves": [],
-        "TutorMoves": []
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
+    },
+    "DEWGONG": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
+    },
+    "SEAKING": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
+    },
+    "LAPRAS": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
+    },
+    "KABUTOPS": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
+    },
+    "ARTICUNO": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
+    },
+    "TOTODILE": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
+    },
+    "CROCONAW": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
+    },
+    "FERALIGATR": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
+    },
+    "AZUMARILL": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
+    },
+    "LAIRON_DELTA": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
+    },
+    "EMPOLEON": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
+    },
+    "DHELMISE": {
+        "LevelMoves": [],
+        "PreEvoMoves": [],
+        "TMMoves": [],
+        "EggMoves": [],
+        "TutorMoves": [
+            "MOVE_ICICLE_CRASH"
+        ]
     },
     "IGNEOUSAUR": {
         "LevelMoves": [],
